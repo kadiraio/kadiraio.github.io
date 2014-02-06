@@ -1,0 +1,7 @@
+permalink: /:title.html
+url: "http://meteorapm.com"
+paginate: 10
+exclude:
+- README.md
+- Rakefile
+- post.sh
