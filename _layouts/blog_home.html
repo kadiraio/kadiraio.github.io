@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  {% assign head_title = "Meteor APM Blog" %}
+  {% include head.html %}
+</head>
+<body>
+  <!-- Header Area -->
+  {% include header.html %}
+  
+  <div class='col-md-2'></div>
+  <div class='col-md-7 blog-home'>
+    <button type="button" class="btn btn-default btn-subscribe">Subscribe</button>
+    <div style="margin-top: 40px">
+      {% assign post_list = site.data.blog %}
+      {% include post_list.html %}
+    </div>
+  </div>
+  <div class='col-md-3'>
+    
+  </div>
+</body>
+</html>

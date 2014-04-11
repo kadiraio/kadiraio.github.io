@@ -1,0 +1,16 @@
+<div class="post-list">
+  {% for post in post_list %}
+    <div class='post-list-item'>
+      <h2><a href='{{ post.link }}' class="link">{{ post.title }}</a></h2>
+      <div>
+        <span class="who">by 
+          <a href="https://twitter.com/arunoda">arunoda</a>
+        </span> - 
+        <span class="date">{{ post.date }}</span>
+      </div>
+      <div class="summery">
+        {{ post.summery }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

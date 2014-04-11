@@ -2,7 +2,6 @@
 body, div, ul, li, a, h1, h2, h3, h4, h5 {
   font-family: 'Source Sans Pro', Sans;
   font-weight: 400;
-  text-align: center;
 }
 
 img {
@@ -13,31 +12,47 @@ img {
   box-shadow:         0px 6px 16px 0px rgba(50, 50, 50, 0.75);
 }
 
-h1 {
+.navbar {
+  padding: 10px 0 10px 0;
+}
+
+.navbar-default {
+  background-color: #fff;
+}
+
+/*
+  ------------- HOME --------------
+*/
+
+.home {
+  text-align: center;
+}
+
+.home h1 {
   font-weight: 900; 
   font-size: 60px;
   line-height: 50px;
-  margin: 75px 0 0 0;
+  margin: 20px 0 0 0;
   color: rgb(113, 0, 76);
 }
 
-h2 {
+.home h2 {
   font-weight: 400; 
   font-size: 25px;
   margin: 10px 0 30px 0;
   -webkit-font-smoothing: antialiased;
 }
 
-form {
+.home form {
   margin: 30px 0 30px 0;
 }
 
-input {
+.home input {
   margin: 0;
   outline: 0;
 }
 
-.email {
+.home .email {
   width: 300px;
   padding: 5px 10px 5px 10px;
   font-size: 16px;
@@ -45,7 +60,7 @@ input {
   border: 1px solid #E2CEF0;
 }
 
-.submit {
+.home .submit {
   padding: 5px 10px 5px 10px;
   font-size: 16px;
   color: #FFF;
@@ -54,7 +69,116 @@ input {
   background-color: rgb(93, 27, 118);
 }
 
+/*
+  --------------- POST LISTS -------------------
+*/
+
+.post-list-item {
+  -webkit-font-smoothing: antialiased;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.post-list-item h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.post-list-item .link {
+  color: #555;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.post-list-item .link:hover {
+  text-decoration: none;
+  color: #222;
+}
+
+.post-list-item .date, .post-list-item .who {
+  color: #888;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.post-list-item .who a{
+  color: #888;
+  border-bottom: 1px solid #ddd;
+}
+
+.post-list-item .who a:hover{
+  text-decoration: none;
+}
+
+.post-list-item .summery {
+  margin-top: 10px;
+  font-size: 18px;
+}
 
 
+/* 
+  ---------------- POST ----------------
+*/
 
+.post {
+  -webkit-font-smoothing: antialiased;
+}
 
+.post h1 {
+  font-weight: 700;
+  font-size: 35px;
+  color: #444;
+}
+
+.post .date, .post .who {
+  color: #888;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.post .who a{
+  color: #888;
+  border-bottom: 1px solid #ddd;
+}
+
+.post .who a:hover{
+  text-decoration: none;
+}
+
+.post .content {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #444;
+}
+
+/*
+  ----------------- COMMENTS --------------------
+*/
+
+.comments {
+  border-top: 1px solid #eee;
+  margin: 10px 0px 30px 0px;
+  padding: 20px 0px 10px 0px
+}
+
+/* 
+  ---------------- BUTTONS -------------------------
+*/
+
+.btn-subscribe {
+  outline: 0;
+  background-color: rgb(246, 255, 242);
+  border: 1px solid rgb(210, 228, 215);
+  width: 150px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #666;
+}
+
+.btn-subscribe:hover {
+  background-color: white;
+  border: 1px solid rgb(210, 228, 215);
+  color: #666;
+}
