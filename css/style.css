@@ -84,7 +84,6 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   font-size: 16px;
   color: #FFF;
   border: 1px solid #ddd;
-  font-weight: 600;
   background-color: rgb(93, 27, 118);
 }
 
@@ -275,6 +274,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   font-weight: 700;
   font-size: 15px;
   color: #666;
+  -webkit-font-smoothing: antialiased;
 }
 
 .btn-subscribe:hover {
@@ -282,4 +282,5 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   background-color: #fff;
   border: 2px solid rgb(164, 221, 141);
   color: #666;
+  -webkit-font-smoothing: antialiased;
 }
