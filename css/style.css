@@ -180,14 +180,18 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   line-height: 1.2;
 }
 
+.post pre {
+  padding: 0px;
+}
+
 .post code {
-  color: #E94256;
-  background-color: transparent;
   border: 1px solid rgb(255, 244, 244);
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .post pre code {
+  padding: 15px;
   border: 0px;
 }
 
