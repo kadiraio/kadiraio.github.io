@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  {% assign head_title = "Meteor APM Blog" %}
+  {% assign head_title = "Meteor APM Academy" %}
   {% include head.html %}
 </head>
 <body>
   <!-- Header Area -->
-  {% assign page_type = "blog" %}
+  {% assign page_type = "academy" %}
   {% include header.html %}
   
   <div class='col-md-2'></div>
   <div class='col-md-7 blog-home'>
     <button type="button" class="btn btn-subscribe">
-      Subscribe to Blog
+      Subscribe to Academy
     </button>
     <div style="margin-top: 40px">
-      {% assign post_list = site.data.blog %}
+      {% assign only_title = "true" %}
+      {% assign post_list = site.data.academy %}
       {% include post_list.html %}
     </div>
   </div>

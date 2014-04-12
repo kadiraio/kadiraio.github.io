@@ -11,10 +11,13 @@
     </div>
     <nav class='collapse navbar-collapse apm-navbar-collapse clearfix' role='navigation'>
       <ul class="nav navbar-nav pull-right">
-        <li><a href="http://support.meteorapm.com/knowledgebase">Docs</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/academy">Academy</a></li>
-        <li><a href="http://support.meteorapm.com/forums/224274-general">Support</a></li>
+        {% for page in site.data.links %}
+          {%if page_type == page.type %}
+            <li><a class="selected-link" href="{{page.link}}">{{page.caption}}</a></li>
+          {%else%}
+            <li><a href="{{page.link}}">{{page.caption}}</a></li>
+          {%endif%}
+        {% endfor %}
       </ul>
     </nav>
   </div>

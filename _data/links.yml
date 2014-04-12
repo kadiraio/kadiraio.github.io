@@ -1,0 +1,17 @@
+---
+  -
+    caption: "Docs"
+    type: "docs"
+    link: "http://support.meteorapm.com/knowledgebase" 
+  -
+    caption: "Blog"
+    type: "blog"
+    link: "/blog"  
+  -
+    caption: "Academy"
+    type: "academy"
+    link: "/academy"    
+  - 
+    caption: "Support"
+    type: "support"
+    link: "http://support.meteorapm.com/forums/224274-general"

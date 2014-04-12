@@ -13,6 +13,25 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 /*
+  ------------- HEADER -------------
+*/
+
+#apm-navbar-brand-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(170, 126, 172);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #C2BFBF;
+}
+
+.navbar-default .navbar-nav>li .selected-link {
+  color: #000;
+  font-weight: 700;
+}
+
+/*
   ------------- HOME --------------
 */
 
@@ -83,6 +102,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 .post-list-item h2 {
   margin: 0px;
   padding: 0px;
+  margin-bottom: 10px;
 }
 
 .post-list-item .link {
@@ -112,6 +132,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 .post-list-item .summery {
+  color: #333332;
   margin-top: 10px;
   font-size: 19px;
   font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
@@ -132,21 +153,23 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 .post h1 {
   font-weight: 700;
   font-size: 35px;
-  color: #444;
+  line-height: 1.2;
 }
 
 .post h2 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 27px;
   color: #444;
   margin: 20px 0;
+  line-height: 1.2;
 }
 
 .post h3 {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 23px;
   color: #444;
   margin: 20px 0;
+  line-height: 1.2;
 }
 
 .post h4 {
@@ -155,6 +178,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   text-decoration: underline;
   color: #444;
   margin: 20px 0;
+  line-height: 1.2;
 }
 
 .post code {
@@ -205,12 +229,11 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 .post .content {
   margin-top: 30px;
-  color: #333;
+  color: #333332;
 }
 
 .post .content li,
 .post .content p {
-  color: rgb(51, 51, 50);
   font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
   letter-spacing: .01rem;
   font-weight: 400;
@@ -246,16 +269,17 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 .btn-subscribe {
   outline: 0;
-  background-color: rgb(246, 255, 242);
-  border: 1px solid rgb(210, 228, 215);
-  width: 150px;
+  background-color: rgb(252, 255, 249);
+  border: 2px solid rgb(164, 221, 141);
+  min-width: 150px;
   font-weight: 700;
   font-size: 15px;
   color: #666;
 }
 
 .btn-subscribe:hover {
-  background-color: white;
-  border: 1px solid rgb(210, 228, 215);
+  outline: 0;
+  background-color: #fff;
+  border: 2px solid rgb(164, 221, 141);
   color: #666;
 }

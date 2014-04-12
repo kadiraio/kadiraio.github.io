@@ -1,7 +1,6 @@
 ---
-layout: blog
+layout: blog_post
 title: The April Release
-category: blog
 permalink: /blog/the-april-release
 ---
 
