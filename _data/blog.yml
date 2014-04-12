@@ -1,16 +1,6 @@
 ---
   - 
-    title: "The Super Article"
-    date: "11, November 2012"
-    link: /blog/abc-ssds
-    summery: "Meteor hides a lot of complexities from you. But you must understand them in order to follow this Pro Meteor guide. This section covers that."
-  -
-    title: "The Coolooo Man"
-    date: "11, November 2012"
-    link: /blog/abc-ssds
-    summery: "Understanding Fibers is really important for you to understand Meteor Well. This article shows, everything you need know about Fibers."
-  -
-    title: "This is awesome bro"
-    date: "11, November 2012"
-    link: /blog/abc-ssds
-    summery: "Does Meteor Scale? This is the question, I think most people worried about Meteor. After you read this article, you can decide your own!"
+    title: "The April Release"
+    date: "14, April 2014"
+    link: /blog/the-april-release
+    summery: "For the past few weeks, we've been working hard to improve Meteor APM, to allow you to get the most out of it. Today, we are releasing a newer version of APM—it has a lot of changes compared with the previous version."

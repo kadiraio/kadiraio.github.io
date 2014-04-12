@@ -1,15 +1,7 @@
 /* Styles */
 body, div, ul, li, a, h1, h2, h3, h4, h5 {
-  font-family: 'Source Sans Pro', Sans;
+  font-family: 'jaf-bernina-sans', Sans;
   font-weight: 400;
-}
-
-img {
-  width: 80%;
-  border: 1px solid #ddd;
-  -webkit-box-shadow: 0px 6px 16px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 6px 16px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 6px 16px 0px rgba(50, 50, 50, 0.75);
 }
 
 .navbar {
@@ -23,6 +15,14 @@ img {
 /*
   ------------- HOME --------------
 */
+
+.home img {
+  width: 80%;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0px 6px 16px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 6px 16px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 6px 16px 0px rgba(50, 50, 50, 0.75);
+}
 
 .home {
   text-align: center;
@@ -113,7 +113,11 @@ img {
 
 .post-list-item .summery {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 19px;
+  font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 
@@ -129,6 +133,59 @@ img {
   font-weight: 700;
   font-size: 35px;
   color: #444;
+}
+
+.post h2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #444;
+  margin: 20px 0;
+}
+
+.post h3 {
+  font-weight: 700;
+  font-size: 25px;
+  color: #444;
+  margin: 20px 0;
+}
+
+.post h4 {
+  font-weight: 700;
+  font-size: 19px;
+  text-decoration: underline;
+  color: #444;
+  margin: 20px 0;
+}
+
+.post code {
+  color: #E94256;
+  background-color: transparent;
+  border: 1px solid rgb(255, 244, 244);
+  font-size: 16px;
+}
+
+.post pre code {
+  border: 0px;
+}
+
+.post a code {
+  border: 1px solid rgb(250, 179, 182);
+}
+
+.post img,
+.post embed,
+.post object,
+.post iframe {
+  max-width: 100%;
+}
+
+.post a code:hover {
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.post a:hover {
+  text-decoration: none;
 }
 
 .post .date, .post .who {
@@ -148,10 +205,31 @@ img {
 
 .post .content {
   margin-top: 30px;
-  font-size: 20px;
-  line-height: 28px;
-  color: #444;
+  color: #333;
 }
+
+.post .content li,
+.post .content p {
+  color: rgb(51, 51, 50);
+  font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
+  letter-spacing: .01rem;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+} 
+
+.post .content a {
+  font-family: 'ff-tisa-web-pro', Sans;
+}
+
+.post blockquote {
+  border-style: solid;
+  border-color: rgba(111,186,135,1);
+  border-width: 0px 0px 0px 5px;
+  line-height: 28px;
+  font-size: 20px;
+}
+
 
 /*
   ----------------- COMMENTS --------------------
@@ -159,7 +237,6 @@ img {
 
 .comments {
   border-top: 1px solid #eee;
-  margin: 10px 0px 30px 0px;
   padding: 20px 0px 10px 0px
 }
 
