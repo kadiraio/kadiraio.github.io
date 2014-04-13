@@ -15,8 +15,10 @@ For this example I'm referring to Methods, but you can apply the same process to
 * The topmost chart shows the response time of your app. Click on any point in that chart and you'll see traced method calls just below the chart.
 * Click on a trace call and you'll get a Method Explorer view. This is a graphical stack trace for your method. With that you can identify which operations are responsible for the response time.
 
-![](https://i.cloudup.com/_8-9cnRo_w.png)
-![](https://i.cloudup.com/96ytJfM00o.png)
+Watch following video:
+
+<iframe src="//player.vimeo.com/video/91842608" width="500" height="500" frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" color="ffffff">
+</iframe>
 
 How you can reduce the response time for those operations is shown below.
 
