@@ -22,7 +22,7 @@ How you can reduce the response time for those operations is shown below.
 
 ## Fetch, ForEach, Map, Count, Observe, ObserveChanges
 
-This is a DB cursor operation in which you are invoking a query against your collection. Normally it should not take more than 200ms to complete an operation of this kind. If it takes longer than that, you can try implementing the following optimizations:
+This is a DB cursor operation in which you are invoking a query against your collection. Normally it should not take more than _**200ms**_ to complete an operation of this kind. If it takes longer than that, you can try implementing the following optimizations:
 
 * Make sure you've added a correct index for your query. Refer to the official [MongoDB index guide](http://docs.mongodb.org/manual/applications/indexes/).
 * If the indexes are already working, it may be a network delay. Check that your app and the DB are in the same data center. Are they close enough?
@@ -43,8 +43,8 @@ This is a DB cursor operation in which you are invoking a query against your col
 
 ## Higher HTTP, Email and Async Time
 
-* Try to add this.unblock to the top of the method (not possible with publications) to avoid other methods and subscriptions being kept waiting on this method. Adding this.unblock is not always possible. Refer to [this guide](http://meteorhacks.com/understanding-meteor-wait-time-and-this-unblock.html).
-* If this is a publication, you should not use these kinds of operation. See why!
+* Try to add `this.unblock` to the top of the method (not possible with publications) to avoid other methods and subscriptions being kept waiting on this method. Adding this.unblock is not always possible. Refer to [this guide](http://meteorhacks.com/understanding-meteor-wait-time-and-this-unblock.html).
+* If this is a publication, you should not use these kinds of operation. [See why](http://support.meteorapm.com/knowledgebase/articles/347759)!
 
 ## Higher Wait Time
 
