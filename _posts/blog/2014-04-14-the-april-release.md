@@ -56,6 +56,6 @@ Now Meteor supports Oplog for most of the queries, although it still can't add O
 
 ## Meteor APM Academy
 
-From today, we are starting the [Meteor APM Academy](/academy) to show you how to improve your application's performace and utilize the resources effectively. I just published a tutorial on how to optimize your methods and publications. In the upcoming weeks you'll be able to read tutorials on MongoDB indexing, load testing and many other topics.
+From today, we are starting the [Meteor APM Academy](/academy) to show you how to improve your application's performace and utilize the resources effectively. I just published two tutorials on the [academy](/academy). In the upcoming weeks you'll be able to read tutorials on MongoDB indexing, load testing and many other topics.
 
 I hope all these new changes will help you to get more from the Meteor APM and ultimately improve your app and make it better. Currently, we are working on adding administrative features and looking for public release very soon.
