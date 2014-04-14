@@ -205,7 +205,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 .post embed,
 .post object,
 .post iframe {
-  width: 100%;
+  max-width: 100%;
   margin: 20px 0;
 }
 

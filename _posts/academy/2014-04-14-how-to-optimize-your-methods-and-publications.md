@@ -17,7 +17,7 @@ For this example I'm referring to Methods, but you can apply the same process to
 
 Watch the following video:
 
-<iframe src="//player.vimeo.com/video/91842608" width="500" height="500" frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" color="ffffff">
+<iframe src="//player.vimeo.com/video/91842608" width="100%" height="500" frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" color="ffffff">
 </iframe>
 
 How you can reduce the response time for those operations is shown below.
