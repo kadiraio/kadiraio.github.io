@@ -48,18 +48,19 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 .home h1 {
-  font-weight: 900; 
-  font-size: 60px;
+  font-weight: 900;
+  font-size: 4em;
   line-height: 50px;
   margin: 20px 0 0 0;
-  color: rgb(113, 0, 76);
+  color: rgb(70, 70, 70);
 }
 
 .home h2 {
-  font-weight: 400; 
-  font-size: 25px;
+  font-weight: 400;
+  font-size: 1.5em;
   margin: 10px 0 30px 0;
   -webkit-font-smoothing: antialiased;
+  line-height: 1.3;
 }
 
 .home form {
@@ -77,6 +78,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   font-size: 16px;
   color: #555;
   border: 1px solid #E2CEF0;
+  margin: 0 0 7px 0;
 }
 
 .home .submit {
