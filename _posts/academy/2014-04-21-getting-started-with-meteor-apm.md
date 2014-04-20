@@ -91,7 +91,10 @@ Normally, for a typical Meteor application, the Average [Response Time](http://s
 * Click on a trace to see exactly what has happened on that method at that time.
 * Follow this [guide](https://meteorapm.com/academy/how-to-optimize-your-methods-and-publications/) to understand the traced data and improve your method accordingly.
 
-> You can follow the same process for PubSub.
+<iframe width="640" height="480" src="//www.youtube.com/embed/4vt2M7-bsDQ" frameborder="0" allowfullscreen="1">
+</iframe>
+
+> You can follow the [same process](https://www.youtube.com/watch?v=CQtmnzIlzE4&feature=youtu.be) for PubSub.
 
 ### Finding Methods You Need to Improve
 
@@ -105,7 +108,10 @@ In your app, you might be using many Meteor Methods. You may need to improve all
 * Analyze it with this [guide](https://meteorapm.com/academy/how-to-optimize-your-methods-and-publications/) and improve your method if possible.
 * Do the same for all methods.
 
-> You can follow the same process for PubSub, but you will need to sort the Pub/Sub Breakdown by [SubRate](http://support.meteorapm.com/knowledgebase/articles/347439-subrate) instead of Throughput.
+<iframe width="640" height="480" src="//www.youtube.com/embed/REUrBU7x6GU" frameborder="0" allowfullscreen="1">
+</iframe>
+
+> You can follow the [same process](https://www.youtube.com/watch?v=CTk0Qvj0n6Y&feature=youtu.be) for PubSub, but you will need to sort the Pub/Sub Breakdown by [SubRate](http://support.meteorapm.com/knowledgebase/articles/347439-subrate) instead of Throughput.
 
 There are many more ways to improve your app with Meteor APM. Explore and [share](http://support.meteorapm.com/forums/224274-general) your discoveries with us. You can also refer the tutorials on the [Meteor APM Academy](https://meteorapm.com/academy/) to find more ways to improve your app.
 
