@@ -1,4 +1,9 @@
 ---
+  -
+    title: "Getting Started With Meteor APM"
+    date: "21, April 2014"
+    link: /academy/getting-started-with-meteor-apm
+    summery: "This guide will help you get started with Meteor APM to identify how your app behaves and help you take necessary actions."
   - 
     title: "How to Optimize Your Methods and Publications"
     date: "14, April 2014"
