@@ -8,6 +8,10 @@ Publications are the main place where your app sends data to the client when a c
 
 If your app sends a large amount of data, it will take a considerable amount of time for it to reach the client (especially when utilizing mobile networks). So it is very important to reduce the amount of data your app sends to clients. Let’s see what we can do about it.
 
+> We've recently find out that fetching a lot of data (~1 MB per each subscription) from the DB and sending them to the client takes considerable amount of CPU. This will lead to a major bottleneck in your app's scalability.
+>
+> (I'll talk more about this in another article)
+
 ## Use Field Filtering
 
 Most of the time, you don't need to publish all the fields of the MongoDB documents. Try using field filtering to remove the data your client doesn't need. For example, imagine your app is a blog, and a typical blog post looks like this in the MongoDB:
@@ -51,5 +55,13 @@ You can create a summary when you are creating and editing the blog post and ass
     Meteor.publish('getTitles', function() {
       return Posts.find({}, {fields: {title: 1, summary: 1}, limit: 20});
     });
+
+## Counting On The Server Side
+
+Sometimes, specially when you are building dashboard and charts, you might need to count the number of documents for some queries. For that, you should not send documents to the client and do the counts on the client side. 
+
+Best way is to count them in the server side using a package like [publish-counts](https://github.com/percolatestudio/publish-counts/). Concept behind publish-counts is explained in [this](http://stackoverflow.com/questions/14656567/meteor-subscribe-to-a-count) stack overflow question.
+
+You may also consider using [MongoDB aggregation techniques](https://atmospherejs.com/?q=aggregate) to get a summery of data and send them to the client.
 
 These are only some of the tips you can use to save subscription data, save server memory usage, and reduce latency. Try applying some of these; you can verify the results from the [Network Impact](http://support.meteorapm.com/knowledgebase/articles/347428-network-impact) metric in the Meteor APM.
