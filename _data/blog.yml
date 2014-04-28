@@ -1,5 +1,10 @@
 ---
   - 
+    title: "Improvements For The Meteor APM Client"
+    date: "28, April 2014"
+    link: /blog/improvements-for-the-meteor-apm-client
+    summery: "Last week, we spent some time optimizing the Meteor APM client package and adding some useful features. Here are the improvements we did."
+  - 
     title: "The April Release"
     date: "14, April 2014"
     link: /blog/the-april-release
