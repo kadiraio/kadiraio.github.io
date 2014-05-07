@@ -14,7 +14,7 @@ Adding APM support for your app is pretty simple. Simply add the APM smart-packa
 
 Then configure your app by adding this code into any file in your app's server directory.
 
-    apm.connect('<appId>', '<appSecret>')
+    Apm.connect('<appId>', '<appSecret>')
 
 > It is very important to add this code into server directory; if you do not, your Meteor APM app credentials will be exposed to the client.
 
