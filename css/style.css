@@ -58,7 +58,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 .home h2 {
   font-weight: 400;
   font-size: 1.5em;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 0 0;
   -webkit-font-smoothing: antialiased;
   line-height: 1.3;
 }
@@ -87,6 +87,14 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   color: #FFF;
   border: 1px solid #ddd;
   background-color: rgb(93, 27, 118);
+}
+
+#launch-link {
+  margin: 5px 0 10px 0;
+}
+
+#launch-link a {
+  text-decoration: underline;
 }
 
 /*
