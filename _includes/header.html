@@ -13,9 +13,9 @@
       <ul class="nav navbar-nav pull-right">
         {% for page in site.data.links %}
           {%if page_type == page.type %}
-            <li><a class="selected-link" href="{{page.link}}">{{page.caption}}</a></li>
+            <li><a class="selected-link" id="toplink-{{page.type}}" href="{{page.link}}">{{page.caption}}</a></li>
           {%else%}
-            <li><a href="{{page.link}}">{{page.caption}}</a></li>
+            <li><a href="{{page.link}}" id="toplink-{{page.type}}">{{page.caption}}</a></li>
           {%endif%}
         {% endfor %}
       </ul>
