@@ -4,10 +4,6 @@
     type: "benefits"
     link: "/#features" 
   -
-    caption: "Docs"
-    type: "docs"
-    link: "http://support.meteorapm.com/knowledgebase" 
-  -
     caption: "Blog"
     type: "blog"
     link: "/blog"  
@@ -15,6 +11,10 @@
     caption: "Academy"
     type: "academy"
     link: "/academy"    
+  -
+    caption: "Docs"
+    type: "docs"
+    link: "http://support.meteorapm.com/knowledgebase" 
   - 
     caption: "Login"
     type: "login"

@@ -37,11 +37,11 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   padding: 5px 15px;
   margin-top: 9px;
   color: #535353;
-  background-color: #F0F0F0;
+  background-color: #fff;
 }
 
 #toplink-login:hover {
-  background-color: #fff;
+  background-color: #F0F0F0;
 }
 
 /*
@@ -121,7 +121,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 .connect a.btn {
-  width: 40%;
+  width: 45%;
   margin: 0 auto;
   transition: all 0.5s;
 }
@@ -131,6 +131,16 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -o-transform: translateY(-10px);
+}
+
+.btn-signup {
+  color: #fff;
+  background-color: #DB6764;
+  border-color: #FFFFFF;
+}
+
+.btn-signup:hover {
+  color: #fff;
 }
 
 #features {
@@ -147,7 +157,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   pointer-events: none;
   width: 60%;
   text-align: center;
-  margin: 0 auto;
+  margin: 10px auto 0 auto;
   color: rgb(73, 73, 73);
   border: 2px solid rgb(165, 165, 165);
   border-radius: 5px;
