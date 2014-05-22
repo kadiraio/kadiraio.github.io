@@ -35,66 +35,132 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   ------------- HOME --------------
 */
 
-.home img {
-  width: 80%;
-  border: 1px solid #ddd;
-  -webkit-box-shadow: 0px 6px 16px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 6px 16px 0px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 6px 16px 0px rgba(50, 50, 50, 0.75);
-}
-
-.home {
-  text-align: center;
-}
-
-.home h1 {
+#intro h1 {
   font-weight: 900;
-  font-size: 4em;
+  font-size: 2.5em;
   line-height: 50px;
   margin: 20px 0 0 0;
   color: rgb(70, 70, 70);
+  text-align: center;
+  pointer-events: none;
 }
 
-.home h2 {
+#intro h2 {
   font-weight: 400;
   font-size: 1.5em;
+  line-height: 1.3;
+  margin: 10px 0 0 0;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  pointer-events: none;
+}
+
+#intro .video {
+  position: relative;
+  margin-top: 30px;
+}
+
+#intro .video img {
+  width: 100%;
+}
+
+#intro .video iframe {
+  position: absolute;
+  top: 7.4%;
+  left: 14.3%;
+  width: 71.2%;
+  height: 78.8%;
+}
+
+#testimonials .media {
+  margin-top: 30px;
+}
+
+#testimonials a.quote {
+  color: rgb(50, 50, 50);
+  font-size: 13px;
+}
+
+#testimonials a.quote:hover {
+  text-decoration: none;
+}
+
+#testimonials .media-object {
+  border-radius: 50%;
+}
+
+#testimonials .media-heading {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 1em;
+  font-weight: 900;
+  pointer-events: none;
+}
+
+#testimonials .media-heading a {
+  color: rgb(50, 50, 50);
+  pointer-events: auto;
+}
+
+.connect {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.connect a.btn {
+  width: 40%;
+  margin: 0 auto;
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features h1 {
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 50px;
+  margin: 40px 0 40px 0;
+  color: rgb(70, 70, 70);
+  text-align: center;
+  pointer-events: none;
+}
+
+.feature {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.feature h2 {
+  font-weight: 900;
+  font-size: 2.5em;
+  line-height: 50px;
+  color: rgb(70, 70, 70);
+  text-align: center;
+  border-bottom: 5px solid;
+  pointer-events: none;
+}
+
+.feature p {
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height: 1.3;
+  text-align: justify;
   margin: 10px 0 0 0;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.3;
+  pointer-events: none;
 }
 
-.home form {
-  margin: 30px 0 30px 0;
-}
-
-.home input {
-  margin: 0;
-  outline: 0;
-}
-
-.home .email {
-  width: 300px;
-  padding: 5px 10px 5px 10px;
-  font-size: 16px;
-  color: #555;
-  border: 1px solid #E2CEF0;
-  margin: 0 0 7px 0;
-}
-
-.home .submit {
-  padding: 5px 10px 5px 10px;
-  font-size: 16px;
-  color: #FFF;
-  border: 1px solid #ddd;
-  background-color: rgb(93, 27, 118);
-}
-
-#launch-link {
-  margin: 5px 0 10px 0;
-}
-
-#launch-link a {
-  text-decoration: underline;
+.feature img {
+  display: block;
+  max-width: 100%;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(220, 220, 220, 0);
+  box-sizing: border-box;
+  transition: all 0.3s;
+  pointer-events: none;
 }
 
 /*
@@ -151,7 +217,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 
-/* 
+/*
   ---------------- POST ----------------
 */
 
@@ -253,7 +319,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-} 
+}
 
 .post .content a {
   font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
@@ -269,6 +335,14 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 
 /*
+  ------------------ FOOTER ---------------------
+*/
+
+footer.navbar {
+  margin-bottom: 0;
+}
+
+/*
   ----------------- COMMENTS --------------------
 */
 
@@ -277,7 +351,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   padding: 20px 0px 10px 0px
 }
 
-/* 
+/*
   ---------------- BUTTONS -------------------------
 */
 

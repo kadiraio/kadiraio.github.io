@@ -8,9 +8,8 @@
   <!-- Header Area -->
   {% assign page_type = "academy" %}
   {% include header.html %}
-  
-  <div class='col-md-2'></div>
-  <div class='col-md-7 post'>
+
+  <div id="content" class='col-md-7 col-md-offset-2 post'>
     <a href="http://mad.ly/signups/106626/join" class="btn btn-subscribe">
       Subscribe to Academy
     </a>
@@ -25,7 +24,9 @@
       {% include comments.html %}
     </div>
   </div>
-  <div class='col-md-3'></div>
+
+  <div class="clearfix"></div>
+
   {% include footer.html %}
 </body>
 </html>
