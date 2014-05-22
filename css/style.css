@@ -132,6 +132,13 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   color: rgb(70, 70, 70);
   text-align: center;
   pointer-events: none;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(73, 73, 73);
+  border: 2px solid rgb(165, 165, 165);
+  border-radius: 5px;
+  padding: 10px 0;
 }
 
 .feature {
@@ -141,22 +148,23 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 .feature h2 {
   font-weight: 900;
-  font-size: 2.5em;
+  font-size: 2.1em;
   line-height: 50px;
-  color: rgb(70, 70, 70);
+  color: rgb(85, 85, 85);
   text-align: center;
-  border-bottom: 5px solid;
+  border-bottom: 1px solid #E7E7E7;
   pointer-events: none;
 }
 
 .feature p {
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 1.3;
-  text-align: justify;
+  text-align: center;
   margin: 10px 0 0 0;
   -webkit-font-smoothing: antialiased;
   pointer-events: none;
+  font-family: "freight-text-pro",Georgia,Cambria,"Times New Roman",Times,serif;
 }
 
 .feature img {
