@@ -71,7 +71,7 @@
     <div id="features" class="row">
       <h1>What can I do with Meteor APM?</h1>
 
-      <div id="recommendation-system" class="feature col-md-8 col-md-offset-2 panel">
+      <div id="recommendation-system" name="recommendation-system" class="feature col-md-8 col-md-offset-2 panel">
         <h2>Make your app faster</h2>
         <img src="images/features/faster-recommendation.png" alt="Recommendation System">
         <p>In order to make your app faster you need reduce the response time of your most commonly used methods and publications. Our <strong>Recommendation System</strong> will tell you which methods and publication you should start focus on.</p>
@@ -79,7 +79,7 @@
         <p>Then you can use our tracing capability to decide where is the bottleneck and apply fixes with our guides.</p>
       </div>
 
-      <div id="average-latency" class="feature col-md-8 col-md-offset-2 panel">
+      <div id="average-latency" name="average-latency" class="feature col-md-8 col-md-offset-2 panel">
         <h2>Send less data over the network</h2>
         <img src="images/features/lessdata-summary.png" alt="Average Latency" class="full">
         <p>If you send more data with publications, it will make your app slower specially in mobile networks. You can track this latency with our <strong>Avg. Network Latency</strong>.</p>
@@ -87,7 +87,7 @@
         <p>Our recommendation system will tell you which publication you should start focus on. Then you can use our guides to reduce the the data you sent and improve the <strong>Avg. Network Latency</strong></p>
       </div>
 
-      <div id="observer-reuse" class="feature col-md-8 col-md-offset-2 panel">
+      <div id="observer-reuse" name="observer-reuse" class="feature col-md-8 col-md-offset-2 panel">
         <h2>Reduce CPU and network usage</h2>
         <img src="images/features/cpuusage-summary.png" alt="Observer Reuse" class="full">
         <p>Each subscription will create one or many observers. Observers initially fetch data from the DB and send to the client. If you are having a lot of subscriptions, there will be a lot of observers and they will impact on the CPU and Network.</p>
@@ -96,7 +96,7 @@
         <p>Then you can sort, publication with Low <strong>Observer Reuse</strong> & apply fixes with our guides.</p>
       </div>
 
-      <div id="update-ratio" class="feature col-md-8 col-md-offset-2 panel">
+      <div id="update-ratio" name="update-ratio" class="feature col-md-8 col-md-offset-2 panel">
         <h2>Better utilization of server memory</h2>
         <img src="images/features/memory-summary.png" alt="Update Ratio" class="full">
         <p>Meteor maintains a copy of all your data sent to each client in the memory. It will be used to detect exact changes which needs to be sent to the client. But if you've a lot client or sending a lot of data, your app will drain server Memory.</p>
@@ -105,20 +105,20 @@
         <p>If the <strong>Update Ratio</strong> is low, you actually don't need to keep them in the server Memory. So you can pick publication which sends a lot of data and having low update ratio; then apply our guides on how to avoid caching data on the server.</p>
       </div>
 
-      <div id="error-tracking" class="feature col-md-8 col-md-offset-2 panel">
+      <div id="error-tracking" name="error-tracking" class="feature col-md-8 col-md-offset-2 panel">
         <h2>Quickly debug and fix errors</h2>
         <img src="images/features/debug-trace.png" alt="Debug Errors">
         <p>Errors are common for any application. You can track them with the application log or similar cloud services. We bring tracking errors into the next stage. Now with Meteor APM, you can debug errors with the method traces and identify the root cause quickly.</p>
       </div>
 
-      <div id="shortest-lifespan" class="feature col-md-8 col-md-offset-2 panel">
+      <div id="shortest-lifespan" name="shortest-lifespan" class="feature col-md-8 col-md-offset-2 panel">
         <h2>Improve user experience</h2>
         <img src="images/features/userexp-list.png" alt="Shortest Lifespan">
         <p>Normally, Iron Router unsubscribe all the current route's subscriptions, before moving into another routes. Then, for each route change users needs to wait until data comes back from the server. Additionally, this will increase add unnecessary server load as well.</p>
         <p>You can track those publications by sorting <strong>Shortest Lifespan</strong> and use our guidelines on improving this behaviour.</p>
       </div>
 
-      <div id="dashboard" class="feature col-md-8 col-md-offset-2 panel">
+      <div id="dashboard" name="dashboard" class="feature col-md-8 col-md-offset-2 panel">
         <h2>Understand overall system performance</h2>
         <p>Understanding Overall System Performance is crucial at a glance is very important for every application. So, we make it simple, now you can track session, Response Time, CPU and memory usage in a single view. This is a perfect match for a Dashboard.</p>
       </div>
