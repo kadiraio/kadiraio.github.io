@@ -151,17 +151,13 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   font-weight: normal;
   font-size: 3em;
   line-height: 50px;
-  margin: 40px 0 40px 0;
   color: rgb(70, 70, 70);
   text-align: center;
   pointer-events: none;
-  width: 60%;
+  width: 55%;
   text-align: center;
   margin: 10px auto 0 auto;
   color: rgb(73, 73, 73);
-  border: 2px solid rgb(165, 165, 165);
-  border-radius: 5px;
-  padding: 10px 0;
 }
 
 .feature {
