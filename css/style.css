@@ -17,9 +17,12 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 */
 
 #apm-navbar-brand-title {
-  font-weight: 700;
-  font-size: 20px;
-  color: rgb(170, 126, 172);
+  font-weight: 600;
+  font-size: 25px;
+  color: #424141;
+  padding-top: 16px;
+  font-family: 'source-sans-pro', Sans;
+  -webkit-font-smoothing: antialiased;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -85,13 +88,17 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   height: 78.8%;
 }
 
+#tesimonials {
+  margin: 20px 0 48px 0;
+}
+
 #testimonials .media {
   margin-top: 30px;
 }
 
 #testimonials a.quote {
   color: rgb(50, 50, 50);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 #testimonials a.quote:hover {
