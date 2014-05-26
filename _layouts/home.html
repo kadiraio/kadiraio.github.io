@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
   <meta name="description" content="Meteor APM - Application Performance Monitoring for Meteor" />
-  {% assign head_title = "Meteor APM - Performance Monitoring & Recommendations for Meteor" %}
+  {% assign head_title = "Kadira - Performance Monitoring for Meteor" %}
   {% include head.html %}
 </head>
 <body>
@@ -11,7 +11,7 @@
 
   <div class="container">
     <div id="intro" class="row">
-      <h1>See What's happening inside your Meteor App</h1>
+      <h1>See What's Happening Inside Your Meteor App</h1>
       <h2>Then Apply Fixes with our Recommendations and Guides</h2>
       <div class="video col-xs-12 col-md-10 col-md-offset-1">
         <img src="css/mba.png">
@@ -72,55 +72,56 @@
       <h1>Benefits of using Meteor APM</h1>
 
       <div id="recommendation-system" name="recommendation-system" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Make your app faster</h2>
+        <h2>Make your apps faster</h2>
+        <p>Our recommendation system will tell you which methods and publications you should focus on to improve response times.</p>
         <img src="images/features/faster-recommendation.png" alt="Recommendation System">
-        <p>In order to make your app faster you need reduce the response time of your most commonly used methods and publications. Our <strong>Recommendation System</strong> will tell you which methods and publication you should start focus on.</p>
         <img src="images/features/faster-traces.png" alt="Recommendation System">
-        <p>Then you can use our tracing capability to decide where is the bottleneck and apply fixes with our guides.</p>
+        <p>Then you can use traces to identify the bottlenecks and you can apply fixes using our guides</p>
       </div>
 
       <div id="average-latency" name="average-latency" class="feature col-md-8 col-md-offset-2 panel">
         <h2>Send less data over the network</h2>
+        <p>Sending more data with your publications makes your apps slower, especially for mobile networks. You can track this latency with "Network Latency".</p>
         <img src="images/features/lessdata-summary.png" alt="Average Latency" class="full">
-        <p>If you send more data with publications, it will make your app slower specially in mobile networks. You can track this latency with our <strong>Avg. Network Latency</strong>.</p>
+        <p>Our recommendation system will tell you which publications you should focus on. Use our guides to reduce the amount of data you send to improve "Network Latency".</p>
         <img src="images/features/latency-recommendation.png" alt="Recommendation System">
-        <p>Our recommendation system will tell you which publication you should start focus on. Then you can use our guides to reduce the the data you sent and improve the <strong>Avg. Network Latency</strong></p>
       </div>
 
       <div id="observer-reuse" name="observer-reuse" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Reduce CPU and network usage</h2>
+        <h2>Reduce CPU and Network Usage</h2>
+        <p>If you have many subscriptions, you will have many observers and they will affect the performance of the CPU and the network.</p>
+        <p>However, Meteor can reuse observers for identical queries. You can track the reuse of observers directly with our dashboard.</p>
         <img src="images/features/cpuusage-summary.png" alt="Observer Reuse" class="full">
-        <p>Each subscription will create one or many observers. Observers initially fetch data from the DB and send to the client. If you are having a lot of subscriptions, there will be a lot of observers and they will impact on the CPU and Network.</p>
+        <p>Sort publications by "Low Observer Reuse" & improve reuse with our guides.</p>
         <img src="images/features/cpuusage-list.png" alt="Sorted by Observer Reuse">
-        <p>But, Meteor could reuse observers for identical queries. You can track the Observer Reuse from our dashboard directly.</p>
-        <p>Then you can sort, publication with Low <strong>Observer Reuse</strong> & apply fixes with our guides.</p>
       </div>
 
       <div id="update-ratio" name="update-ratio" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Better utilization of server memory</h2>
+        <h2>Better Utilization of Server Memory</h2>
+        <p>Meteor maintains a copy in memory of all your data sent to each client. This is normally not an issue, but there are certain situations you need to consider.</p>
+        <p>We show you the estimated memory usage for each publication and how much of a document has been updated.</p>
         <img src="images/features/memory-summary.png" alt="Update Ratio" class="full">
-        <p>Meteor maintains a copy of all your data sent to each client in the memory. It will be used to detect exact changes which needs to be sent to the client. But if you've a lot client or sending a lot of data, your app will drain server Memory.</p>
+        <p>Using these metrics and our guides, you can optimize the memory usage of your application.</p>
         <img src="images/features/memory-list.png" alt="Update Ratio">
-        <p>We'll show you a very unique metric called <strong>Update Ratio</strong> which shows you the percentage of data change compared with all the data sent to the client.</p>
-        <p>If the <strong>Update Ratio</strong> is low, you actually don't need to keep them in the server Memory. So you can pick publication which sends a lot of data and having low update ratio; then apply our guides on how to avoid caching data on the server.</p>
       </div>
 
       <div id="error-tracking" name="error-tracking" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Quickly debug and fix errors</h2>
+        <h2>Quickly Debug and Fix Errors</h2>
+        <p>We have taken tracking errors to the next level. Now you can debug an error with its context and identify the root cause quickly.</p>
         <img src="images/features/debug-trace.png" alt="Debug Errors">
-        <p>Errors are common for any application. You can track them with the application log or similar cloud services. We bring tracking errors into the next stage. Now with Meteor APM, you can debug errors with the method traces and identify the root cause quickly.</p>
       </div>
 
       <div id="shortest-lifespan" name="shortest-lifespan" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Improve user experience</h2>
+        <h2>Improve User Experience</h2>
+        <p>Normally, Iron Router unsubscribes all the current route's subscriptions before moving to another route. For each route change, users need to wait until the data has been returned from the server, which adds an unnecessary server load.</p>
+        <p>You can track those publications by sorting "Shortest Lifespan" and use our guides on improving this behaviour.</p>
         <img src="images/features/userexp-list.png" alt="Shortest Lifespan">
-        <p>Normally, Iron Router unsubscribe all the current route's subscriptions, before moving into another routes. Then, for each route change users needs to wait until data comes back from the server. Additionally, this will increase add unnecessary server load as well.</p>
-        <p>You can track those publications by sorting <strong>Shortest Lifespan</strong> and use our guidelines on improving this behaviour.</p>
       </div>
 
       <div id="dashboard" name="dashboard" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Understand overall system performance</h2>
-        <p>Understanding Overall System Performance is crucial at a glance is very important for every application. So, we make it simple, now you can track session, Response Time, CPU and memory usage in a single view. This is a perfect match for a Dashboard.</p>
+        <h2>Real-time Performance Overview</h2>
+        <p>Our real-time dashboard shows the overall performance of an app in a single view. This is perfect for a wall-mounted display.</p>
+        <img src="images/features/realtime-performance-overview.png" alt="Real-time Performance Overview">
       </div>
     </div>
 
