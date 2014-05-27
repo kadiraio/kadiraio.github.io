@@ -1,5 +1,15 @@
 ---
   - 
+    title: "How Brent is using Kadira with his development workflow"
+    date: "27, May 2014"
+    link:  /blog/user-stories-brent-abrahams
+    summery: "Brent Abrahams is a mathematics teacher who has build an online curriculum management app Standbench for his organization using Meteor. This is how he is using Kadira."
+  - 
+    title: "How Chris used Kadira to optimize The CareNoteBook"
+    date: "27, May 2014"
+    link:  /blog/user-stories-chris-doe
+    summery: "When it comes to the initial development of care note book, Chris and his team were trying to get the most out from the time they had. hey Then they decided to use Kadira and it helps them to focus on where they need to optimize and focus."
+  - 
     title: "How Kadia helps Denis for his Meteor App PinTask"
     date: "27, May 2014"
     link:  /blog/user-stories-denis-gorbachev
