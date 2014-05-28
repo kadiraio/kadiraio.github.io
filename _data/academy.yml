@@ -14,3 +14,8 @@
     date: "14, April 2014"
     link: /academy/reducing-pubsub-data-usage
     summery: "Publications are the main place where your app sends data to the client. You can follow simple techniques on reducing PubSub data usage and reduce server memory usage and latency very easily."
+  -
+    title: "How to Optimize Memory Usage of your Meteor App"
+    date: "28, May 2014"
+    link: /academy/how-to-optimize-memory-usage-of-your-meteor-app
+    summery: "Meteor caches a lot of data in the memory. You need to undertand how that affects your app and what are the solutions if your app is affected."
