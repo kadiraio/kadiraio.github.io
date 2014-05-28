@@ -1,22 +1,22 @@
 ---
 layout: academy_post
-title: Getting Started With Meteor APM
-permalink: /academy/getting-started-with-meteor-apm
+title: Getting Started With Kadira
+permalink: /academy/getting-started-with-kadira
 ---
 
-This guide will help you get started with Meteor APM to identify how your app behaves and help you take necessary actions.
+This guide will help you get started with Kadira to identify how your app behaves and help you take necessary actions.
 
-##Install and Configure Meteor APM
+##Install and Configure Kadira
 
-Adding APM support for your app is pretty simple. Simply add the APM smart-package as follows:
+Adding Kadira support for your app is pretty simple. Simply add the kadira smart-package as follows:
 
-    mrt add apm
+    mrt add kadira
 
 Then configure your app by adding this code into any file in your app's server directory.
 
-    Apm.connect('<appId>', '<appSecret>')
+    Kadira.connect('<appId>', '<appSecret>')
 
-> It is very important to add this code into server directory; if you do not, your Meteor APM app credentials will be exposed to the client.
+> It is very important to add this code into server directory; if you do not, your Kadira app credentials will be exposed to the client.
 
 ## A Good Way to Configure
 
@@ -28,7 +28,7 @@ Your `settings.json` file will look like this:
 
     {
       ...
-      "apm": {
+      "kadira": {
         "appId": "<your appId>",
         "appSecret": "<your appSecret>"
       }
@@ -37,47 +37,47 @@ Your `settings.json` file will look like this:
 
 This is the code that runs on the server:
 
-    if(Meteor.settings && Meteor.settings.apm) {
-      var apmAuth = Meteor.settings.apm;
-      Apm.connect(apmAuth.appId, apmAuth.appSecret);
+    if(Meteor.settings && Meteor.settings.kadira) {
+      var auth = Meteor.settings.apm;
+      Apm.connect(auth.appId, auth.appSecret);
     }
 
-Deploy and run your app with the [`settings.json`](https://groups.google.com/forum/#!topic/meteor-talk/K79-i3LYL3g) file. If you have not provided APM credentials via Meteor.settings, you won't be connecting the APM. This is ideal for developing your app locally.
+Deploy and run your app with the [`settings.json`](https://groups.google.com/forum/#!topic/meteor-talk/K79-i3LYL3g) file. If you have not provided credentials via Meteor.settings, you won't be connecting Kadira. This is ideal for developing your app locally.
 
 ### Using Environmental Variables
 
 Add the following environmental variables when you are running your app (possibly in your deployment environment):
 
-    APM_APP_ID=<your appId>
-    APM_APP_SECRET=<your apmSecret>
+    KADIRA_APP_ID=<your appId>
+    KADIRA_APP_SECRET=<your apmSecret>
 
 This is how your server code should look:
 
-    var apmAppId = process.env.APM_APP_ID;
-    var appAppSecret = process.env.APM_APP_SECRET;
-    if(apmAppId && apmAppSecret) {
-      Apm.connect(apmAppId, apmAppSecret);
+    var appId = process.env.KADIRA_APP_ID;
+    var appSecret = process.env.KADIRA_APP_SECRET;
+    if(appId && appSecret) {
+      Apm.connect(appId, appSecret);
     }
 
-Deploy and run your app. As with `Meteor.settings`, if you have not exposed environmental variables, you won't be connecting to the APM. This is ideal for dev environments.
+Deploy and run your app. As with `Meteor.settings`, if you have not exposed environmental variables, you won't be connecting to Kadira. This is ideal for dev environments.
 
-After you've successfully connected with APM, you'll be able to see messages like the ones below, which indicate you've successfully authenticated with APM.
+After you've successfully connected with Kadira, you'll be able to see messages like the ones below, which indicate you've successfully authenticated with Kadira.
 
-![Successfully Connected to the APM](https://i.cloudup.com/w9hkMusPNE.png)
+![Successfully Connected to the Kadira](https://i.cloudup.com/w9hkMusPNE.png)
 
 _**After about one minute, your data will be processed and will be available on the UI.**_
 
-## Meteor APM Dashboard
+## Kadira Dashboard
 
-The Meteor APM Dashboard is very nicely designed and super easy to use. Yep, it's a Meteor App too. This is the overview of the Meteor APM Dashboard.
+The Kadira Dashboard is very nicely designed and super easy to use. Yep, it's a Meteor App too. This is the overview of the Kadira Dashboard.
 
-![Meteor APM Dashboard](https://i.cloudup.com/awL09AN93C.png)
+![Kadira Dashboard](https://i.cloudup.com/awL09AN93C.png)
 
 You should not need extra help to become familiar with the Dashboard. However, if you do need clarification, refer to this [guide](http://support.meteorapm.com/knowledgebase/articles/306862-page-navigation) or click the inline "Help" icons.
 
-## How to Use Meteor APM
+## How to Use Kadira
 
-Let's assume you've added Meteor APM and it has enough information (about 30 minutes of runtime data) to provide a good analysis. There is no right or wrong way to use Meteor APM but I will suggest two simple ways to get started.
+Let's assume you've added Kadira and it has enough information (about 30 minutes of runtime data) to provide a good analysis. There is no right or wrong way to use Kadira but I will suggest two simple ways to get started.
 
 ### Finding Bottlenecks in Meteor Methods and Fixing Them
 
@@ -113,6 +113,6 @@ In your app, you might be using many Meteor Methods. You may need to improve all
 
 > You can follow the [same process](https://www.youtube.com/watch?v=CTk0Qvj0n6Y&feature=youtu.be) for PubSub, but you will need to sort the Pub/Sub Breakdown by [SubRate](http://support.meteorapm.com/knowledgebase/articles/347439-subrate) instead of Throughput.
 
-There are many more ways to improve your app with Meteor APM. Explore and [share](http://support.meteorapm.com/forums/224274-general) your discoveries with us. You can also refer the tutorials on the [Meteor APM Academy](https://meteorapm.com/academy/) to find more ways to improve your app.
+There are many more ways to improve your app with Kadira. Explore and [share](http://support.meteorapm.com/forums/224274-general) your discoveries with us. You can also refer the tutorials on the [Kadira Academy](https://meteorapm.com/academy/) to find more ways to improve your app.
 
 If you need help or more information, contact arunoda at `arunoda [at] meteorhacks.com`. Good luck and don't forget to share your [experience](http://support.meteorapm.com/forums/224274-general) with us.

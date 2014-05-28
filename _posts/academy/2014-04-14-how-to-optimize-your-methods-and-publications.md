@@ -8,7 +8,7 @@ This is a general guide that can be used to optimize the response time of your m
 
 ## See What's Happening Behind Your Method/Publication
 
-With Meteor APM, it is very easy to see what’s happening inside your method/publication and understand what operations cost the most. This is how:
+With Kadira, it is very easy to see what’s happening inside your method/publication and understand what operations cost the most. This is how:
 For this example I'm referring to Methods, but you can apply the same process to PubSub as well.
 
 * First navigate to the Detailed View section.
