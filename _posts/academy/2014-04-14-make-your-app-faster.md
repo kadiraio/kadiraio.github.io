@@ -1,7 +1,7 @@
 ---
 layout: academy_post
-title: How to Optimize Your Methods and Publications
-permalink: /academy/how-to-optimize-your-methods-and-publications
+title: Make Your App Faster
+permalink: /academy/make-your-app-faster
 ---
 
 This is a general guide that can be used to optimize the response time of your methods and publications. Since this is a general guide only, some of the tips won't work for you.
