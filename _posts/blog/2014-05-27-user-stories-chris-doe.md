@@ -19,4 +19,4 @@ Chris showed us, how he used Kadira and few of features he likes much.
 <iframe width="640" height="480" src="//www.youtube.com/embed/Vl5wcZEm3Bw" frameborder="0" allowfullscreen="1">
 </iframe>
 
-The CareNotebook is looking for Meteor Developers. Apply Here!
+The CareNotebook is looking for Meteor Developers. [Apply Here!](https://thecarenotebook.com/jobs)
