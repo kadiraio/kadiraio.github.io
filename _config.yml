@@ -5,3 +5,4 @@ exclude:
 - README.md
 - Rakefile
 - post.sh
+markdown: kramdown
