@@ -29,12 +29,20 @@
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var main = document.getElementById('content');
-    if(!main) return;
+  pH.add('.full-page');
+
+  pH.add('.half-page', function (h) {
+    return Math.round(h/2);
+  });
+
+  pH.add('.full-page-wo-header', function (h) {
+    var header = document.getElementById('header');
+    return Math.round(h - header.getBoundingClientRect().height);
+  });
+
+  pH.add('.full-page-wo-header-footer', function (h) {
     var header = document.getElementById('header');
     var footer = document.getElementById('footer');
-    var height = window.innerHeight - header.getBoundingClientRect().height - footer.getBoundingClientRect().height;
-    main.style.minHeight = height + 'px';
+    return Math.round(h - header.getBoundingClientRect().height - footer.getBoundingClientRect().height);
   });
 </script>

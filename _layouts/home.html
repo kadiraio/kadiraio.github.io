@@ -7,12 +7,32 @@
 </head>
 <body>
 
-  <div class="container">
-    <div id="intro" class="row" style="margin-top: 250px;">
-      <h1>Kadira - Performance Monitoring for Meteor</h1>
-      <h2>Launching <a style="pointer-events: all;" href="http://www.worldtimebuddy.com/?qm=1&lid=8,2643743,1248991,1796236&h=8&date=2014-6-2&sln=9-10">June 2nd @ 9 AM PDT</a></h2>
-      <img src="https://i.cloudup.com/LwrCCa_RRE.png" style="width:100%; margin-top: 100px;"></img>
+  {% include header.html %}
+  <!-- /Header -->
+
+  <div id="intro">
+    <div class="container">
+      <h1>See what's happening in your Meteor app in realtime</h1>
+      <h2>Then apply fixes and improve where it needs most</h2>
+      <img src="images/intro.png" alt="Kadira - Performance Monitoring for Meteor">
     </div>
   </div>
+
+  <div id="make-your-app-faster" class="homepage-benefit purple half-page">
+    <div class="container">
+      <div class="description">
+        <h3>Make your app faster</h3>
+        <p>You can easily find our your slow methods and publication. Inspect them with traces and make them faster.</p>
+      </div>
+      <div class="images half-page">
+        <img src="images/screenshots/make-your-app-faster-1.png" alt="Response Time Breakdown Graph" class="front">
+        <img src="images/screenshots/make-your-app-faster-2.png" alt="Trace Performance Issues" class="back">
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+  <!-- /Footer -->
+
 </body>
 </html>
