@@ -35,6 +35,10 @@
     return Math.round(h/2);
   });
 
+  pH.add('.third-page', function (h) {
+    return Math.round(h/3);
+  });
+
   pH.add('.full-page-wo-header', function (h) {
     var header = document.getElementById('header');
     return Math.round(h - header.getBoundingClientRect().height);

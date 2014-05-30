@@ -100,6 +100,19 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   background: rgb(60, 50, 95);
 }
 
+.homepage-benefit.purple img {
+  background: white;
+}
+
+.homepage-benefit.darkgrey {
+  color: white;
+  background: rgb(15, 20, 30);
+}
+
+.homepage-benefit.darkgrey img {
+  background: white;
+}
+
 .homepage-benefit .description:before,
 .homepage-benefit .images:before {
   content: '';
@@ -115,15 +128,44 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   vertical-align: middle;
 }
 
+.homepage-benefit .description.ghost,
+.homepage-benefit .images.ghost {
+  width: 0%;
+}
+
 .homepage-benefit .description {
   width: 39%;
   text-align: left;
   -webkit-font-smoothing: antialiased;
 }
 
+.homepage-benefit .description.full {
+  width: 60%;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.homepage-benefit .description img {
+  width: 100%;
+  margin: 5px;
+}
+
 .homepage-benefit .images {
   width: 59%;
   position: relative;
+}
+
+.homepage-benefit.equal .description,
+.homepage-benefit.equal .images {
+  width: 49%;
+}
+
+.homepage-benefit.reverse .description {
+  width: 59%;
+}
+
+.homepage-benefit.reverse .images {
+  width: 39%;
 }
 
 .homepage-benefit .images img.front {
@@ -148,6 +190,20 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   transition: all 0.3s;
   transform: translateX(-50%) scale(0.8);
   -webkit-transform: translateX(-50%) scale(0.8);
+}
+
+.homepage-benefit .images img.single {
+  position: absolute;
+  width: 95%;
+  padding: 5px;
+  margin: 2.5%;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  border: 1px solid rgb(200, 200, 200);
+  transition: all 0.3s;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
 .homepage-benefit .images:hover img.front {
