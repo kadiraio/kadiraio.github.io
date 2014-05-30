@@ -75,21 +75,14 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 #intro img {
-  width: 100%;
+  width: 80%;
   margin: 25px 0 0 0;
   transition: all 0.3s;
 }
 
-#intro img:hover {
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
-
-
 /*
   --------------- HOMEPAGE - BENEFITS -------------------
 */
-
 
 .homepage-benefit {
   text-align: center;
@@ -111,6 +104,53 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 .homepage-benefit.darkgrey img {
   background: white;
+}
+
+.homepage-benefit.red {
+  color: white;
+  background: rgb(155, 95, 85);
+}
+
+.homepage-benefit.red img {
+  background: white;
+}
+
+.homepage-benefit.orange {
+  color: white;
+  background: rgb(190, 120, 60);
+}
+
+.homepage-benefit.orange img {
+  background: white;
+}
+
+.homepage-benefit.blue {
+  color: white;
+  background: rgb(60, 90, 110);
+}
+
+.homepage-benefit.blue img {
+  background: white;
+}
+
+.homepage-benefit a.other-benefits {
+  display: block;
+  padding-left: 15px;
+  color: white;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+  opacity: 0.3;
+  transition: all 0.2s;
+}
+
+.homepage-benefit.light a.other-benefits {
+  color: black;
+}
+
+.homepage-benefit a.other-benefits:hover {
+  opacity: 1;
+  text-decoration: none;
 }
 
 .homepage-benefit .description:before,
@@ -139,6 +179,14 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   -webkit-font-smoothing: antialiased;
 }
 
+.homepage-benefit .description h3 {
+  margin-top: 25px;
+}
+
+.homepage-benefit .description p {
+  margin-bottom: 25px;
+}
+
 .homepage-benefit .description.full {
   width: 60%;
   text-align: center;
@@ -161,11 +209,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 .homepage-benefit.reverse .description {
-  width: 59%;
-}
-
-.homepage-benefit.reverse .images {
-  width: 39%;
+  padding-left: 30px;
 }
 
 .homepage-benefit .images img.front {
@@ -194,16 +238,20 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 .homepage-benefit .images img.single {
   position: absolute;
-  width: 95%;
+  max-width: 95%;
   padding: 5px;
-  margin: 2.5%;
+  margin: 0 auto;
   top: 50%;
   left: 50%;
   z-index: 10;
-  border: 1px solid rgb(200, 200, 200);
   transition: all 0.3s;
   transform: translateX(-50%) translateY(-50%) scale(1);
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+.homepage-benefit .images img.single:hover {
+  transform: translateX(-50%) translateY(-50%) scale(1.1);
+  -webkit-transform: translateX(-50%) translateY(-50%) scale(1.1);
 }
 
 .homepage-benefit .images:hover img.front {
@@ -216,6 +264,88 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   opacity: 1;
   transform: translateX(-50%) scale(1);
   -webkit-transform: translateX(-50%) scale(1);
+}
+
+/*
+  --------------- HOMEPAGE - TESTIMONIALS -------------------
+*/
+
+#testimonials .media {
+  margin: 30px 0;
+}
+
+#testimonials a.quote {
+  color: rgb(50, 50, 50);
+  font-size: 13px;
+}
+
+#testimonials a.quote:hover {
+  text-decoration: none;
+}
+
+#testimonials .media-object {
+  border-radius: 50%;
+}
+
+#testimonials .media-heading {
+  display: block;
+  margin-top: 0.5em;
+  font-size: 1em;
+  font-weight: 900;
+  pointer-events: none;
+}
+
+#testimonials .media-heading a {
+  color: rgb(50, 50, 50);
+  pointer-events: auto;
+}
+
+/*
+.homepage-testimonial {
+  margin: 100px 0;
+  text-align: center;
+}
+
+.homepage-testimonial .avatar {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+.homepage-testimonial .quote {
+  display: inline-block;
+  margin-left: 30px;
+  width: 40%;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+}
+*/
+
+/*
+  --------------- HOMEPAGE - CONNECT -------------------
+*/
+
+.connect-app {
+  padding: 50px 0;
+  text-align: center;
+  background: rgb(250, 250, 250);
+}
+
+.connect-app a.btn {
+  width: 40%;
+  margin: 0 auto;
+  padding: 15px;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.connect-app a.btn:hover {
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
 }
 
 /*
