@@ -1,7 +1,7 @@
 ---
 layout: academy_post
-title: How to Optimize Memory Usage of your Meteor App
-permalink: /academy/how-to-optimize-memory-usage-of-your-meteor-app
+title: Optimize Memory Usage
+permalink: /academy/optimize-memory-usage
 ---
 
 Caching data on the server is one of the common issues with Meteor. I have also claimed that it is one of the core issues for Meteor. 

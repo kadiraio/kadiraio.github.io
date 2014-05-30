@@ -1,7 +1,7 @@
 ---
 layout: academy_post
-title: Improve User Experience and Reduce Subscription Rate
-permalink: /academyimprove-user-experience-and-reduce-subscription-rate
+title: Improve User Experience
+permalink: /academy/improve-user-experience
 ---
 
 Iron Router normally unsubscribes all previous subscriptions when entering into a new route. 
