@@ -56,7 +56,7 @@ The Kadira Dashboard is very nicely designed and super easy to use. Yep, it's a 
 
 ![Kadira Dashboard](https://i.cloudup.com/M_FD_KuKWq.png)
 
-You should not need extra help to become familiar with the Dashboard. However, if you do need clarification, watch our [Onboarding video](https://www.youtube.com/watch?v=L2uFmvFpfEw).
+You should not need extra help to become familiar with the Dashboard. However, if you do need clarification, watch our [Onboarding video](https://www.youtube.com/watch?v=GDkG2Wq3mLo).
 
 ## How to Use Kadira
 
