@@ -64,4 +64,4 @@ Best way is to count them in the server side using a package like [publish-count
 
 You may also consider using [MongoDB aggregation techniques](https://atmospherejs.com/?q=aggregate) to get a summery of data and send them to the client.
 
-These are only some of the tips you can use to save subscription data, save server memory usage, and reduce latency. Try applying some of these; you can verify the results from the [Network Latency](http://support.meteorapm.com/knowledgebase/articles/347428-network-impact) metric in the Kadira.
+These are only some of the tips you can use to save subscription data, save server memory usage, and reduce latency. Try applying some of these; you can verify the results from the [Network Latency](http://support.kadira.io/knowledgebase/articles/372869-network-latency) metric in the Kadira.

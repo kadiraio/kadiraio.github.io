@@ -46,7 +46,7 @@ This is a DB cursor operation in which you are invoking a query against your col
 ## Higher HTTP, Email and Async Time
 
 * Try to add `this.unblock` to the top of the method (not possible with publications) to avoid other methods and subscriptions being kept waiting on this method. Adding this.unblock is not always possible. Refer to [this guide](http://meteorhacks.com/understanding-meteor-wait-time-and-this-unblock.html).
-* If this is a publication, you should not use these kinds of operation. [See why](http://support.meteorapm.com/knowledgebase/articles/347759)!
+* If this is a publication, you should not use these kinds of operation. [See why](http://support.kadira.io/knowledgebase/articles/347759)!
 
 ## Higher Wait Time
 

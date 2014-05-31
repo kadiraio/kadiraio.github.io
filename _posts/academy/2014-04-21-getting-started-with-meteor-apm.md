@@ -71,9 +71,9 @@ _**After about one minute, your data will be processed and will be available on 
 
 The Kadira Dashboard is very nicely designed and super easy to use. Yep, it's a Meteor App too. This is the overview of the Kadira Dashboard.
 
-![Kadira Dashboard](https://i.cloudup.com/awL09AN93C.png)
+![Kadira Dashboard](https://i.cloudup.com/M_FD_KuKWq.png)
 
-You should not need extra help to become familiar with the Dashboard. However, if you do need clarification, refer to this [guide](http://support.meteorapm.com/knowledgebase/articles/306862-page-navigation) or click the inline "Help" icons.
+You should not need extra help to become familiar with the Dashboard. However, if you do need clarification, watch our [Onboarding video](https://www.youtube.com/watch?v=L2uFmvFpfEw).
 
 ## How to Use Kadira
 
@@ -81,7 +81,7 @@ Let's assume you've added Kadira and it has enough information (about 30 minutes
 
 ### Finding Bottlenecks in Meteor Methods and Fixing Them
 
-Normally, for a typical Meteor application, the Average [Response Time](http://support.meteorapm.com/knowledgebase/articles/347424-response-time) of a Meteor Method should not be more than 200ms. If it is more than this, in many cases there are ways to improve performance.
+Normally, for a typical Meteor application, the Average [Response Time](http://support.kadira.io/knowledgebase/articles/347424-response-time) of a Meteor Method should not be more than 200ms. If it is more than this, in many cases there are ways to improve performance.
 
 * First click on **Methods** on the Main Menu and look at the Response Time.
 * Also look at the Response Time graph for any spikes.
@@ -89,9 +89,9 @@ Normally, for a typical Meteor application, the Average [Response Time](http://s
 * Then find the Response Time and click on the spike in the graph.
 * This will show a set of traced methods at that time.
 * Click on a trace to see exactly what has happened on that method at that time.
-* Follow this [guide](https://meteorapm.com/academy/how-to-optimize-your-methods-and-publications/) to understand the traced data and improve your method accordingly.
+* Follow this [guide](https://kadira.io/academy/make-your-app-faster/) to understand the traced data and improve your method accordingly.
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/4vt2M7-bsDQ" frameborder="0" allowfullscreen="1">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/4vt2M7-bsDQ" frameborder="0" allowfullscreen="1">
 </iframe>
 
 > You can follow the [same process](https://www.youtube.com/watch?v=CQtmnzIlzE4&feature=youtu.be) for PubSub.
@@ -101,18 +101,18 @@ Normally, for a typical Meteor application, the Average [Response Time](http://s
 In your app, you might be using many Meteor Methods. You may need to improve all of them. It is a good idea to start, though, with the ones that have more impact. We’ve identified that if you can improve a method with higher Throughput, it will impact more on the total performance gain. To do this, follow these steps:
 
 * Click on the **Detailed View** of Methods.
-* Sort the Methods Breakdown by [Throughput](http://support.meteorapm.com/knowledgebase/articles/347444-throughput) (the default sort criteria).
+* Sort the Methods Breakdown by [Throughput](http://support.kadira.io/knowledgebase/articles/347444-throughput) (the default sort criteria).
 * Click on a method name in the Methods Breakdown.
-* In the [Recommendations](http://support.meteorapm.com/knowledgebase/articles/347445-method-recommendations) section, you will see the impact you can have if you improve the selected method.
+* In the [Recommendations](http://support.kadira.io/knowledgebase/articles/347445-method-recommendations) section, you will see the impact you can have if you improve the selected method.
 * Click on the Response Time Graph and find a trace.
-* Analyze it with this [guide](https://meteorapm.com/academy/how-to-optimize-your-methods-and-publications/) and improve your method if possible.
+* Analyze it with this [guide](https://kadira.io/academy/make-your-app-faster/) and improve your method if possible.
 * Do the same for all methods.
 
-<iframe width="640" height="480" src="//www.youtube.com/embed/REUrBU7x6GU" frameborder="0" allowfullscreen="1">
+<iframe width="640" height="480" src="https://www.youtube.com/embed/REUrBU7x6GU" frameborder="0" allowfullscreen="1">
 </iframe>
 
-> You can follow the [same process](https://www.youtube.com/watch?v=CTk0Qvj0n6Y&feature=youtu.be) for PubSub, but you will need to sort the Pub/Sub Breakdown by [SubRate](http://support.meteorapm.com/knowledgebase/articles/347439-subrate) instead of Throughput.
+> You can follow the [same process](https://www.youtube.com/watch?v=CTk0Qvj0n6Y&feature=youtu.be) for PubSub, but you will need to sort the Pub/Sub Breakdown by [SubRate](http://support.kadira.io/knowledgebase/articles/347439-subrate) instead of Throughput.
 
-There are many more ways to improve your app with Kadira. Explore and [share](http://support.meteorapm.com/forums/224274-general) your discoveries with us. You can also refer the tutorials on the [Kadira Academy](https://kadira.io/academy/) to find more ways to improve your app.
+There are many more ways to improve your app with Kadira. Explore and [share](http://support.kadira.io/forums/224274-general) your discoveries with us. You can also refer the tutorials on the [Kadira Academy](https://kadira.io/academy/) to find more ways to improve your app.
 
-If you need help or more information, contact arunoda at `arunoda [at] meteorhacks.com`. Good luck and don't forget to share your [experience](http://support.meteorapm.com/forums/224274-general) with us.
+If you need help or more information, contact arunoda at `arunoda [at] meteorhacks.com`. Good luck and don't forget to share your [experience](http://support.kadira.io/forums/224274-general) with us.
