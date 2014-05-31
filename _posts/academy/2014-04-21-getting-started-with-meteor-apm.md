@@ -18,52 +18,35 @@ Then configure your app by adding this code into any file in your app's server d
 
 > It is very important to add this code into server directory; if you do not, your Kadira app credentials will be exposed to the client.
 
-## A Good Way to Configure
+## Auto Connect
 
-Normally, it is a good practice to not hard code API credentials. For that, you can use [`Meteor.settings`](http://docs.meteor.com/#meteor_settings) or Environmental Variables.
+It is possible to automatically connect to Kadira using Environment Variables or using [`Meteor.settings`](http://docs.meteor.com/#meteor_settings).
 
-### Using Meteor.settings
+### Using Meteor Settings
+use followng `settings.json` file with your app.
 
-Your `settings.json` file will look like this:
+~~~js
+{
+  ...
+  "kadira": {
+    "appId": "<appId>",
+    "appSecret": "<appSecret>"
+  }
+  ...
+}
+~~~
 
-    {
-      ...
-      "kadira": {
-        "appId": "<your appId>",
-        "appSecret": "<your appSecret>"
-      }
-      ...
-    }
+### Using Environment Variables
+expose following environemnt variables before when you are runnign or deploying your app.
 
-This is the code that runs on the server:
-
-    if(Meteor.settings && Meteor.settings.kadira) {
-      var auth = Meteor.settings.apm;
-      Apm.connect(auth.appId, auth.appSecret);
-    }
-
-Deploy and run your app with the [`settings.json`](https://groups.google.com/forum/#!topic/meteor-talk/K79-i3LYL3g) file. If you have not provided credentials via Meteor.settings, you won't be connecting Kadira. This is ideal for developing your app locally.
-
-### Using Environmental Variables
-
-Add the following environmental variables when you are running your app (possibly in your deployment environment):
-
-    KADIRA_APP_ID=<your appId>
-    KADIRA_APP_SECRET=<your apmSecret>
-
-This is how your server code should look:
-
-    var appId = process.env.KADIRA_APP_ID;
-    var appSecret = process.env.KADIRA_APP_SECRET;
-    if(appId && appSecret) {
-      Apm.connect(appId, appSecret);
-    }
-
-Deploy and run your app. As with `Meteor.settings`, if you have not exposed environmental variables, you won't be connecting to Kadira. This is ideal for dev environments.
+~~~
+export KADIRA_APP_ID=<appId>
+export KADIRA_APP_SECRET=<appSecret>
+~~~
 
 After you've successfully connected with Kadira, you'll be able to see messages like the ones below, which indicate you've successfully authenticated with Kadira.
 
-![Successfully Connected to the Kadira](https://i.cloudup.com/w9hkMusPNE.png)
+![Successfully Connected to the Kadira](https://i.cloudup.com/cBzynAatoq.png)
 
 _**After about one minute, your data will be processed and will be available on the UI.**_
 
