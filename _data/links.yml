@@ -12,9 +12,9 @@
     type: "academy"
     link: "/academy"    
   -
-    caption: "Docs"
+    caption: "Support"
     type: "docs"
-    link: "http://support.meteorapm.com/knowledgebase" 
+    link: "http://support.kadira.io" 
   - 
     caption: "Login"
     type: "login"
