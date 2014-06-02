@@ -371,16 +371,18 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 */
 
 .connect-app {
-  padding: 0px 0;
+  padding: 0 0 20px 0;
   text-align: center;
 }
 
 .connect-app a.btn {
   width: 40%;
   margin: 0 auto;
-  padding: 5px;
+  padding: 15px;
   font-size: 20px;
   transition: all 0.5s;
+  background-color: #7A2857;
+  color: #fff;
 }
 
 .connect-app a.btn:hover {
@@ -388,6 +390,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -o-transform: translateY(-10px);
+  background-color: #A00543;
 }
 
 /*
