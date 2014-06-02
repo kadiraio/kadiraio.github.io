@@ -2,20 +2,24 @@
   -
     caption: "Benefits"
     type: "benefits"
-    link: "/#features" 
+    link: "#benefits"
+  -
+    caption: "Pricing"
+    type: "pricing"
+    link: "/pricing.html"
   -
     caption: "Blog"
     type: "blog"
-    link: "/blog"  
+    link: "/blog"
   -
     caption: "Academy"
     type: "academy"
-    link: "/academy"    
+    link: "/academy"
   -
     caption: "Support"
     type: "docs"
-    link: "http://support.kadira.io" 
-  - 
+    link: "http://support.kadira.io"
+  -
     caption: "Login"
     type: "login"
     link: "https://ui.kadira.io/sign-in"
