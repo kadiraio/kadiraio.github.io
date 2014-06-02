@@ -659,3 +659,128 @@ footer.navbar {
   font-size: 17px;
   text-align: center;
 }
+
+
+/*
+  ------------- MOBILE --------------
+*/
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    float: none!important;
+    text-align: left;
+  }
+
+  #toplink-login {
+    font-weight: bold;
+    border: none;
+    background: none;
+    border-top: 3px solid rgb(100, 100, 100);
+    border-bottom: 3px solid rgb(100, 100, 100);
+    border-radius: 0;
+  }
+
+  #toplink-login:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 50, 50);
+    border-top: 3px solid rgb(50, 50, 50);
+    border-bottom: 3px solid rgb(50, 50, 50);
+  }
+
+  #intro {
+    margin-top: 30px;
+  }
+
+  #intro h1 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  #intro h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  #intro img {
+    width: 100%;
+  }
+
+  .connect-app a.btn {
+    width: 95%;
+    font-size: 16px;
+  }
+
+  #testimonials a.quote {
+    font-size: 14px;
+  }
+
+  .homepage-benefit {
+    border-bottom: 1px solid rgb(240, 240, 240);
+  }
+
+  div.homepage-benefit.purple,
+  div.homepage-benefit.darkgrey,
+  div.homepage-benefit.red,
+  div.homepage-benefit.light,
+  div.homepage-benefit.blue {
+    color: rgb(50, 50, 50);
+    background: none;
+  }
+
+  .homepage-benefit .description,
+  .homepage-benefit .images {
+    display: block;
+  }
+
+  .homepage-benefit .description {
+    text-align: center;
+    width: 100%;
+  }
+
+  .homepage-benefit .description h3 {
+    font-size: 18px;
+  }
+
+  .homepage-benefit .description p {
+    font-size: 14px;
+  }
+
+  .homepage-benefit .images {
+    width: 100%;
+    min-height: 0;
+    /*max-height: 300px;*/
+    overflow: hidden;
+  }
+
+  div.homepage-benefit .images img.single,
+  div.homepage-benefit .images img.single:hover,
+  div.homepage-benefit .images img.front,
+  div.homepage-benefit .images:hover img.front {
+    position: static;
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+  }
+
+  div.homepage-benefit .images img.back,
+  div.homepage-benefit .images:hover img.back {
+    display: none;
+  }
+
+  .homepage-benefit a.btn-connect {
+    display: none;
+    /*padding-top: 0px;*/
+  }
+
+  /* hack to override pageHeight based classed */
+  div.homepage-benefit {
+    min-height: inherit;
+    padding-bottom: 30px;
+  }
+
+  .homepage-benefit a.other-benefits {
+    display: none;
+  }
+}
