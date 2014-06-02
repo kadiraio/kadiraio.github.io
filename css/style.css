@@ -226,6 +226,16 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   margin-bottom: 25px;
 }
 
+.homepage-benefit .description p a {
+  color: inherit;
+  border-bottom: 1px solid #aaa;
+}
+
+.homepage-benefit .description p a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #ddd;
+}
+
 .homepage-benefit .description.full {
   width: 60%;
   text-align: center;
