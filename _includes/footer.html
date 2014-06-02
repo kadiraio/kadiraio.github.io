@@ -49,4 +49,17 @@
     var footer = document.getElementById('footer');
     return Math.round(h - header.getBoundingClientRect().height - footer.getBoundingClientRect().height);
   });
+
+  (function ($root) {
+    // http://goo.gl/AZGEgV
+    $('a[href*=#]').click(function() {
+      var href = $.attr(this, 'href');
+      $root.animate({
+        scrollTop: $(href).offset().top
+      }, 500, function () {
+        window.location.hash = href;
+      });
+      return false;
+    });
+  })($('html, body'));
 </script>
