@@ -297,13 +297,17 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   --------------- HOMEPAGE - TESTIMONIALS -------------------
 */
 
+#testimonials {
+  padding: 50px 0;
+}
+
 #testimonials .media {
   margin: 30px 0;
 }
 
 #testimonials a.quote {
-  color: rgb(50, 50, 50);
-  font-size: 13px;
+  color: rgb(114, 110, 110);
+  font-size: 19px;
 }
 
 #testimonials a.quote:hover {
@@ -355,15 +359,14 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 */
 
 .connect-app {
-  padding: 50px 0;
+  padding: 0px 0;
   text-align: center;
-  background: rgb(250, 250, 250);
 }
 
 .connect-app a.btn {
   width: 40%;
   margin: 0 auto;
-  padding: 15px;
+  padding: 5px;
   font-size: 20px;
   transition: all 0.5s;
 }
