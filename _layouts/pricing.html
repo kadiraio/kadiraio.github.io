@@ -9,9 +9,84 @@
   {% assign page_type = "pricing" %}
   {% include header.html %}
 
-  <div class='col-md-7 col-md-offset-2 post full-page-wo-header-footer'>
+  <div class='post full-page-wo-header-footer'>
     <div style="margin: 40px 0 20px 0">
-      PRICING_PAGE
+      <div id='plan-list' class="col-md-10 col-md-offset-1">
+        <div class="col-xs-12 col-md-4">
+          <div class="panel panel-success">
+            <div class="panel-heading">Free</div>
+            <div class="panel-body plan-heading">
+              <p>Best for Development with a Single User</p>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Access All Metrics and Graphs</li>
+              <li class="list-group-item">24 Hours Data Retention</li>
+              <li class="list-group-item clear">a</li>
+              <li class="list-group-item clear">a</li>
+              <li class="list-group-item clear">a</li>
+              <li class="list-group-item price-tag">Free Forever</li>
+            </ul>
+            <div class="panel-footer">
+              {{#if isPlan 'free'}}
+                <button class="btn btn-success btn-block" disabled>Current Plan</button>
+              {{else}}
+                <button class="btn btn-success btn-block btn-plan" data-plan="free">Select</button>
+              {{/if}}
+            </div>
+          </div>
+        </div> <!--/plan-->
+        <div class="col-xs-12 col-md-4">
+          <div class="panel panel-info">
+            <div class="panel-heading">Startup</div>
+            <div class="panel-body plan-heading">
+              <p>Best for a Production app with a Smaller Team</p>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Access All Metrics and Graphs</li>
+              <li class="list-group-item"><em>2 Weeks</em> Data Retention</li>
+              <li class="list-group-item">Share App upto <em>5</em> collaborators</li>
+              <li class="list-group-item">Multi Host Support</li>
+              <li class="list-group-item clear">a</li>
+              <li class="list-group-item price-tag">$19 Per Month/Host</li>
+            </ul>
+            <div class="panel-footer">
+              {{#if isPlan 'startup'}}
+                <button class="btn btn-info btn-block" disabled>Current Plan</button>
+              {{else}}
+                <button class="btn btn-info btn-block btn-plan" data-plan="startup">Select</button>
+              {{/if}}
+            </div>
+          </div>
+        </div> <!--/plan-->
+        <div class="col-xs-12 col-md-4">
+          <div class="panel panel-warning">
+            <div class="panel-heading">Pro</div>
+             <div class="panel-body plan-heading">
+              <p>Best for a Production App with a Larger Team</p>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Access All Metrics and Graphs</li>
+              <li class="list-group-item"><em>3 Months</em> Data Retention</li>
+              <li class="list-group-item">Share App upto <em>15</em> collaborators</li>
+              <li class="list-group-item">Multi Host Support</li>
+              <li class="list-group-item clear">a</li>
+              <li class="list-group-item price-tag">$49 Per Month/Host</li>
+            </ul>
+            <div class="panel-footer">
+              {{#if isPlan 'pro'}}
+                <button class="btn btn-warning btn-block" disabled>Current Plan</button>
+              {{else}}
+                <button class="btn btn-warning btn-block btn-plan" data-plan="pro">Select</button>
+              {{/if}}
+            </div>
+          </div>
+        </div> <!--/plan-->
+      </div>
+      <div class="col-md-10 col-md-offset-1" style="padding: 0 30px;">
+        <div class="plan-info">
+           Looking for a bigger plan? <a href='mailto: hello@meteorhacks.com' target="_blank">Contact Us.</a>
+        </div>
+      </div>
     </div>
   </div>
 

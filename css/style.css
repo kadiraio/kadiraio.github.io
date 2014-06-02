@@ -583,3 +583,39 @@ footer.navbar {
   color: #666;
   -webkit-font-smoothing: antialiased;
 }
+
+/*
+  ---------------- BUTTONS -------------------------
+*/
+
+#plan-list li {
+  font-size: 16px;
+  color: rgb(109, 109, 109);
+}
+
+#plan-list li em {
+  font-style: normal;
+  font-weight: 600;
+  color: #FF685A;
+}
+
+#plan-list .clear {
+  color: #fff;
+}
+
+#plan-list .price-tag {
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(99, 99, 99);
+}
+
+.plan-heading {
+  font-size: 22px;
+  color: #4D4D4D;
+}
+
+.plan-info {
+  color: rgb(114, 114, 114);
+  font-size: 17px;
+  text-align: center;
+}
