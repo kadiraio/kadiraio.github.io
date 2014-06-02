@@ -818,3 +818,32 @@ footer.navbar {
     display: none;
   }
 }
+
+
+/*
+  ------------- TEMP --------------
+*/
+
+
+#irc-chat {
+  height: 0;
+  text-align: center;
+}
+
+#irc-chat img {
+  width: 45px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+#irc-chat span {
+  display: inline-block;
+  padding-left: 4px;
+  font-size: 18px;
+  line-height: 18px;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
