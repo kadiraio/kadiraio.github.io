@@ -2,7 +2,7 @@
   -
     caption: "Benefits"
     type: "benefits"
-    link: "/#features"
+    link: "#benefits"
   -
     caption: "Pricing"
     type: "pricing"
