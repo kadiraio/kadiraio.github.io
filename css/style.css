@@ -153,6 +153,31 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   text-decoration: none;
 }
 
+.homepage-benefit a.btn-connect {
+  margin: 15px 0 0 15px;
+  padding: 0 0 5px 0;
+  color: white;
+  font-weight: bold;
+  background: none;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  transition: all 0.2s;
+}
+
+.homepage-benefit.light a.btn-connect {
+  color: rgb(10, 10, 10);
+  border-bottom: 3px solid rgba(10, 10, 10, 0);
+}
+
+.homepage-benefit a.btn-connect:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 1);
+}
+
+.homepage-benefit.light a.btn-connect:hover {
+  border-bottom: 3px solid rgba(10, 10, 10, 1);
+}
+
 .homepage-benefit .description:before,
 .homepage-benefit .images:before {
   content: '';
