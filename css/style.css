@@ -384,6 +384,26 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   ------------------ FOOTER ---------------------
 */
 
+footer {
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid rgb(233, 230, 230);
+  color: #666363;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer a {
+  color: #666363;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #666363;
+  text-decoration: none;
+  border-bottom: 1px solid #aaa;
+}
+
 footer.navbar {
   margin-bottom: 0;
 }
