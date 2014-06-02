@@ -155,19 +155,19 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 .homepage-benefit a.btn-connect {
   margin: 15px 0 0 15px;
-  padding: 0 0 5px 0;
+  padding: 0 0 3px 0;
   color: white;
   font-weight: bold;
   background: none;
   border: none;
   border-radius: 0;
-  border-bottom: 3px solid rgba(255, 255, 255, 0);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
   transition: all 0.2s;
 }
 
 .homepage-benefit.light a.btn-connect {
   color: rgb(10, 10, 10);
-  border-bottom: 3px solid rgba(10, 10, 10, 0);
+  border-bottom: 3px solid rgba(10, 10, 10, 0.2);
 }
 
 .homepage-benefit a.btn-connect:hover {
@@ -206,9 +206,11 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 .homepage-benefit .description h3 {
   margin-top: 25px;
+  font-weight: bold;
 }
 
 .homepage-benefit .description p {
+  font-size: 16px;
   margin-bottom: 25px;
 }
 
