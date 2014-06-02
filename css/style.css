@@ -817,4 +817,38 @@ footer.navbar {
   .homepage-benefit a.other-benefits {
     display: none;
   }
+
+  #irc-chat {
+    margin-bottom: 50px;
+  }
+}
+
+
+/*
+  ------------- TEMP --------------
+*/
+
+
+#irc-chat {
+  height: 0;
+  text-align: center;
+}
+
+#irc-chat img {
+  width: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+}
+
+#irc-chat span {
+  display: inline-block;
+  padding-left: 4px;
+  font-size: 15px;
+  /*line-height: 18px;*/
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  color: rgb(148, 148, 148);
 }
