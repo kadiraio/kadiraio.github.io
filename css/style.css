@@ -831,7 +831,7 @@ footer.navbar {
 }
 
 #irc-chat img {
-  width: 45px;
+  width: 35px;
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
@@ -840,10 +840,11 @@ footer.navbar {
 #irc-chat span {
   display: inline-block;
   padding-left: 4px;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  /*line-height: 18px;*/
   vertical-align: middle;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
+  color: rgb(148, 148, 148);
 }
