@@ -23,6 +23,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   padding-top: 16px;
   font-family: 'source-sans-pro', Sans;
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -62,6 +64,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   line-height: 50px;
   color: rgb(70, 70, 70);
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
   pointer-events: none;
 }
 
@@ -71,6 +75,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   line-height: 1.3;
   margin: 10px 0 0 0;
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
   pointer-events: none;
 }
 
@@ -213,6 +219,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   width: 39%;
   text-align: left;
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 .homepage-benefit .description h3 {
@@ -240,6 +248,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   width: 60%;
   text-align: center;
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 .homepage-benefit .description img {
@@ -271,6 +281,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   transition: all 0.2s;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .homepage-benefit .images img.back {
@@ -283,6 +295,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   transition: all 0.3s;
   transform: translateX(-50%) scale(0.8);
   -webkit-transform: translateX(-50%) scale(0.8);
+  -moz-transform: translateX(-50%) scale(0.8);
+  -o-transform: translateX(-50%) scale(0.8);
 }
 
 .homepage-benefit .images img.single {
@@ -296,23 +310,31 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   transition: all 0.3s;
   transform: translateX(-50%) translateY(-50%) scale(1);
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(1);
+  -o-transform: translateX(-50%) translateY(-50%) scale(1);
 }
 
 .homepage-benefit .images img.single:hover {
   transform: translateX(-50%) translateY(-50%) scale(1.1);
   -webkit-transform: translateX(-50%) translateY(-50%) scale(1.1);
+  -moz-transform: translateX(-50%) translateY(-50%) scale(1.1);
+  -o-transform: translateX(-50%) translateY(-50%) scale(1.1);
 }
 
 .homepage-benefit .images:hover img.front {
   opacity: 0;
   transform: translateX(-50%) translateY(50px) scale(1.2);
   -webkit-transform: translateX(-50%) translateY(50px) scale(1.2);
+  -moz-transform: translateX(-50%) translateY(50px) scale(1.2);
+  -o-transform: translateX(-50%) translateY(50px) scale(1.2);
 }
 
 .homepage-benefit .images:hover img.back {
   opacity: 1;
   transform: translateX(-50%) scale(1);
   -webkit-transform: translateX(-50%) scale(1);
+  -moz-transform: translateX(-50%) scale(1);
+  -o-transform: translateX(-50%) scale(1);
 }
 
 /*
@@ -373,6 +395,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   vertical-align: middle;
   text-align: left;
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 */
 
@@ -400,6 +424,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
   -o-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
   background-color: #A00543;
 }
 
@@ -409,6 +435,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 .post-list-item {
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
   margin-bottom: 20px;
@@ -463,6 +491,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 .post {
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 .post h1 {
@@ -604,6 +634,8 @@ footer.navbar {
   font-size: 15px;
   color: #666;
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 .btn-subscribe:hover {
@@ -612,6 +644,8 @@ footer.navbar {
   border: 2px solid rgb(164, 221, 141);
   color: #666;
   -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 /*
