@@ -54,6 +54,5 @@ Please review this Agreement periodically for changes. If you do not agree to an
 
 If you have any questions about this Agreement, please contact us.
 
-Email: <hello@meteorhacks.com>
-
+Email: <hello@meteorhacks.com><br>
 Address: MeteorHacks Pvt Ltd, Orion City, Colombo 9, Sri Lanka.

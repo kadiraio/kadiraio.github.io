@@ -4,7 +4,7 @@
     date: "21, April 2014"
     link: /academy/getting-started-with-kadira
     summery: "This guide will help you get started with Kadira to identify how your app behaves and help you take necessary actions."
-  - 
+  -
     title: "Make Your App Faster"
     date: "14, April 2014"
     link: /academy/make-your-app-faster
@@ -14,18 +14,18 @@
     date: "14, April 2014"
     link: /academy/reducing-pubsub-data-usage
     summery: "Publications are the main place where your app sends data to the client. You can follow simple techniques on reducing PubSub data usage and reduce server memory usage and latency very easily."
-  - 
-    title: "Reusing Observers for Better CPU & Network Utilization"
+  -
+    title: "Improve CPU & Network Usage"
     date: "28, May 2014"
-    link: /academy/reusing-observers-for-better-cpu-and-network-utilizations
+    link: /academy/improve-cpu-and-network-usage
     summery: "If you could be able to reuse observers, you will be able to save higer CPU and Network Utilization. First understand the concept and apply into your app."
   -
-    title: "How to Optimize Memory Usage of your Meteor App"
+    title: "Optimize Memory Usage"
     date: "28, May 2014"
-    link: /academy/how-to-optimize-memory-usage-of-your-meteor-app
+    link: /academy/optimize-memory-usage
     summery: "Meteor caches a lot of data in the memory. You need to undertand how that affects your app and what are the solutions if your app is affected."
   -
-    title: "Improve User Experience and Reduce Subscription Rate"
+    title: "Reduce Bandwidth and CPU Waste"
     date: "28, May 2014"
-    link: /academyimprove-user-experience-and-reduce-subscription-rate
-    summery: "Iron Router normally unsubscribes all previous subscriptions when entering into a new route. This is how you can identify and fix this issue."
+    link: /academy/reduce-bandwidth-and-cpu-waste
+    summery: "Iron Router normally unsubscribes all previous subscriptions when entering into a new route. Because of this your CPU and Bandwidth will be wasted."

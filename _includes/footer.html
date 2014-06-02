@@ -23,17 +23,43 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-48364339-2', 'meteorapm.com');
+
+  ga('create', 'UA-48364339-1', 'kadira.io');
   ga('send', 'pageview');
 </script>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var main = document.getElementById('content');
-    if(!main) return;
+  pH.add('.full-page');
+
+  pH.add('.half-page', function (h) {
+    return Math.round(h/2);
+  });
+
+  pH.add('.third-page', function (h) {
+    return Math.round(h/3);
+  });
+
+  pH.add('.full-page-wo-header', function (h) {
+    var header = document.getElementById('header');
+    return Math.round(h - header.getBoundingClientRect().height);
+  });
+
+  pH.add('.full-page-wo-header-footer', function (h) {
     var header = document.getElementById('header');
     var footer = document.getElementById('footer');
-    var height = window.innerHeight - header.getBoundingClientRect().height - footer.getBoundingClientRect().height;
-    main.style.minHeight = height + 'px';
+    return Math.round(h - header.getBoundingClientRect().height - footer.getBoundingClientRect().height);
   });
+
+  (function ($root) {
+    // http://goo.gl/AZGEgV
+    $('a[href*=#]').click(function() {
+      var href = $.attr(this, 'href');
+      $root.animate({
+        scrollTop: $(href).offset().top
+      }, 500, function () {
+        window.location.hash = href;
+      });
+      return false;
+    });
+  })($('html, body'));
 </script>

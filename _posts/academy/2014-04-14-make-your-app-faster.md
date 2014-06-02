@@ -30,6 +30,7 @@ This is a DB cursor operation in which you are invoking a query against your col
 * If the indexes are already working, it may be a network delay. Check that your app and the DB are in the same data center. Are they close enough?
 * Your query may return a lot of data. Click the SEE MORE section of the Method/PubSub Explorer to see how many documents you are getting back from the DB. Try to reduce the number of documents you are getting, or reduce the data size.
 * You might also be carrying out some DB or similar operations inside a ForEach or Map operation. If so, try to ignore them if possible, or try to find some alternative way.
+* If you've high throughput than 300 request per min, use [Find Faster](http://meteorhacks.com/improving-meteors-mongodb-read-performance-and-cpu-usage-with-find-faster.html) for **fetch and findOne**.
 
 ## Update, Remove
 
@@ -46,7 +47,7 @@ This is a DB cursor operation in which you are invoking a query against your col
 ## Higher HTTP, Email and Async Time
 
 * Try to add `this.unblock` to the top of the method (not possible with publications) to avoid other methods and subscriptions being kept waiting on this method. Adding this.unblock is not always possible. Refer to [this guide](http://meteorhacks.com/understanding-meteor-wait-time-and-this-unblock.html).
-* If this is a publication, you should not use these kinds of operation. [See why](http://support.meteorapm.com/knowledgebase/articles/347759)!
+* If this is a publication, you should not use these kinds of operation. [See why](http://support.kadira.io/knowledgebase/articles/347759)!
 
 ## Higher Wait Time
 
@@ -61,5 +62,3 @@ Sometimes, you are subscribing to several publications at once or calling severa
 This is the time taken for a computation to happen in your app. Since Meteor runs on NodeJS, and NodeJS is based on [eventloop](http://meteorhacks.com/fibers-eventloop-and-meteor.html), all the other operations are getting blocked. It's wise to optimize your computation or use another algorithm.
 
 These are some of the general guidelines you can apply to your app. But bear in mind that every app is unique and some of these tips might not work for you.
-
-We can have a look at your app. Simply send us an email to `help[at]meteorhacks.com` with your issue. (Don't forget to send your appID as well.)

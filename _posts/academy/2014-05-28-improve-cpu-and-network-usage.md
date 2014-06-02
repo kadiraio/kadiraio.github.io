@@ -1,7 +1,7 @@
 ---
 layout: academy_post
-title: Reusing Observers for Better CPU & Network Utilization
-permalink: /academy/reusing-observers-for-better-cpu-and-network-utilizations
+title: Improve CPU & Network Usage
+permalink: /academy/improve-cpu-and-network-usage
 ---
 
 Before we start, I'd like to explain a bit about some Meteor Internals that might help you to understand this topic better. To make it easier to understand, I won't be using the exact terms Meteor uses internally.

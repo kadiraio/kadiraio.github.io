@@ -8,11 +8,11 @@ This Privacy Policy was last modified on May 16, 2014.
 
 MeteorHacks Private Limited ("us", "we", or "our") operates <https://kadira.io> (the "Kadira"). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Kadira.
 
-We will not use or share your information with anyone except as described in this Privacy Policy. This Privacy Policy does not apply to information we collect by other means (including offline) or from other sources. By using the Kadira or using the APM Smart Package, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at https://kadira.io.
+We will not use or share your information with anyone except as described in this Privacy Policy. This Privacy Policy does not apply to information we collect by other means (including offline) or from other sources. By using the Kadira or using the ["kadira" Smart Package](https://github.com/meteorhacks/kadira), you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at https://kadira.io.
 
 ## Information Collection And Use
 
-While using Kadira or with APM Smart Package we will collect data about your Meteor application(s) and you. How we collect those data and use them is described below.
+While using Kadira or with ["kadira" Smart Package](https://github.com/meteorhacks/kadira) we will collect data about your Meteor application(s) and you. How we collect those data and use them is described below.
 
 ### Personal Data
 
@@ -20,7 +20,7 @@ While using our Kadira, we may ask you to provide us with certain personally ide
 
 ### Application Data
 
-Using the APM Smart Package, we will collect information about your application data. This data may include, but is not limited to metrics, traces and errors. This information may shared with the people you explicitly asked with Kadira's sharing feature. We will use this data to generate reports & information available on Kadira. Application Data will retain maximum of 16 days from the date we've collected even if you terminate your account.
+Using the ["kadira" Smart Package](https://github.com/meteorhacks/kadira), we will collect information about your application data. This data may include, but is not limited to metrics, traces and errors. This information may shared with the people you explicitly asked with Kadira's sharing feature. We will use this data to generate reports & information available on Kadira. Application Data will retain maximum of 16 days from the date we've collected even if you terminate your account.
 
 ### Log Data
 Like many site operators, we collect information that your browser sends whenever you visit our Kadira ("Log Data"). This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser type, browser version, the pages of our Kadira that you visit, the time and date of your visit, the time spent on those pages and other statistics.
@@ -44,6 +44,5 @@ MeteorHacks Private Limited may update this Privacy Policy from time to time. We
 ## Contact Us
 If you have any questions about this Privacy Policy, please contact us.
 
-Email: <hello@meteorhacks.com>
-
+Email: <hello@meteorhacks.com><br>
 Address: MeteorHacks Pvt Ltd, Orion City, Colombo 9, Sri Lanka.

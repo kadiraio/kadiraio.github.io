@@ -6,21 +6,27 @@
   {% include head.html %}
 </head>
 <body>
-  <!-- Header Area -->
+
   {% include header.html %}
+  <!-- /Header -->
 
-  <div class="container">
-    <div id="intro" class="row">
-      <h1>See What's Happening Inside Your Meteor App</h1>
-      <h2>Then Apply Fixes with our Recommendations and Guides</h2>
-      <div class="video col-xs-12 col-md-10 col-md-offset-1">
-        <img src="css/mba.png">
-        <iframe width="704" height="441" src="//www.youtube-nocookie.com/embed/xXUjpHHfTLY?rel=0&theme=dark&showinfo=0&modestbranding=1&controls=2&iv_load_policy=3" frameborder="0" allowfullscreen></iframe>
-      </div>
+  <div id="intro">
+    <div class="container">
+      <h1>See what's happening in your Meteor app in realtime</h1>
+      <h2>Then apply fixes and improve where it needs most</h2>
+      <img src="images/intro.png" alt="Kadira - Performance Monitoring for Meteor">
     </div>
+  </div>
 
-    <div id="testimonials">
-      <div class="col-md-4">
+  <div class="connect-app">
+    <a href="https://ui.kadira.io/sign-up" class="btn">
+      Connect Your App<br>
+      <small>It's free forever</small>
+    </a>
+  </div>
+
+  <div id="testimonials" class="container">
+      <div class="col-md-6">
         <div class="media">
           <a class="pull-left" href="/blog/user-stories-denis-gorbachev/">
             <img src="/images/faces/denis_gorbachev.jpg" alt="" class="media-object">
@@ -32,7 +38,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="media">
           <a class="pull-left" href="/blog/user-stories-chris-doe/">
             <img src="/images/faces/chris_doe.png" alt="" class="media-object">
@@ -44,7 +50,7 @@
         </div>
       </div>
 
-      <div class="col-md-4">
+      <div class="col-md-6 col-md-offset-3">
         <div class="media">
           <a class="pull-left" href="/blog/user-stories-brent-abrahams">
             <img src="/images/faces/brent_abrahams.png" alt="" class="media-object">
@@ -59,81 +65,152 @@
       <div class="clearfix"></div>
     </div>
 
-    <div class="connect row">
-      <a href="https://ui.kadira.io/sign-up" class="btn btn-signup btn-lg">
-        Connect Your App<br>
-        <small>(It's Free Forever)</small>
-      </a>
-    </div>
-
-    <hr>
-
-    <div id="features" class="row">
-      <h1>Benefits of using Kadira</h1>
-
-      <div id="recommendation-system" name="recommendation-system" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Make your apps faster</h2>
-        <p>Our recommendation system will tell you which methods and publications you should focus on to improve response times.</p>
-        <img src="images/features/faster-recommendation.png" alt="Recommendation System">
-        <img src="images/features/faster-traces.png" alt="Recommendation System">
-        <p>Then you can use traces to identify the bottlenecks and you can apply fixes using our <a href='/academy/make-your-app-faster'>guides</a></p>
-      </div>
-
-      <div id="average-latency" name="average-latency" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Send less data over the network</h2>
-        <p>Sending more data with your publications makes your apps slower, especially for mobile networks. You can track this latency with "Network Latency".</p>
-        <img src="images/features/lessdata-summary.png" alt="Average Latency" class="full">
-        <p>Our recommendation system will tell you which publications you should focus on. Use our <a href="/academy/reducing-pubsub-data-usage">guides</a> to reduce the amount of data you send to improve "Network Latency".</p>
-        <img src="images/features/latency-recommendation.png" alt="Recommendation System">
-      </div>
-
-      <div id="observer-reuse" name="observer-reuse" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Reduce CPU and Network Usage</h2>
-        <p>If you have many subscriptions, you will have many observers and they will affect the performance of the CPU and the network.</p>
-        <p>However, Meteor can reuse observers for identical queries. You can track the reuse of observers directly with our dashboard.</p>
-        <img src="images/features/cpuusage-summary.png" alt="Observer Reuse" class="full">
-        <p>Sort publications by "Low Observer Reuse" & improve reuse with our <a href="/academy/reusing-observers-for-better-cpu-and-network-utilizations">guides</a>.</p>
-        <img src="images/features/cpuusage-list.png" alt="Sorted by Observer Reuse">
-      </div>
-
-      <div id="update-ratio" name="update-ratio" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Better Utilization of Server Memory</h2>
-        <p>Meteor maintains a copy in memory of all your data sent to each client. This is normally not an issue, but there are certain situations you need to consider.</p>
-        <p>We show you the estimated memory usage for each publication and how much of a document has been updated.</p>
-        <img src="images/features/memory-summary.png" alt="Update Ratio" class="full">
-        <p>Using these metrics and our <a href='/academy/how-to-optimize-memory-usage-of-your-meteor-app'>guides</a>, you can optimize the memory usage of your application.</p>
-        <img src="images/features/memory-list.png" alt="Update Ratio">
-      </div>
-
-      <div id="error-tracking" name="error-tracking" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Quickly Debug and Fix Errors</h2>
-        <p>We have taken tracking errors to the next level. Now you can debug an error with its context and identify the root cause quickly.</p>
-        <img src="images/features/debug-trace.png" alt="Debug Errors">
-      </div>
-
-      <div id="shortest-lifespan" name="shortest-lifespan" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Improve User Experience</h2>
-        <p>Normally, Iron Router unsubscribes all the current route's subscriptions before moving to another route. For each route change, users need to wait until the data has been returned from the server, which adds an unnecessary server load.</p>
-        <p>You can track those publications by sorting "Shortest Lifespan" and use our <a href='/academyimprove-user-experience-and-reduce-subscription-rate'>guides</a> on improving this behaviour.</p>
-        <img src="images/features/userexp-list.png" alt="Shortest Lifespan">
-      </div>
-
-      <div id="dashboard" name="dashboard" class="feature col-md-8 col-md-offset-2 panel">
-        <h2>Real-time Performance Overview</h2>
-        <p>Our real-time dashboard shows the overall performance of an app in a single view. This is perfect for a wall-mounted display.</p>
-        <img src="images/features/realtime-performance-overview.png" alt="Real-time Performance Overview">
+  <div id="benefits">
+    <div id="make-your-app-faster" class="homepage-benefit purple full-page">
+      <div class="container">
+        <div class="description">
+          <h3>Make Your App Faster</h3>
+          <p>Easily find slow methods and publications in your app. Inspect them with sampled traces and <a href="/academy/make-your-app-faster/">make them faster</a>.</p>
+          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
+          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
+          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
+          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
+          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
+          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
+          <a href="https://ui.kadira.io/sign-up" class="btn btn-default btn-connect">Connect Your App</a>
+        </div>
+        <div class="images full-page">
+          <img src="images/screenshots/make-your-app-faster-1.png" alt="Response time breakdown graph" class="front">
+          <img src="images/screenshots/make-your-app-faster-2.png" alt="Trace performance issues" class="back">
+        </div>
       </div>
     </div>
 
-    <div class="connect row">
-      <a href="https://ui.kadira.io/sign-up" class="btn btn-signup btn-lg">
-        Connect Your App<br>
-        <small>(It's Free Forever)</small>
-      </a>
+    <div id="send-less-data" class="homepage-benefit darkgrey full-page">
+      <div class="container">
+        <div class="description">
+          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
+          <h3>Send Less Data over the Network</h3>
+          <p>Find out how much time it takes to send your publication data to a client and <a href="/academy/reducing-pubsub-data-usage/">change</a> your publications accordingly.</p>
+          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
+          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
+          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
+          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
+          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
+          <a href="https://ui.kadira.io/sign-up" class="btn btn-default btn-connect">Connect Your App</a>
+        </div>
+        <div class="images full-page">
+          <img src="images/screenshots/send-less-data.png" alt="Recommendations for sending less data" class="single">
+        </div>
+      </div>
     </div>
 
+    <div id="fix-errors" class="homepage-benefit red full-page">
+      <div class="container">
+        <div class="description">
+          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
+          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
+          <h3>Quickly Debug and Fix Errors</h3>
+          <p>We take tracking errors to the next level. Now you can debug errors with the context and identify root causes quickly.</p>
+          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
+          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
+          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
+          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
+          <a href="https://ui.kadira.io/sign-up" class="btn btn-default btn-connect">Connect Your App</a>
+        </div>
+        <div class="images full-page">
+          <img src="images/screenshots/error-1.png" alt="" class="front">
+          <img src="images/screenshots/error-2.png" alt="" class="back">
+        </div>
+      </div>
+    </div>
+
+    <div id="reduce-cpu" class="homepage-benefit light full-page">
+      <div class="container">
+        <div class="description">
+          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
+          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
+          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
+          <h3>Reduce CPU and Network Usage</h3>
+          <p>Check the "<a href="/academy/improve-cpu-and-network-usage/">Observer Reuse</a>" percentage for your publications. <a href="/academy/improve-cpu-and-network-usage/">Improve it</a> and reduce CPU and network usage.</p>
+          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
+          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
+          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
+          <a href="https://ui.kadira.io/sign-up" class="btn btn-default btn-connect">Connect Your App</a>
+        </div>
+        <div class="images full-page">
+          <img src="images/screenshots/reduce-cpu.png" alt="Observer reuse ratio" class="single">
+        </div>
+      </div>
+    </div>
+
+    <div id="performance-monitoring" class="homepage-benefit blue full-page">
+      <div class="container">
+        <div class="description">
+          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
+          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
+          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
+          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
+          <h3>Real-time Performance Overview</h3>
+          <p>Our real-time dashboard shows the overall performance of your app in a single view. This is a perfect match for a wall-mounted display.</p>
+          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
+          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
+          <a href="https://ui.kadira.io/sign-up" class="btn btn-default btn-connect">Connect Your App</a>
+        </div>
+        <div class="images full-page">
+          <img src="images/screenshots/realtime.png" alt="Publication beakdown sorted by shortest lifespan" class="single">
+        </div>
+      </div>
+    </div>
+
+    <div id="user-experience" class="homepage-benefit darkgrey full-page">
+      <div class="container">
+        <div class="description">
+          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
+          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
+          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
+          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
+          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
+          <h3>Reduce Bandwidth and CPU Waste</h3>
+          <p>Identify which subscriptions need to be cached. Make them <a href="/academy/reduce-bandwidth-and-cpu-waste/">cacheable</a> and reduce bandwidth and CPU waste.</p>
+          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
+          <a href="https://ui.kadira.io/sign-up" class="btn btn-default btn-connect">Connect Your App</a>
+        </div>
+        <div class="images full-page">
+          <img src="images/screenshots/ux.png" alt="Publication beakdown sorted by shortest lifespan" class="single">
+        </div>
+      </div>
+    </div>
+
+    <div id="better-memory" class="homepage-benefit light full-page">
+      <div class="container">
+        <div class="description">
+          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
+          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
+          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
+          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
+          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
+          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
+          <h3>Better Utilization of Server Memory</h3>
+          <p>Identify how much memory each of your publications consumes. Then <a href="/academy/optimize-memory-usage/">alter</a> your applications accordingly.</p>
+          <a href="https://ui.kadira.io/sign-up" class="btn btn-default btn-connect">Connect Your App</a>
+        </div>
+        <div class="images full-page">
+          <img src="images/screenshots/memory.png" alt="SUpdate ratio" class="single">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connect-app">
+    <a href="https://ui.kadira.io/sign-up" class="btn btn-danger">
+      Connect Your App<br>
+      <small>It's free forever</small>
+    </a>
   </div>
 
   {% include footer.html %}
+  <!-- /Footer -->
+
 </body>
 </html>
