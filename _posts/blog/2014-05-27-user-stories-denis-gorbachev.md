@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: How Kadia helps Denis for his Meteor App PinTask
+title: How Kadira helps Denis for his Meteor App PinTask
 permalink: /blog/user-stories-denis-gorbachev
 ---
 
