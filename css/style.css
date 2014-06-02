@@ -205,6 +205,10 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   width: 0%;
 }
 
+.homepage-benefit .images img {
+  border-radius: 3px;
+}
+
 .homepage-benefit .description {
   width: 39%;
   text-align: left;
