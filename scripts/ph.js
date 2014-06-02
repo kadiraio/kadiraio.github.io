@@ -23,7 +23,6 @@
     }
 
     function addClass(name, fn) {
-        console.log('* adding');
         classes[name] = typeof fn === 'function' ? fn : function (h) { return h };
     }
 
