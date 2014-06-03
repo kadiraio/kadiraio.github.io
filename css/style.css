@@ -714,6 +714,17 @@ footer.navbar {
   text-align: center;
 }
 
+#plan-startup .panel-heading {
+  color: white;
+  background: rgb(49, 112, 143);
+}
+
+#plan-startup .btn-plan {
+  font-weight: bold;
+  background: rgb(49, 112, 143);
+  border-color: rgb(49, 112, 143);
+}
+
 
 /*
   ------------- MOBILE --------------
