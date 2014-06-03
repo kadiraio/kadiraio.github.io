@@ -18,12 +18,12 @@
     title: "Improve CPU & Network Usage"
     date: "28, May 2014"
     link: /academy/improve-cpu-and-network-usage
-    summery: "If you could be able to reuse observers, you will be able to save higer CPU and Network Utilization. First understand the concept and apply into your app."
+    summery: "If you could be able to reuse observers, you will be able to save higher CPU and Network Utilization. First understand the concept and apply into your app."
   -
     title: "Optimize Memory Usage"
     date: "28, May 2014"
     link: /academy/optimize-memory-usage
-    summery: "Meteor caches a lot of data in the memory. You need to undertand how that affects your app and what are the solutions if your app is affected."
+    summery: "Meteor caches a lot of data in the memory. You need to understand how that affects your app and what are the solutions if your app is affected."
   -
     title: "Reduce Bandwidth and CPU Waste"
     date: "28, May 2014"
