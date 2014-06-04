@@ -160,18 +160,17 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 .homepage-benefit a.btn-connect {
-  margin: 15px 0 0 15px;
-  padding: 0 0 3px 0;
-  color: white;
+  margin: 60px 0 0 15px;
+  color: #000;
   font-weight: bold;
   background: none;
   border: none;
-  border-radius: 0;
-  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
   transition: all 0.2s;
   font-size: 20px;
   opacity: 0.6;
-  padding-top: 60px;
+  background-color: white;
+  padding: 10px 30px;
 }
 
 .homepage-benefit a.btn-connect:hover {
@@ -179,16 +178,8 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 .homepage-benefit.light a.btn-connect {
-  color: rgb(10, 10, 10);
-  border-bottom: 3px solid rgba(10, 10, 10, 0.2);
-}
-
-.homepage-benefit a.btn-connect:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 1);
-}
-
-.homepage-benefit.light a.btn-connect:hover {
-  border-bottom: 3px solid rgba(10, 10, 10, 1);
+  color: #fff;
+  background-color: #000;
 }
 
 .homepage-benefit .description:before,
