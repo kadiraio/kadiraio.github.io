@@ -23,3 +23,16 @@
 
 <!-- Our CSS -->
 <link rel="stylesheet" type="text/css" href="/css/style.css" />
+
+<script type="text/javascript">
+  var trackSignUpClick = function(url, page, where) {
+    // prevent tracking on the devlopment
+    if(location.href.match(/localhost/)) return true;
+     ga('send', 'event', 'signup', page, where, {'hitCallback':
+       function () {
+         document.location = url;
+       }
+     });
+     return false;
+  }
+</script>
