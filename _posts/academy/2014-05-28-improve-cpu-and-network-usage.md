@@ -90,39 +90,6 @@ var messages = Messages.find({
 
 The query above will normalize the currentTime into the currentHour. In this way, you can create identical queries while keeping your logic as it is.
 
-### Avoid Using $in
-
-Let's say you have a publication as shown below.
-
-~~~js
-Meteor.publish('getPosts', function(postList) {
-  return Posts.publish({_id: {$in: postList}});
-});
-~~~
-
-If you need to get multiplePosts, all you have to do is this:
-
-~~~js
-Meteor.subscribe('getPosts', ['postId1', 'postId2']);
-~~~
-
-If the pattern for postList varies a lot, Meteor can't create identical queries. Here is an alternate implementation for the above:
-
-~~~js
-Meteor.publish('getPost', function(postId) {
-  return Posts.publish({_id: postId});
-});
-~~~
-
-Now you can subscribe like this:
-
-~~~js
-Meteor.subscribe('getPost', 'postId1');
-Meteor.subscribe('getPost', 'postId2');
-~~~
-
-Following this technique, you can get a better "Observer Reuse" percentage.
-
 ### Always Do a Null Check for `_id`
 
 It is quite common to publish more user data into the client with a publication, as shown below.
