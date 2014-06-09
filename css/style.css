@@ -915,30 +915,30 @@ footer.navbar {
     display: none;
   }
 
-  #irc-chat {
+  #top-banner {
     margin-bottom: 50px;
   }
 }
 
 
 /*
-  ------------- TEMP --------------
+  ------------- Top Banner --------------
 */
 
 
-#irc-chat {
+#top-banner {
   height: 0;
   text-align: center;
 }
 
-#irc-chat img {
+#top-banner img {
   width: 35px;
   display: inline-block;
   vertical-align: middle;
   border-radius: 50%;
 }
 
-#irc-chat span {
+#top-banner span {
   display: inline-block;
   padding-left: 4px;
   font-size: 15px;
