@@ -1,25 +1,30 @@
 ---
-  - 
+  -
+    title: "We Heard You! Now our paid plans start at $9.99"
+    date: "06, June 2014"
+    link:  /blog/we-heard-you
+    summery: "It has been a great (but busy) week for us and plenty of new apps are being monitored with Kadira. A lot of developers asked about a change to our pricing model. And we did it."
+  -
     title: "How Brent is using Kadira with his development workflow"
     date: "27, May 2014"
     link:  /blog/user-stories-brent-abrahams
     summery: "Brent Abrahams is a mathematics teacher who has build an online curriculum management app Standbench for his organization using Meteor. This is how he is using Kadira."
-  - 
+  -
     title: "How Chris used Kadira to optimize The CareNoteBook"
     date: "27, May 2014"
     link:  /blog/user-stories-chris-doe
     summery: "When it comes to the initial development of care note book, Chris and his team were trying to get the most out from the time they had. hey Then they decided to use Kadira and it helps them to focus on where they need to optimize and focus."
-  - 
+  -
     title: "How Kadira helps Denis for his Meteor App PinTask"
     date: "27, May 2014"
     link:  /blog/user-stories-denis-gorbachev
     summery: "Denis has been using Kadira from the initial beta release and helped us a lot on identifying issues with Kadira. This is how he is using Kadira."
-  - 
+  -
     title: "Improvements For The Meteor APM Client"
     date: "28, April 2014"
     link: /blog/improvements-for-the-meteor-apm-client
     summery: "Last week, we spent some time optimizing the Meteor APM client package and adding some useful features. Here are the improvements we did."
-  - 
+  -
     title: "The April Release"
     date: "14, April 2014"
     link: /blog/the-april-release
