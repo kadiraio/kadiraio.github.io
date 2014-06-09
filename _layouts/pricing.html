@@ -9,15 +9,14 @@
   {% assign page_type = "pricing" %}
   {% include header.html %}
 
-  <div class='post full-page-wo-header-footer'>
-    <p class="plan-info">Kadira calculates usage <u>per minute</u> basis. So, you can change the plan anytime you wish.</p>
+  <div class='post'>
     <div style="margin: 40px 0 20px 0">
       <div id='plan-list' class="col-md-10 col-md-offset-1">
         <div id="plan-free" class="col-xs-12 col-md-4">
-          <div class="panel panel-success">
+          <div class="panel">
             <div class="panel-heading">Free</div>
             <div class="panel-body plan-heading">
-              <p>Best for Development with a Single User</p>
+              <p>Best for Development or a Simple app with a Single Developer</p>
             </div>
             <ul class="list-group">
               <li class="list-group-item">Access All Metrics and Graphs</li>
@@ -28,14 +27,14 @@
               <li class="list-group-item price-tag">Free Forever</li>
             </ul>
             <div class="panel-footer">
-              <a href="https://ui.kadira.io/sign-up" class="btn btn-success btn-block btn-plan" data-plan="free"
-              onclick="return trackSignUpClick('https://ui.kadira.io/sign-up', 'pricing', 'free');">Sign up</a>
+              <a href="https://ui.kadira.io/sign-up?plan=free" class="btn btn-block btn-plan" data-plan="free"
+              onclick="return trackSignUpClick('https://ui.kadira.io/sign-up?plan=free', 'pricing', 'free');">Sign up</a>
             </div>
           </div>
         </div> <!--/plan-->
         <div id="plan-startup" class="col-xs-12 col-md-4">
           <div class="panel panel-info">
-            <div class="panel-heading">Startup</div>
+            <div class="panel-heading">StartUp</div>
             <div class="panel-body plan-heading">
               <p>Best for a Production app with a Smaller Team</p>
             </div>
@@ -45,42 +44,90 @@
               <li class="list-group-item">Share App upto <em>5</em> collaborators</li>
               <li class="list-group-item">Multi Host Support</li>
               <li class="list-group-item clear">a</li>
-              <li class="list-group-item price-tag">$19 Per Month/Host</li>
+              <li class="list-group-item price-tag">$9.99 Per Month/Host</li>
             </ul>
             <div class="panel-footer">
-              <a href="https://ui.kadira.io/sign-up" class="btn btn-info btn-block btn-plan" data-plan="startup"
-              onclick="return trackSignUpClick('https://ui.kadira.io/sign-up', 'pricing', 'startup');">Sign up</a>
+              <a href="https://ui.kadira.io/sign-up?plan=startup" class="btn btn-info btn-block btn-plan" data-plan="startup"
+              onclick="return trackSignUpClick('https://ui.kadira.io/sign-up?plan=startup', 'pricing', 'startup');">Sign up</a>
             </div>
           </div>
         </div> <!--/plan-->
         <div id="plan-pro" class="col-xs-12 col-md-4">
-          <div class="panel panel-warning">
+          <div class="panel panel-pro">
             <div class="panel-heading">Pro</div>
              <div class="panel-body plan-heading">
-              <p>Best for a Production App with a Larger Team</p>
+              <p>Best for a Complex Production App with a Large Team</p>
             </div>
             <ul class="list-group">
               <li class="list-group-item">Access All Metrics and Graphs</li>
-              <li class="list-group-item"><em>3 Months</em> Data Retention</li>
-              <li class="list-group-item">Share App upto <em>15</em> collaborators</li>
+              <li class="list-group-item"><em>Unlimited</em> Data Retention</li>
+              <li class="list-group-item">Share App with <em>Unlimited</em> collaborators</li>
               <li class="list-group-item">Multi Host Support</li>
               <li class="list-group-item clear">a</li>
-              <li class="list-group-item price-tag">$49 Per Month/Host</li>
+              <li class="list-group-item price-tag">$99 Per Month/Host</li>
             </ul>
             <div class="panel-footer">
-              <a href="https://ui.kadira.io/sign-up" class="btn btn-warning btn-block btn-plan" data-plan="pro"
-              onclick="return trackSignUpClick('https://ui.kadira.io/sign-up', 'pricing', 'pro');">Sign up</a>
+              <a href="https://ui.kadira.io/sign-up?plan=pro" class="btn btn-block btn-plan btn-pro" data-plan="pro"
+              onclick="return trackSignUpClick('https://ui.kadira.io/sign-up?plan=pro', 'pricing', 'pro');">Sign up</a>
             </div>
           </div>
         </div> <!--/plan-->
       </div>
-      <div class="col-md-10 col-md-offset-1" style="padding: 0 30px;">
-        <div class="plan-info">
-           Looking for a bigger plan? <a href='mailto: hello@meteorhacks.com' target="_blank">Contact Us.</a>
-        </div>
-      </div>
     </div>
+
   </div>
+
+  <div class="clearfix"></div>
+
+  <div class='col-md-10 col-md-offset-1' id='common-questions-panel'> <!-- paid features START-->
+    <h1 id='common-questions'>Common Questions</h1>
+
+    <h3 id='pricing-model'>How our pricing model works?</h3>
+    <p>
+      We charge you monthly, based on your usage for each host. You assign a plan for apps created with Kadira, but not for your whole account. See this example:
+    </p>
+    <ul>
+      <li>You've created an app with the StartUp Plan</li>
+      <li>You have two hosts (instances, servos, drones or virtual machines) running throughout the month</li>
+      <li>At the end of the month, you'll be billed for <b>$9.99 * 2</b>, since you are using 2 hosts throughout the month</li>
+    </ul>
+    <hr/>
+
+    <h3 id='change-plans'>Can I change plans?</h3>
+    <p>
+      Of course you can change plans. We calculate your bill based on the <b>number of minutes</b> you've spent using Kadira, so you can change plans whenever you like. Most importantly, you’ll be billed only when you use Kadira.
+    </p>
+    <hr/>
+
+    <h3 id='sharing'>What is sharing?</h3>
+    <p>
+      With our sharing feature, you can simply allow other members in your team to use Kadira Dashboard to monitor and optimize your app.
+You can change the ownership to another user as well.
+    </p>
+    <img src='/images/pricing/sharing.png'>
+    <hr/>
+
+    <h3 id='multi-host'>What is multi host support?</h3>
+    <p>
+      With multi host support, you can analyze metrics by each of your hosts. This will be useful to understand how each of your server instances are performing. This is also a way to visualize the load distribution by your load balancer.
+    </p>
+    <img src='/images/pricing/multihost.png'>
+    <hr/>
+
+    <h3 id='data-retention'>What is Data Retention?</h3>
+    <p>
+      Data Rentention indicates the period of time we keep your application data with us. With a free plan you only can analyze <b>24 hours</b> of data.
+    </p>
+    <p>
+      But with the StartUp plan, you can analyze <b>two weeks</b> of data, so you won't miss anything suspicious in your app. You can also compare the performance throughout a two week period.
+    </p>
+    <hr/>
+
+    <p>
+      Do you have any questions? <a href='http://support.kadira.io/'>Please ask!</a><br/>
+      We are happy to help you out.
+    </p>
+  </div> <!-- paid features END-->
 
   <div class="clearfix"></div>
 

@@ -673,8 +673,8 @@ footer.navbar {
 }
 
 #plan-list li {
-  font-size: 16px;
-  color: rgb(109, 109, 109);
+  font-size: 15px;
+  color: rgb(80, 80, 80);
   border: none;
 }
 
@@ -682,6 +682,7 @@ footer.navbar {
   font-style: normal;
   font-weight: 600;
   color: #FF685A;
+  border-bottom: 1px solid #FF685A;
 }
 
 #plan-list .clear {
@@ -695,8 +696,13 @@ footer.navbar {
 }
 
 .plan-heading {
-  font-size: 21px;
+  font-size: 17px;
   color: #4D4D4D;
+}
+
+.plan-heading p  {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #E7E7E7;
 }
 
 .plan-info {
@@ -705,17 +711,85 @@ footer.navbar {
   text-align: center;
 }
 
+.btn-plan {
+  font-size: 20px;
+}
+
+.btn-plan:hover {
+  opacity: 0.8;
+}
+
+/*
+  StartUp Plan
+*/
+
 #plan-startup .panel-heading {
   color: white;
   background: rgb(49, 112, 143);
 }
 
 #plan-startup .btn-plan {
-  font-weight: bold;
   background: rgb(49, 112, 143);
   border-color: rgb(49, 112, 143);
 }
 
+/*
+  Pro Plan
+*/
+
+#plan-pro .panel {
+  border: 1px solid rgb(255, 207, 243);
+}
+
+#plan-pro .panel-heading {
+  color: #fff;
+  background-color: rgb(124, 20, 99);
+  border: 1px solid rgb(124, 20, 99);
+}
+
+#plan-pro .btn {
+  background-color: rgb(124, 20, 99);
+  color: #fff;
+}
+
+/*
+  Free Plan
+*/
+#plan-free .panel {
+  border: 1px solid #d6e9c6;
+}
+
+#plan-free .panel-heading {
+  color: #fff;
+  background-color: #7DAC69;
+  border: 1px solid #7DAC69;
+}
+
+#plan-free .btn {
+  background-color: #7DAC69;
+  color: #fff;
+}
+
+#common-questions-panel h1 {
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 10px;
+}
+
+#common-questions-panel {
+  margin-top: 20px;
+}
+
+#common-questions-panel p,
+#common-questions-panel li{
+  font-size: 17px;
+  color: #575656;
+  -webkit-font-smoothing: antialiased;
+  max-width: 700px;
+}
+
+#common-questions-panel ul{
+  padding-left: 30px;
+}
 
 /*
   ------------- MOBILE --------------
