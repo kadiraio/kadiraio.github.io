@@ -19,3 +19,5 @@ So we've cut the price of our StartUp plan in half. It now costs $9.99 per month
 So jump into the [StartUp Plan!](https://kadira.io/pricing.html) Analyze 2 weeks’ worth of data and get more insight with your team.
 
 Simply visit <https://ui.kadira.io/account/plans> to change your plan.
+
+> If you already have a StartUp plan, you don't need to do anything. You'll be billed with new pricing. We've already adjust your bill.
