@@ -673,8 +673,8 @@ footer.navbar {
 }
 
 #plan-list li {
-  font-size: 16px;
-  color: rgb(109, 109, 109);
+  font-size: 15px;
+  color: rgb(80, 80, 80);
   border: none;
 }
 
@@ -768,6 +768,27 @@ footer.navbar {
 #plan-free .btn {
   background-color: #7DAC69;
   color: #fff;
+}
+
+#common-questions-panel h1 {
+  border-bottom: 1px solid #DADADA;
+  padding-bottom: 10px;
+}
+
+#common-questions-panel {
+  margin-top: 20px;
+}
+
+#common-questions-panel p,
+#common-questions-panel li{
+  font-size: 17px;
+  color: #575656;
+  -webkit-font-smoothing: antialiased;
+  max-width: 700px;
+}
+
+#common-questions-panel ul{
+  padding-left: 30px;
 }
 
 /*
