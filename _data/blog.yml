@@ -1,5 +1,10 @@
 ---
   -
+    title: "Tracking CPU Usage with Kadira"
+    date: "12, June 2014"
+    link:  /blog/tracking-cpu-usage-with-kadira
+    summery: "We've replaced EventLoop Utilization chart with actual CPU Usage. See why?"
+  -
     title: "We Heard You! Now our paid plans start at $9.99"
     date: "06, June 2014"
     link:  /blog/we-heard-you
