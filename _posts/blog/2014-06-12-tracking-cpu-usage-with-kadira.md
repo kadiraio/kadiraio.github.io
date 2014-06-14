@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: Tracking CPU Usage with Kadira
+title: Tracking Meteor CPU Usage with Kadira
 permalink: /blog/tracking-cpu-usage-with-kadira
 ---
 

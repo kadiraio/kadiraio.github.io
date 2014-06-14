@@ -1,6 +1,6 @@
 ---
   -
-    title: "Tracking CPU Usage with Kadira"
+    title: "Tracking Meteor CPU Usage with Kadira"
     date: "12, June 2014"
     link:  /blog/tracking-cpu-usage-with-kadira
     summery: "We've replaced EventLoop Utilization chart with actual CPU Usage. See why?"
