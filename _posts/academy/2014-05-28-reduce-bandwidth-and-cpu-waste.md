@@ -19,9 +19,9 @@ Although this is a nice feature it causes two main issues.
 
 With meteor APM you can identify the subscriptions that have this issue and apply a fix.
 
-First visit the PubSub detailed view. Then sort publications by "Shortest Lifespan". Next, Select publications with the lowest lifespan and high throughput.
+First visit the PubSub detailed view. Then sort publications by "Shortest Lifespan". Next, Select publications with the short lifespan and high throughput.
 
-![Sort with Shortest Lifespan](https://i.cloudup.com/xlVG39nzxr.png)
+![Sort with Shortest Lifespan](https://i.cloudup.com/9VOU29DPwP.png)
 
 Publications identified by the above selection criteria have the shortest lifespan and high subscription rates, which means they change very rapidly. The following fixes can be applied to resolve the issue.
 
