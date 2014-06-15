@@ -4,61 +4,101 @@ title: Make Your App Faster
 permalink: /academy/make-your-app-faster
 ---
 
-This is a general guide that can be used to optimize the response time of your methods and publications. Since this is a general guide only, some of the tips won't work for you.
+This guide will help you to speed up your methods and publications by following a few simple techniques. First let's try to speed up methods; later on I'll show you how to apply these techniques for publications as well.
 
-## See What's Happening Behind Your Method/Publication
+## Throughput matters
 
-With Kadira, it is very easy to see what’s happening inside your method/publication and understand what operations cost the most. This is how:
-For this example I'm referring to Methods, but you can apply the same process to PubSub as well.
+First you need to sort your methods by throughput and optimize methods from top to bottom. This way you add more focus to the methods utilized most by users, which will save your resources since you’ll be optimizing what your users care about.
 
-* First navigate to the Detailed View section.
-* The topmost chart shows the response time of your app. Click on any point in that chart and you'll see traced method calls just below the chart.
-* Click on a trace call and you'll get a Method Explorer view. This is a graphical stack trace for your method. With that you can identify which operations are responsible for the response time.
+![Methods Sort by Througput](https://i.cloudup.com/rPb_vfIYLn.png)
 
-Watch the following video:
+Click on a method and you'll see the Response Time graph. If that’s above 500ms, you might need to worry about that method. Click on the Response Time graph and analyze some traces to see what's really happening inside your app.
 
-<iframe src="//player.vimeo.com/video/91842608" width="100%" height="500" frameborder="0" webkitallowfullscreen="1" mozallowfullscreen="1" allowfullscreen="1" color="ffffff">
-</iframe>
+![Sample Method Trace](https://i.cloudup.com/na_Q_aHqhk.png)
 
-How you can reduce the response time for those operations is shown below.
+Then you can use the following guides to optimize if some parts of your traces are slower.
+Add necessary indexes
 
-## Fetch, ForEach, Map, Count, Observe, ObserveChanges
+Normally, your database queries should take no more than 300 ms. If they take more than that, you'll likely need an index for your query. You should add an index (or allocate an index) for all the queries you use, especially for methods with high throughput. Otherwise you'll have a hard time when your database is larger and you have plenty of users using your app.
 
-This is a DB cursor operation in which you are invoking a query against your collection. Normally it should not take more than _**200ms**_ to complete an operation of this kind. If it takes longer than that, you can try implementing the following optimizations:
+## What is an index?
 
-* Make sure you've added a correct index for your query. Refer to the official [MongoDB index guide](http://docs.mongodb.org/manual/applications/indexes/).
-* If the indexes are already working, it may be a network delay. Check that your app and the DB are in the same data center. Are they close enough?
-* Your query may return a lot of data. Click the SEE MORE section of the Method/PubSub Explorer to see how many documents you are getting back from the DB. Try to reduce the number of documents you are getting, or reduce the data size.
-* You might also be carrying out some DB or similar operations inside a ForEach or Map operation. If so, try to ignore them if possible, or try to find some alternative way.
-* If you've high throughput than 300 request per min, use [Find Faster](http://meteorhacks.com/improving-meteors-mongodb-read-performance-and-cpu-usage-with-find-faster.html) for **fetch and findOne**.
+MongoDB stores your data on the hard disk, without any order and in some random places. Now, let's say you have 1,000 documents and you need to find a single document. MongoDB needs to start from the first document and traverse until it finds the document you are looking for. This is inefficient, especially if you have a large number of documents or many requests.
 
-## Update, Remove
+An index is a better way to find documents. It is a sorted list that maintains a pointer to the specific document in the database. Index is also stored on the hard disk, but it will be loaded into the memory when it will be used. Since the index is sorted, MongoDB can find your document quickly. This comes at a cost—you need to create indexes for all queries to find them faster. However, there are some ways to use a single index for multiple queries.
 
-* Update and Remove operations can also take advantage of the index. So, make sure that the selection query is occupying an index. Refer to the official [MongoDB index guide](http://docs.mongodb.org/manual/applications/indexes/).
-* You might invoke a query that affects a large set of documents. Try to reduce the number of affected documents if possible.
-* Check whether you have too many indexes on your collections. If so, all your indexes need to be updated whenever a document gets changed. This is a costly operation compared with having few indexes. So, try to reduce the number of indexes by using [compound indexes](http://docs.mongodb.org/manual/core/index-compound/).
-* Check that your app and the DB are in the same data center. Are they close enough?
+## Learn indexing
 
-## Insert
+Learning how to use an index is a big topic and needs to be taught correctly. Refer to the following MongoDB documentation, which is really useful:
 
-* Check whether you have too many indexes on your collections. If so, all your indexes need to be updated when a document gets changed. So, try to reduce the number of indexes by using [compound indexes](http://docs.mongodb.org/manual/core/index-compound/).
-* Check that your app and the DB are in the same data center. Are they close enough?
+* [MongoDB Index Documentation](http://docs.mongodb.org/manual/indexes/)
 
-## Higher HTTP, Email and Async Time
+You can also watch the following videos extracted from  [MongoDB for DBA](https://university.mongodb.com/courses/10gen/M102/2014_July/about) course.
 
-* Try to add `this.unblock` to the top of the method (not possible with publications) to avoid other methods and subscriptions being kept waiting on this method. Adding this.unblock is not always possible. Refer to [this guide](http://meteorhacks.com/understanding-meteor-wait-time-and-this-unblock.html).
-* If this is a publication, you should not use these kinds of operation. [See why](http://support.kadira.io/knowledgebase/articles/347759)!
+* [Index Overview](https://www.youtube.com/watch?v=a7TrHP1C6qQ)
+* [Index Types](https://www.youtube.com/watch?v=DFfCC8Or8_U)
+* [Covered Indexes](https://www.youtube.com/watch?v=boAkBnMUBnw)
+* [Explain and Hint](https://www.youtube.com/watch?v=oaTm0Kftit8)
+* [Read vs Write](https://www.youtube.com/watch?v=USDbDotmums)
+* [MongoDB Profiler](https://www.youtube.com/watch?v=MzLmI8FNB94)
 
-## Higher Wait Time
+### Optimizing HTTP calls, email sending, and third party NPM modules
 
-This is owing to your method/publication being kept waiting on one or many other methods/publications until those methods are completed. You can click on the SEE MORE button in front of the wait and see what methods and subscriptions you are waiting for.
+All methods interacting with third party services take a considerable amount of time to complete. Using these calls in a method will cause two main issues:
 
-If you can see what is causing your methods and subscriptions to have a higher response time, try to improve them using this guide.
+1. Other methods from the same client will have to wait for the completion of the current method.
+2. They will slow down the method itself.
 
-Sometimes, you are subscribing to several publications at once or calling several methods at once (or a mix of both). If so, having a higher wait time will be familiar to you. If those methods' throughput is low, you might not need to worry, as the wait time affects only a small number of clients.
+You can simply use `this.unblock()` to ask Meteor not to wait on this method. Sometimes it is not wise to use `this.unblock()`. I highly recommend reading the MeteorHacks article, [Understanding Meteor Wait Time](http://meteorhacks.com/understanding-meteor-wait-time-and-this-unblock.html).
 
-## Higher Compute Time
+For emails, you also can use `Meteor.defer`, as shown below:
 
-This is the time taken for a computation to happen in your app. Since Meteor runs on NodeJS, and NodeJS is based on [eventloop](http://meteorhacks.com/fibers-eventloop-and-meteor.html), all the other operations are getting blocked. It's wise to optimize your computation or use another algorithm.
+~~~js
+Meteor.methods({
+  addNewPost: function(email, message) {
+    // do the method logic
+    Meteor.defer(function() {
+      // send emails to all the subscribers
+      Emails.send({});
+    });
+  }
+});
+~~~
 
-These are some of the general guidelines you can apply to your app. But bear in mind that every app is unique and some of these tips might not work for you.
+With this, your method does not include the time used to send the email. This is completely okay, since adding a new post does not need to wait for sending emails, as it is a background operation. That's what `Meteor.defer` does.
+
+### Do server-side aggregations
+
+Sometimes you'll receive a lot of data for the method and do some calculations inside it. This will increase the Response Time of your app as well as the CPU usage. MongoDB aggregations is the best and most efficient option. Let's say you need to count the number of posts by each category. This is how you can do it with aggregations:
+
+Install the following package.
+
+~~~shell
+mrt add mongodb-server-aggregation
+~~~
+
+Use this code.
+
+~~~js
+var result = Posts.aggregate([
+  {$group: {_id: "$category", count: {$sum: 1}}}
+])
+~~~
+
+
+Refer to the MongoDB aggregation [documentation](http://docs.mongodb.org/manual/applications/aggregation/) for more information. Also refer to the following videos extracted from the [MongoDB for DBAs](https://university.mongodb.com/courses/10gen/M102/2014_July/about) course :
+
+* [Part 1](https://www.youtube.com/watch?v=OOciY22Eqpc)
+* [Part 2](https://www.youtube.com/watch?v=5ApeWrsjOJY)
+
+### Reduce wait time
+
+With traces, you can find out the wait time and the methods and subscriptions for the current method.
+
+![Meteor Wait Time](https://i.cloudup.com/M-Ps-P6yeg.png)
+
+Find those methods and subscriptions and reduce their Response Time by applying the above techniques.
+
+## A note on Publications
+
+You can follow the same process above for publications as well. However, instead of sorting with throughput, you need to sort with SubRate. You also can't use `this.unblock` inside publications. Because of that you should not invoke HTTP requests, send emails, or do Async operations inside publications. If you really must do this, do it with `Meteor.defer`.
