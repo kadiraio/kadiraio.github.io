@@ -29,3 +29,8 @@
     date: "28, May 2014"
     link: /academy/reduce-bandwidth-and-cpu-waste
     summery: "Iron Router normally unsubscribes all previous subscriptions when entering into a new route. Because of this your CPU and Bandwidth will be wasted."
+  -
+    title: "Optimize Your Meteor App for Oplog Integration"
+    date: "19, June 2014"
+    link: /academy/optimize-your-app-for-oplog
+    summery: "Meteor supports most of the queries with oplog, but there are some edge cases where observers will fall back into an inefficient poll and diff implementation. Let me show you those edge cases."
