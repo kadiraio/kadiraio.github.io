@@ -55,7 +55,7 @@ Posts.find({}, {sort: {$natural: -1}, limit: 10});
 
 Because it is using `$natural`, it won't be able to get the oplog support.
 
-## Identify the Above Scenarios
+## Identify Above Scenarios
 
 Now you clearly know why some of your observers cannot use oplog support. But it is really hard to find the reason for such queries in production, especially with invalid selectors.
 
