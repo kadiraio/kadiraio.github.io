@@ -1,5 +1,10 @@
 ---
   -
+    title: "Google Cloud Tracing Explained"
+    date: "26, June 2014"
+    link:  /blog/google-cloud-tracing-explained
+    summery: "At Google I/O 2014, Google introduced a performance monitoring solution called Google Cloud Traces. This post explains what it is."
+  -
     title: "Tracking Meteor CPU Usage with Kadira"
     date: "12, June 2014"
     link:  /blog/tracking-cpu-usage-with-kadira
