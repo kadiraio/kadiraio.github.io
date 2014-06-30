@@ -24,7 +24,7 @@ With Real Client Monitoring, you can learn how your app behaves in actual client
 
 Comparisons with all of these metrics can be made against countries and browsers (mobiles, desktop, etc.).
 
-> This is an add-on for your app and we charge **$25 for 50K DDP connections per month**. You can also enable this add-on even if you have a free plan.
+> This is an add-on for your app and we charge [**$25 for 50K DDP connections per month**](https://gumroad.com/products/LyDy/edit). You can also enable this add-on even if you have a free plan.
 >
 > 1 DDP connection = 1 Reatime client who established a DDP connection
 
