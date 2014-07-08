@@ -3,7 +3,7 @@
     title: "Stay alert with your Meteor app"
     date: "08, July 2014"
     link:  /blog/stay-alert-with-your-meteor-app
-    summery: ""
+    summery: "Kadira Alerts sends you a notification when something strange happens with your app. You can get alerts for almost every metric available in Kadira."
   -
     title: "What Should Kadira Build Next?"
     date: "30, June 2014"

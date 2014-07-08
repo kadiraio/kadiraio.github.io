@@ -770,6 +770,10 @@ footer.navbar {
   color: #fff;
 }
 
+#common-questions-panel img {
+  max-width: 100%;
+}
+
 #common-questions-panel h1 {
   border-bottom: 1px solid #DADADA;
   padding-bottom: 10px;
