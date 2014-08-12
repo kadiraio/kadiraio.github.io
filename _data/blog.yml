@@ -1,5 +1,10 @@
 ---
   -
+    title: "Login with Meteor Developer Accounts"
+    date: "12, August 2014"
+    link: /blog/login-with-meteor-developer-accounts
+    summery: "Now Kadira's default authentication mechanism is Meteor developer accounts and login with password has been deprecated."
+  -
     title: "Now, traces can be shared publicly"
     date: "25, July 2014"
     link:  /blog/now-traces-can-be-shared-publicly
