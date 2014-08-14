@@ -6,3 +6,6 @@ exclude:
 - Rakefile
 - post.sh
 markdown: kramdown
+collections:
+- testimonials
+- features

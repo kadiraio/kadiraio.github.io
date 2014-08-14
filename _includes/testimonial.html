@@ -1,0 +1,18 @@
+<div class="testimonial-block">
+  <div class="row">
+    <div class="col-md-4 avatar">
+      <img src="{{ testimonial.avatar }}" alt="{{ testimonial.person }}">
+      <p class="hidden-xs">
+        {{ testimonial.person }}<br>
+        <strong>{{ testimonial.position }} - <a target="_blank" href="{{ testimonial.link }}">{{ testimonial.name }}</a></strong>
+      </p>
+    </div>
+    <div class="col-md-8 quote">
+      {{ testimonial.quote }}<br>
+      <span class="visible-xs">
+        {{ testimonial.person }} -
+        <strong>{{ testimonial.position }} - <a href="{{ testimonial.link }}">{{ testimonial.name }}</a></strong>
+      </span>
+    </div>
+  </div>
+</div>

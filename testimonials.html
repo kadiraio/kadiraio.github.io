@@ -1,0 +1,46 @@
+---
+layout: page-empty
+title: Testimonials
+permalink: /testimonials.html
+---
+
+<div id="all-testimonials">
+  <h1>Testimonials</h1>
+
+  {% for testimonial in site.testimonials %}
+    <div class="testimonial-block col-md-5">
+      <div class="row">
+        <div class="col-md-4 avatar">
+          <img src="{{ testimonial.avatar }}" alt="{{ testimonial.person }}">
+          <p class="hidden-xs">
+            {{ testimonial.person }}<br>
+            <strong>{{ testimonial.position }} - <a href="{{ testimonial.link }}">{{ testimonial.name }}</a></strong>
+          </p>
+        </div>
+        <div class="col-md-8 quote">
+          {{ testimonial.quote }}<br>
+          <span class="visible-xs">
+            {{ testimonial.person }}
+            <strong>{{ testimonial.position }} - <a href="{{ testimonial.link }}">{{ testimonial.name }}</a></strong>
+          </span>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+<div id="tweet-testimonials">
+  <div class="col-md-6">
+    <div class="tweet-wrap"><blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/meteorhacks">@meteorhacks</a> kadira just helped me turn my app from hopelessly slow @ 3k data points to performing wonderfully @ 40k points</p>&mdash; Jake Gaylor (@jhgaylor) <a href="https://twitter.com/jhgaylor/statuses/498064537258823680">August 9, 2014</a></blockquote></div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="tweet-wrap"><blockquote class="twitter-tweet" lang="en"><p>I hear there&#39;s a lot of Meteor apps getting good use out of <a href="https://t.co/ihVbTz9Y6P">https://t.co/ihVbTz9Y6P</a> now for insights into problems and performance tuning.</p>&mdash; Tim Haines (@TimHaines) <a href="https://twitter.com/TimHaines/statuses/479506260622983168">June 19, 2014</a></blockquote></div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="tweet-wrap"><blockquote class="twitter-tweet" lang="en"><p>I&#39;ve just connected my <a href="https://twitter.com/meteorjs">@meteorjs</a> <a href="https://twitter.com/hashtag/app?src=hash">#app</a> with <a href="https://twitter.com/hashtag/kadira?src=hash">#kadira</a> - I&#39;m so amazed how awesome this tool is! thanks <a href="https://twitter.com/arunoda">@arunoda</a> !</p>&mdash; Łukasz Kupś (@OfcaPL) <a href="https://twitter.com/OfcaPL/statuses/473904098992205826">June 3, 2014</a></blockquote></div>
+  </div>
+</div>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
