@@ -10,213 +10,60 @@
   {% include header.html %}
   <!-- /Header -->
 
-  <div id="top-banner">
-    <img src="/images/faces/arunoda.jpg" onclick="location.href='/blog/we-heard-you'">
-    <span><a href='/blog/login-with-meteor-developer-accounts'>Login with Meteor Developer Accounts</a></span>
-  </div>
-
   <div id="intro">
     <div class="container">
-      <h1>See what's happening in your Meteor app in realtime</h1>
-      <h2>Then apply fixes and improve where it needs most</h2>
-      <img src="images/intro.png" alt="Kadira - Performance Monitoring for Meteor">
-    </div>
-  </div>
-
-  <div class="connect-app">
-    <div class="container">
-      <a href="/pricing.html" class="btn"
-        onclick="return trackSignUpClick('/pricing.html', 'home', 'top-button');">
-        Start Monitoring<br>(It's free)
-      </a>
-    </div>
-  </div>
-
-  <div id="testimonials">
-    <div class="container">
-      <div class="col-md-6">
-        <div class="media">
-          <a class="pull-left" href="/blog/user-stories-denis-gorbachev/">
-            <img src="/images/faces/denis_gorbachev.jpg" alt="" class="media-object">
-          </a>
-          <div class="media-body">
-            <a class="quote" href="/blog/user-stories-denis-gorbachev/">I was able to reduce Pintask's response time from 4 seconds to 1 second with the findings from Kadira.</a>
-            <h4 class="media-heading">Denis Gorbachev @ <a href="https://pintask.me/">PinTask</a></h4>
-          </div>
+      <div class="col-md-5">
+        <div id="testimonials">
+          {% for item in site.testimonials %}
+            {% assign testimonial = item %}
+            {% include testimonial.html %}
+          {% endfor %}
+          <a class="more-testimonials" href="#">see more testimonials</a>
         </div>
-      </div>
 
-      <div class="col-md-6">
-        <div class="media">
-          <a class="pull-left" href="/blog/user-stories-chris-doe/">
-            <img src="/images/faces/chris_doe.png" alt="" class="media-object">
-          </a>
-          <div class="media-body">
-            <a class="quote" href="/blog/user-stories-chris-doe/">Kadira saved a lot of time when developing the CareNoteBook because it told us where we need to optimize!</a>
-            <h4 class="media-heading">Chris Doe@ <a href="https://thecarenotebook.com/">The CareNoteBook</a></h4>
-          </div>
-        </div>
-      </div>
+        <hr>
 
-      <div class="col-md-6 col-md-offset-3">
-        <div class="media">
-          <a class="pull-left" href="/blog/user-stories-brent-abrahams">
-            <img src="/images/faces/brent_abrahams.png" alt="" class="media-object">
-          </a>
-          <div class="media-body">
-            <a class="quote" href="/blog/user-stories-brent-abrahams">Kadira gave me a heads-up a couple of days ago that one of my servers was in trouble.</a>
-            <h4 class="media-heading">Brent Abrahams @ <a href="http://www.standbench.com/">Standbench</a></h4>
-          </div>
-        </div>
-      </div>
+        <p class="intro-text">
+          Understand what's happening in<br>
+          your <strong>Meteor</strong> app realtime
+        </p>
 
-      <div class="clearfix"></div>
+        <a href="/pricing.html" class="start-button" onclick="return trackSignUpClick('/pricing.html', 'home', 'top-button');">
+          <strong>Start Monitoring</strong><br>
+          (It's FREE)
+        </a>
+
+        <p class="intro-features-link">
+          <a href="#">see what kadira can do</a>
+        </p>
+      </div>
+      <div class="col-md-7">
+        <img id="intro-screenshot" src="images/intro.png" alt="Kadira - Performance Monitoring for Meteor">
+      </div>
     </div>
   </div>
 
   <div id="benefits">
-    <div id="make-your-app-faster" class="homepage-benefit purple full-page">
-      <div class="container">
-        <div class="description">
-          <h3>Make Your App Faster</h3>
-          <p>Easily find slow methods and publications in your app. Inspect them with sampled traces and <a href="/academy/make-your-app-faster/">make them faster</a>.</p>
-          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
-          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
-          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
-          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
-          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
-          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
-          <a href="/pricing.html" class="btn btn-default btn-connect">Start Monitoring</a>
-        </div>
-        <div class="images full-page">
-          <img src="images/screenshots/make-your-app-faster-1.png" alt="Response time breakdown graph" class="front">
-          <img src="images/screenshots/make-your-app-faster-2.png" alt="Trace performance issues" class="back">
-        </div>
-      </div>
-    </div>
-
-    <div id="send-less-data" class="homepage-benefit darkgrey full-page">
-      <div class="container">
-        <div class="description">
-          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
-          <h3>Send Less Data over the Network</h3>
-          <p>Find out how much time it takes to send your publication data to a client and <a href="/academy/reducing-pubsub-data-usage/">change</a> your publications accordingly.</p>
-          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
-          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
-          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
-          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
-          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
-          <a href="/pricing.html" class="btn btn-default btn-connect">Start Monitoring</a>
-        </div>
-        <div class="images full-page">
-          <img src="images/screenshots/send-less-data.png" alt="Recommendations for sending less data" class="single">
-        </div>
-      </div>
-    </div>
-
-    <div id="fix-errors" class="homepage-benefit red full-page">
-      <div class="container">
-        <div class="description">
-          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
-          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
-          <h3>Quickly Debug and Fix Errors</h3>
-          <p>We take tracking errors to the next level. Now you can debug errors with the context and identify root causes quickly.</p>
-          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
-          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
-          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
-          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
-          <a href="/pricing.html" class="btn btn-default btn-connect">Start Monitoring</a>
-        </div>
-        <div class="images full-page">
-          <img src="images/screenshots/error-1.png" alt="" class="front">
-          <img src="images/screenshots/error-2.png" alt="" class="back">
-        </div>
-      </div>
-    </div>
-
-    <div id="reduce-cpu" class="homepage-benefit light full-page">
-      <div class="container">
-        <div class="description">
-          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
-          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
-          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
-          <h3>Reduce CPU and Network Usage</h3>
-          <p>Check the "<a href="/academy/improve-cpu-and-network-usage/">Observer Reuse</a>" percentage for your publications. <a href="/academy/improve-cpu-and-network-usage/">Improve it</a> and reduce CPU and network usage.</p>
-          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
-          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
-          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
-          <a href="/pricing.html" class="btn btn-default btn-connect">Start Monitoring</a>
-        </div>
-        <div class="images full-page">
-          <img src="images/screenshots/reduce-cpu.png" alt="Observer reuse ratio" class="single">
-        </div>
-      </div>
-    </div>
-
-    <div id="performance-monitoring" class="homepage-benefit blue full-page">
-      <div class="container">
-        <div class="description">
-          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
-          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
-          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
-          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
-          <h3>Real-time Performance Overview</h3>
-          <p>Our real-time dashboard shows the overall performance of your app in a single view. This is a perfect match for a wall-mounted display.</p>
-          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
-          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
-          <a href="/pricing.html" class="btn btn-default btn-connect">Start Monitoring</a>
-        </div>
-        <div class="images full-page">
-          <img src="images/screenshots/realtime.png" alt="Publication beakdown sorted by shortest lifespan" class="single">
-        </div>
-      </div>
-    </div>
-
-    <div id="user-experience" class="homepage-benefit darkgrey full-page">
-      <div class="container">
-        <div class="description">
-          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
-          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
-          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
-          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
-          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
-          <h3>Reduce Bandwidth and CPU Waste</h3>
-          <p>Identify which subscriptions need to be cached. Make them <a href="/academy/reduce-bandwidth-and-cpu-waste/">cacheable</a> and reduce bandwidth and CPU waste.</p>
-          <a href="#better-memory" class="other-benefits">Better Utilization of Server Memory</a>
-          <a href="/pricing.html" class="btn btn-default btn-connect">Start Monitoring</a>
-        </div>
-        <div class="images full-page">
-          <img src="images/screenshots/short-lifespan.png" alt="Publication beakdown sorted by shortest lifespan" class="single">
-        </div>
-      </div>
-    </div>
-
-    <div id="better-memory" class="homepage-benefit light full-page">
-      <div class="container">
-        <div class="description">
-          <a href="#make-your-app-faster" class="other-benefits">Make Your App Faster</a>
-          <a href="#send-less-data" class="other-benefits">Send Less Data over the Network</a>
-          <a href="#fix-errors" class="other-benefits">Quickly Debug and Fix Errors</a>
-          <a href="#reduce-cpu" class="other-benefits">Reduce CPU and Network Usage</a>
-          <a href="#performance-monitoring" class="other-benefits">Real-time Performance Overview</a>
-          <a href="#user-experience" class="other-benefits">Reduce Bandwidth and CPU Waste</a>
-          <h3>Better Utilization of Server Memory</h3>
-          <p>Identify how much memory each of your publications consumes. Then <a href="/academy/optimize-memory-usage/">alter</a> your applications accordingly.</p>
-          <a href="/pricing.html" class="btn btn-default btn-connect">Start Monitoring</a>
-        </div>
-        <div class="images full-page">
-          <img src="images/screenshots/memory.png" alt="SUpdate ratio" class="single">
-        </div>
-      </div>
-    </div>
+    {% for item in site.features %}
+      {% assign feature = item %}
+      {% include feature.html %}
+    {% endfor %}
   </div>
 
-  <div class="connect-app">
+  <div id="config">
     <div class="container">
-      <a href="/pricing.html" class="btn"
-        onclick="return trackSignUpClick('/pricing.html', 'home', 'bottom-button');">
-        Start Monitoring <br>(It's free)
-      </a>
+      <div class="col-md-6 text">
+        <h2>No Configuration Needed</h2>
+        <p>
+          Add our smart package and connect it to Kadira.<br>
+          We take care of the rest.<br>
+          Yes. It's that simple.
+        </p>
+      </div>
+      <pre class="col-md-6">
+> mrt add kadira
+Kadira.connect('appId', 'appSecret');
+      </pre>
     </div>
   </div>
 
