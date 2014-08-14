@@ -763,6 +763,30 @@ footer.navbar {
   text-align: left;
 }
 
+#tweet-testimonials {
+  text-align: center;
+}
+
+#tweet-testimonials > div {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+#tweet-testimonials > div:nth-child(odd) {
+  padding-right: 5px;
+  text-align: right;
+}
+
+#tweet-testimonials > div:nth-child(even) {
+  padding-left: 10px;
+  text-align: left;
+}
+
+#tweet-testimonials .tweet-wrap {
+  display: inline-block;
+  width: 500px;
+}
+
 /*
   ------------- MOBILE --------------
 */
