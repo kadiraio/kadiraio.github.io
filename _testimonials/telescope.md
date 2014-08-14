@@ -1,5 +1,6 @@
 ---
-name: Telescope <br> Discover Meteor
+name: Discover Meteor
+link: http://www.telesc.pe
 person: Sacha Grief
 avatar: /images/faces/sacha.jpg
 position:

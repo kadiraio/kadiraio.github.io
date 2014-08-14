@@ -155,6 +155,17 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   padding: 10px 0 0 0;
 }
 
+.testimonial-block a {
+  color: #424141;
+  text-decoration: none;
+  border-bottom: solid 1px rgb(220, 220, 220);
+}
+
+.testimonial-block a:hover {
+  text-decoration: none;
+  border-bottom: solid 1px rgb(200, 200, 200);
+}
+
 .testimonial-block .quote {
   font-weight: 500;
   padding: 10px 25px 0 0;
