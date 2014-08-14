@@ -127,7 +127,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   -o-font-smoothing: antialiased;
 }
 
-#testimonials .testimonial-block {
+.testimonial-block {
   display: none;
   padding: 15px 10px;
   color: #424141;
@@ -137,31 +137,31 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   min-height: 136px;
 }
 
-#testimonials .testimonial-block .avatar {
+.testimonial-block .avatar {
   padding: 0 0 0 0;
   text-align: center;
   font-size: 13px;
 }
 
-#testimonials .testimonial-block .avatar img {
+.testimonial-block .avatar img {
   display: inline-block;
   padding-right: 0;
   width: 50%;
   border-radius: 50%;
 }
 
-#testimonials .testimonial-block .avatar p {
+.testimonial-block .avatar p {
   margin: 0;
   padding: 10px 0 0 0;
 }
 
-#testimonials .testimonial-block .quote {
+.testimonial-block .quote {
   font-weight: 500;
   padding: 10px 25px 0 0;
   font-size: 17px;
 }
 
-#testimonials .testimonial-block .quote span {
+.testimonial-block .quote span {
   padding-top: 10px;
   font-size: 15px;
 }
@@ -739,6 +739,21 @@ footer.navbar {
 }
 
 /*
+  ------------- TESTIMONIALS PAGE --------------
+*/
+
+#all-testimonials {
+  text-align: center;
+}
+
+#all-testimonials .testimonial-block {
+  display: inline-block;
+  margin: 10px;
+  float: none;
+  text-align: left;
+}
+
+/*
   ------------- MOBILE --------------
 */
 
@@ -771,15 +786,15 @@ footer.navbar {
     display: none;
   }
 
-  #testimonials .testimonial-block .avatar {
+  .testimonial-block .avatar {
     padding: 0 0 0 0;
   }
 
-  #testimonials .testimonial-block .avatar img {
+  .testimonial-block .avatar img {
     width: 35%;
   }
 
-  #testimonials .testimonial-block .quote {
+  .testimonial-block .quote {
     padding: 10px;
     text-align: center;
   }

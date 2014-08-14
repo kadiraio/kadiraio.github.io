@@ -1,7 +1,7 @@
 'use strict'
 
 $(function prepareTestimonials () {
-  var blocks = $('.testimonial-block');
+  var blocks = $('#testimonials .testimonial-block');
   var interval = 1000*10;
 
   // show a random testimonial

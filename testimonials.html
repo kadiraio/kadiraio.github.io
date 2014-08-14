@@ -1,0 +1,30 @@
+---
+layout: page-empty
+title: Testimonials
+permalink: /testimonials.html
+---
+
+<div id="all-testimonials" style="text-align: center">
+  <h1>Testimonials</h1>
+
+  {% for testimonial in site.testimonials %}
+    <div class="testimonial-block col-md-5">
+      <div class="row">
+        <div class="col-md-4 avatar">
+          <img src="{{ testimonial.avatar }}" alt="{{ testimonial.person }}">
+          <p class="hidden-xs">
+            {{ testimonial.person }}<br>
+            <strong>{{ testimonial.position }} - {{ testimonial.name }}</strong>
+          </p>
+        </div>
+        <div class="col-md-8 quote">
+          {{ testimonial.quote }}<br>
+          <span class="visible-xs">
+            {{ testimonial.person }}
+            <strong>{{ testimonial.position }} - {{ testimonial.name }}</strong>
+          </span>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
