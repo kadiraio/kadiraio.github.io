@@ -1,6 +1,6 @@
 ---
 name: Discover Meteor
-link: http://www.telesc.pe
+link: https://www.discovermeteor.com/
 person: Sacha Grief
 avatar: /images/faces/sacha.jpg
 position: Author
