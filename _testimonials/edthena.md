@@ -1,5 +1,6 @@
 ---
 name: Edthena
+link: http://www.edthena.com
 person: David Weldon
 avatar: /images/faces/david.jpg
 position: CEO

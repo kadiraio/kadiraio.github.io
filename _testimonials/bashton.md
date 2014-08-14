@@ -1,5 +1,6 @@
 ---
 name: Bashton Ltd
+link: http://www.bashton.com
 person: David Watson
 avatar: /images/faces/watson.png
 position: Engineer

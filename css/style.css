@@ -87,9 +87,9 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   text-align: center;
   font-size: 13px;
   line-height: 18px;
-  background: rgb(116, 72, 125);
+  background-color: rgb(160, 5, 67);
   color: white;
-  transition: all 0.5s;
+  transition: all 0.3s;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -102,13 +102,12 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 }
 
 .start-button:hover {
-  transform: translateY(-6px);
-  -webkit-transform: translateY(-6px);
-  -moz-transform: translateY(-6px);
-  -o-transform: translateY(-6px);
-  -moz-transform: translateY(-6px);
-  -o-transform: translateY(-6px);
-  background-color: rgb(160, 5, 67);
+  transform: translateY(-7px);
+  -webkit-transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+  -o-transform: translateY(-7px);
+  -moz-transform: translateY(-7px);
+  -o-transform: translateY(-7px);
   text-decoration: none;
   color: white;
 }
@@ -153,6 +152,17 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 .testimonial-block .avatar p {
   margin: 0;
   padding: 10px 0 0 0;
+}
+
+.testimonial-block a {
+  color: #424141;
+  text-decoration: none;
+  border-bottom: solid 1px rgb(220, 220, 220);
+}
+
+.testimonial-block a:hover {
+  text-decoration: none;
+  border-bottom: solid 1px rgb(200, 200, 200);
 }
 
 .testimonial-block .quote {
@@ -751,6 +761,30 @@ footer.navbar {
   margin: 10px;
   float: none;
   text-align: left;
+}
+
+#tweet-testimonials {
+  text-align: center;
+}
+
+#tweet-testimonials > div {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+#tweet-testimonials > div:nth-child(odd) {
+  padding-right: 5px;
+  text-align: right;
+}
+
+#tweet-testimonials > div:nth-child(even) {
+  padding-left: 10px;
+  text-align: left;
+}
+
+#tweet-testimonials .tweet-wrap {
+  display: inline-block;
+  width: 500px;
 }
 
 /*

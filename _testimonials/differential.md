@@ -1,5 +1,6 @@
 ---
 name: Differential
+link: http://differential.io
 person: Josh Owens
 avatar: /images/faces/josh.jpg
 position: Partner
