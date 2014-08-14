@@ -338,6 +338,9 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 #config {
   padding: 150px 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 #config .text h2 {
