@@ -83,19 +83,32 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   display: block;
   margin: 0 auto;
   max-width: 300px;
-  padding: 15px;
+  padding: 10px 15px;
   text-align: center;
   font-size: 13px;
+  line-height: 18px;
   background: rgb(116, 72, 125);
   color: white;
+  transition: all 0.5s;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 .start-button strong {
   font-weight: normal;
   font-size: 19px;
+  line-height: 19px;
 }
 
 .start-button:hover {
+  transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  -moz-transform: translateY(-6px);
+  -o-transform: translateY(-6px);
+  background-color: rgb(160, 5, 67);
   text-decoration: none;
   color: white;
 }
@@ -108,26 +121,31 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 #testimonials {
   min-height: 136px;
-  margin-bottom: 36px;
+  margin-bottom: 60px;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
 }
 
 #testimonials .testimonial-block {
   display: none;
   padding: 15px 10px;
   color: #424141;
-  background: rgb(245, 250, 240);
-  border: 1px solid rgb(235, 240, 225);
-  border-radius: 2px;
+  background: rgb(248, 248, 248);
+  border: 1px solid rgb(233, 233, 233);
+  border-radius: 4px;
   min-height: 136px;
 }
 
 #testimonials .testimonial-block .avatar {
+  padding: 0 0 0 0;
   text-align: center;
   font-size: 13px;
 }
 
 #testimonials .testimonial-block .avatar img {
   display: inline-block;
+  padding-right: 0;
   width: 50%;
   border-radius: 50%;
 }
@@ -139,17 +157,22 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 #testimonials .testimonial-block .quote {
   font-weight: 500;
-  padding-left: 0;
-  font-size: 18px;
+  padding: 10px 25px 0 0;
+  font-size: 17px;
+}
+
+#testimonials .testimonial-block .quote span {
+  padding-top: 10px;
+  font-size: 15px;
 }
 
 #testimonials .more-testimonials {
   display: block;
   float: right;
   clear: both;
-  font-size: 12px;
-  color: #424141;
-  border-bottom: dotted 1px #424141;
+  font-size: 12px;;
+  color: #AAA7A7;
+  /*border-bottom: solid 1px #DFDFDF;*/
 }
 
 #testimonials .more-testimonials:hover {
@@ -178,6 +201,14 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 #intro .intro-features-link a:hover {
   color: #424141;
   text-decoration: none;
+}
+
+#bottom-start {
+  margin-bottom: 100px;
+}
+
+#bottom-start p {
+  text-align: center;
 }
 
 /*
@@ -306,6 +337,29 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 
 #config .text p {
   font-size: 18px;
+}
+
+#config .example {
+  line-height: 1.7;
+}
+
+#config .example span {
+  opacity: 0.25;
+}
+
+@keyframes blink-caret {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@-webkit-keyframes blink-caret {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+#config .example span.code-caret {
+  animation: blink-caret 0.4s linear 0 infinite alternate;
+  -webkit-animation: blink-caret 0.4s linear 0 infinite alternate;
 }
 
 /*
@@ -717,6 +771,19 @@ footer.navbar {
     display: none;
   }
 
+  #testimonials .testimonial-block .avatar {
+    padding: 0 0 0 0;
+  }
+
+  #testimonials .testimonial-block .avatar img {
+    width: 35%;
+  }
+
+  #testimonials .testimonial-block .quote {
+    padding: 10px;
+    text-align: center;
+  }
+
   .feature-block {
     border-bottom: 1px solid rgb(240, 240, 240);
   }
@@ -766,5 +833,26 @@ footer.navbar {
   div.feature-block .screenshots img.back,
   div.feature-block .screenshots:hover img.back {
     display: none;
+  }
+
+  #config {
+    padding: 50px 0;
+  }
+
+  #config .text {
+    width: 90%;
+    text-align: center;
+  }
+
+  #config .text h2 {
+    font-size: 24px;
+  }
+
+  #config .text p {
+    font-size: 14px;
+  }
+
+  #bottom-start {
+    margin-bottom: 50px;
   }
 }

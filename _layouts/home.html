@@ -18,23 +18,21 @@
             {% assign testimonial = item %}
             {% include testimonial.html %}
           {% endfor %}
-          <a class="more-testimonials" href="#">see more testimonials</a>
+          <a class="more-testimonials" href="/testimonials.html">see more testimonials</a>
         </div>
-
-        <hr>
 
         <p class="intro-text">
           Understand what's happening in<br>
           your <strong>Meteor</strong> app realtime
         </p>
 
-        <a href="/pricing.html" class="start-button" onclick="return trackSignUpClick('/pricing.html', 'home', 'top-button');">
+        <a href="https://ui.kadira.io/sign-up" class="start-button" onclick="return trackSignUpClick('/pricing.html', 'home', 'top-button');">
           <strong>Start Monitoring</strong><br>
           (It's FREE)
         </a>
 
         <p class="intro-features-link">
-          <a href="#">see what kadira can do</a>
+          <a href="#features">see what kadira can do</a>
         </p>
       </div>
       <div class="col-md-7">
@@ -43,7 +41,7 @@
     </div>
   </div>
 
-  <div id="benefits">
+  <div id="features">
     {% for item in site.features %}
       {% assign feature = item %}
       {% include feature.html %}
@@ -60,11 +58,22 @@
           Yes. It's that simple.
         </p>
       </div>
-      <pre class="col-md-6">
-> mrt add kadira
-Kadira.connect('appId', 'appSecret');
+      <pre class="col-md-6 example">
+
+<span>&gt;</span> mrt add <strong>kadira</strong>
+<span>&gt;</span> export <strong>KADIRA_APP_ID</strong>=<em>'appId'</em>
+<span>&gt;</span> export <strong>KADIRA_APP_SECRET</strong>=<em>'appSecret'</em>
+<span>&gt;</span> meteor<span class="code-caret">_</span>
       </pre>
     </div>
+  </div>
+
+  <div id="bottom-start">
+    <p>More than <strong>1000</strong> developers trust Kadira</p>
+    <a href="https://ui.kadira.io/sign-up" class="start-button" onclick="return trackSignUpClick('/pricing.html', 'home', 'top-button');">
+      <strong>Start Monitoring</strong><br>
+      (It's FREE)
+    </a>
   </div>
 
   {% include footer.html %}

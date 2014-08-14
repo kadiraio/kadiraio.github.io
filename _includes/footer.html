@@ -1,5 +1,5 @@
 <footer id="footer" role="banner">
-  Built by <a href="http://meteorhacks.com">MeteorHacks</a> |
+  Built by <a href="http://meteorhacks.com">MeteorHacks</a><br>
   <a href='/privacy_policy.html'>Privacy Policy</a> |
   <a href='/terms_and_conditions.html'>Terms and Conditions</a>
 </footer>
@@ -13,40 +13,3 @@
   ga('create', 'UA-48364339-1', 'kadira.io');
   ga('send', 'pageview');
 </script>
-<!--
-<script>
-  pH.add('.full-page');
-
-  pH.add('.half-page', function (h) {
-    return Math.round(h/2);
-  });
-
-  pH.add('.third-page', function (h) {
-    return Math.round(h/3);
-  });
-
-  pH.add('.full-page-wo-header', function (h) {
-    var header = document.getElementById('header');
-    return Math.round(h - header.getBoundingClientRect().height);
-  });
-
-  pH.add('.full-page-wo-header-footer', function (h) {
-    var header = document.getElementById('header');
-    var footer = document.getElementById('footer');
-    return Math.round(h - header.getBoundingClientRect().height - footer.getBoundingClientRect().height);
-  });
-
-  (function ($root) {
-    // http://goo.gl/AZGEgV
-    $('a[href*=#]').click(function() {
-      var href = $.attr(this, 'href');
-      $root.animate({
-        scrollTop: $(href).offset().top
-      }, 500, function () {
-        window.location.hash = href;
-      });
-      return false;
-    });
-  })($('html, body'));
-</script>
- -->

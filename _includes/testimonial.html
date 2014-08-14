@@ -1,14 +1,18 @@
 <div class="testimonial-block">
   <div class="row">
-    <div class="col-xs-4 avatar">
+    <div class="col-md-4 avatar">
       <img src="{{ testimonial.avatar }}" alt="{{ testimonial.person }}">
-      <p>
+      <p class="hidden-xs">
         {{ testimonial.person }}<br>
         <strong>{{ testimonial.position }} - {{ testimonial.name }}</strong>
       </p>
     </div>
-    <div class="col-xs-8 quote">
-      {{ testimonial.quote }}
+    <div class="col-md-8 quote">
+      {{ testimonial.quote }}<br>
+      <span class="visible-xs">
+        {{ testimonial.person }} -
+        <strong>{{ testimonial.position }} - {{ testimonial.name }}</strong>
+      </span>
     </div>
   </div>
 </div>
