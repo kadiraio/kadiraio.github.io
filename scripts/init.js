@@ -20,7 +20,8 @@ $(function prepareTestimonials () {
   }
 
   function next () {
-    change((selected + 1) % blocks.length);
+    selected = (selected + 1) % blocks.length;
+    change(selected);
   }
 });
 
