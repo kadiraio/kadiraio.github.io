@@ -1,8 +1,8 @@
 ---
   -
-    caption: "Benefits"
+    caption: "Tour"
     type: "benefits"
-    link: "#features"
+    link: "/#features"
   -
     caption: "Pricing"
     type: "pricing"
