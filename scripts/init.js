@@ -16,12 +16,12 @@ $(function prepareTestimonials () {
   function change (newIndex) {
     $(blocks[selected]).fadeOut('fast', function () {
       $(blocks[newIndex]).fadeIn('fast');
+      selected = newIndex;
     });
   }
 
   function next () {
-    selected = (selected + 1) % blocks.length;
-    change(selected);
+    change((selected + 1) % blocks.length);
   }
 });
 
