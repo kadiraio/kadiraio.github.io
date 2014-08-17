@@ -2,27 +2,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>{{head_title}}</title>
 
+<!-- Our CSS -->
+<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" href="/vendor/highlight/styles/zenburn.css">
+
 <!-- jQuery -->
 <script type="text/javascript" src='/vendor/jquery/jquery.min.js'></script>
-
-<!-- bootstrap -->
-<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css" />
-<script type="text/javascript" src='/vendor/bootstrap/js/bootstrap.min.js'></script>
 
 <!-- Typekit fonts -->
 <script type="text/javascript" src="//use.typekit.net/ypr5vji.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <!-- Highlight JS -->
-<link rel="stylesheet" href="/vendor/highlight/styles/zenburn.css">
-<script type="text/javascript" src='/vendor/highlight/highlight.pack.js'></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script 
+  type="text/javascript" 
+  src='/vendor/highlight/highlight.pack.js'
+  onload='hljs.initHighlightingOnLoad();'
+  async>
+</script>
 
 <!-- Page Height JS -->
 <script src="/scripts/init.js"></script>
-
-<!-- Our CSS -->
-<link rel="stylesheet" type="text/css" href="/css/style.css" />
 
 <script type="text/javascript">
   var trackSignUpClick = function(url, page, where) {
