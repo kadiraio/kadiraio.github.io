@@ -23,10 +23,10 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
 #navbar-brand .brand-title {
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 27px;
-  color: #424141;
-  line-height: 27px;
+  color: #E32C2C;
+  line-height: 29px;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
@@ -130,10 +130,10 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   display: none;
   padding: 15px 10px;
   color: #424141;
-  background: rgb(248, 248, 248);
   border: 1px solid rgb(233, 233, 233);
   border-radius: 4px;
   min-height: 136px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .testimonial-block .avatar {
@@ -169,6 +169,12 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   font-weight: 500;
   padding: 10px 25px 0 0;
   font-size: 17px;
+}
+
+.testimonial-block .quote em {
+  font-weight: bold;
+  border-bottom: 1px solid #D5D5D5;
+  font-style: normal;
 }
 
 .testimonial-block .quote span {
