@@ -133,6 +133,7 @@ body, div, ul, li, a, h1, h2, h3, h4, h5 {
   border: 1px solid rgb(233, 233, 233);
   border-radius: 4px;
   min-height: 136px;
+  background-color: rgb(251, 255, 238);
   -webkit-font-smoothing: antialiased;
 }
 
