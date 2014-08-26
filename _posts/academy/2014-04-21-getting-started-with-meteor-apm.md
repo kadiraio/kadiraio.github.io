@@ -9,8 +9,10 @@ This guide will help you get started with Kadira to identify how your app behave
 ##Install and Configure Kadira
 
 Adding Kadira support for your app is pretty simple. Simply add the kadira smart-package as follows:
-
-    mrt add kadira
+  
+    meteor add meteorhacks:kadira
+    # or if you've not yet migrated to Meteor 0.9 run following
+    # mrt add kadira
 
 Then configure your app by adding this code into any file in your app's server directory.
 
