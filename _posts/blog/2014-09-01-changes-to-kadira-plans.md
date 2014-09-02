@@ -4,9 +4,11 @@ title: Changes on the StartUp Plan & Meteor 0.9 Update
 permalink: /blog/changes-on-the-startup-plan-meteor-09-update
 ---
 
-Currently, we are re-structuring our paid plans and trying to offer more affordable plans with more features. (Yep! There will be an awesome announcement planed for later this week).
+Currently, we are re-structuring our paid plans and this is the first step of that.
 
-As a part of that process, we've [increased](https://kadira.io/pricing.html) the price of our [StartUp](https://kadira.io/pricing.html) plan to $19 from $9.99 and increased the **collaborators** limit to **10** (previously 5). 
+As a part of that process, we've [increased](https://kadira.io/pricing.html) the price of our [StartUp](https://kadira.io/pricing.html) plan to $19 from $9.99 and increased the **collaborators** limit to **10** (previously, it was 5). 
+
+It was not **economical** for us to offer the StartUp plan for $9.99 and that's why we increased it.
 
 > Anyway, we've no intention to change our **FREE** plan.
 
