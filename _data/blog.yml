@@ -1,5 +1,10 @@
 ---
   -
+    title: "Error Tracking Reimagined for Meteor Apps with Kadira"
+    date: "08, September 2014"
+    link: /blog/error-tracking-re-imagined-for-meteor-apps-with-kadira
+    summery: "Error tracking is so much important and goes side by side with performance issues. This is the public beta announcement of Kadira's error tracking solution."
+  -
     title: "Changes on the StartUp Plan & Meteor 0.9 Update"
     date: "01, September 2014"
     link: /blog/changes-on-the-startup-plan-meteor-09-update
