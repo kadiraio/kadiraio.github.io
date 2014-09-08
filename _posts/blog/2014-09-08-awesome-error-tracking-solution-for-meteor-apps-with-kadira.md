@@ -1,7 +1,7 @@
 ---
 layout: blog_post
-title: Error Tracking Reimagined for Meteor Apps with Kadira
-permalink: /blog/error-tracking-re-imagined-for-meteor-apps-with-kadira
+title: Awesome Error Tracking Solution for Meteor Apps with Kadira
+permalink: /blog/awesome-error-tracking-solution-for-meteor-apps-with-kadira
 ---
 
 Everybody hates errors -- whether it's in a Meteor app or not. Unfortunately, errors are something we can't avoid. So we must track and handle errors even though, we have tested our app a lot.
@@ -19,7 +19,7 @@ I don't think I need to talk more about this because we all follow the same proc
 
 ### Client Side Errors
 
-Managing server side errors are pretty easy compared with client side errors. For server errors all we need to focus on our servers. But tracking client side errors is not that simple.
+Managing server side errors is pretty easy compared with client side errors. For server errors all we need to focus on our servers. But tracking client side errors is not that simple.
 
 Also, we can't really depend on stack traces because of the minified code. Even though we capture errors, it's not easy as server side errors due to the vendor specific issues and constraints. 
 
