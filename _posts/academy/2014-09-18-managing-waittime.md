@@ -24,6 +24,7 @@ Now, Meteor loads all these DDP messages in a sequence by default. So, categorie
 You can easily see this behaviour by analyzing a Kadira trace for the categories method:
 
 ![Showing Meteor WaitTime](https://cldup.com/CBdwsq8BYo.png)
+
 [See Complete Trace](https://ui.kadira.io/pt/d6235716-ab27-4f09-a876-503e5934b228) 
 
 You can clearly see it has a waitTime of **6415** milliseconds.
@@ -58,6 +59,7 @@ But, unfortunately, this.unblock is available only inside methods and we can't u
 Now we've added the necessary optimizations. Let's run the app and see what's happening right now: 
 
 ![Meteor WaitTime fixed](https://cldup.com/Zt3IGxMD0n.png)
+
 [See Complete Trace](https://ui.kadira.io/pt/1ad4420f-0282-456c-b95e-a29a6ea11df9)
 
 Wow, that's great. We've reduced the initial subscription load time from **6415 to 360** milliseconds. That's a huge achievement. 
