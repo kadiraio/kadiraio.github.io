@@ -1,5 +1,10 @@
 ---
   -
+    title: "Introducing Wait Time Breakdown"
+    date: "18, September 2014"
+    link: /blog/introducing-waittime-breakdown
+    summery: "We've enhanced waitTime tracking and this is about it."
+  -
     title: "Awesome Error Tracking Solution for Meteor Apps with Kadira"
     date: "08, September 2014"
     link: /blog/awesome-error-tracking-solution-for-meteor-apps-with-kadira
