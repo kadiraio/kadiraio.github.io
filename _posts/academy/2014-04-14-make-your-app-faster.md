@@ -49,7 +49,7 @@ All methods interacting with third party services take a considerable amount of 
 1. Other methods from the same client will have to wait for the completion of the current method.
 2. They will slow down the method itself.
 
-You can simply use `this.unblock()` to ask Meteor not to wait on this method. Sometimes it is not wise to use `this.unblock()`. I highly recommend reading the MeteorHacks article, [Understanding Meteor Wait Time](http://meteorhacks.com/understanding-meteor-wait-time-and-this-unblock.html).
+You can simply use `this.unblock()` to ask Meteor not to wait on this method. Sometimes it is not wise to use `this.unblock()`. Refer our article on [Managing WaitTime](https://kadira.io/academy/managing-waittime/) to learn more about `this.unblock()`
 
 For emails, you also can use `Meteor.defer`, as shown below:
 
@@ -101,4 +101,6 @@ Find those methods and subscriptions and reduce their Response Time by applying 
 
 ## A note on Publications
 
-You can follow the same process above for publications as well. However, instead of sorting with throughput, you need to sort with SubRate. You also can't use `this.unblock` inside publications. Because of that you should not invoke HTTP requests, send emails, or do Async operations inside publications. If you really must do this, do it with `Meteor.defer`.
+You can follow the same process above for publications as well. However, instead of sorting with throughput, you need to sort with SubRate. You also can't use `this.unblock` inside publications by default.
+
+But we've a [solution](https://github.com/meteorhacks/unblock) for that.
