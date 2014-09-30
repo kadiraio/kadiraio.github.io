@@ -12,7 +12,7 @@ Today, I want to announce some of the essential features we've added recently to
 
 Now you can create alerts targeting errors via our existing [alert system](https://kadira.io/blog/stay-alert-with-your-meteor-app/). Just click on the "Alerts" button on the main menu and create your first Error Alert.
 
-![Kadira Error Alerts](https://cldup.com/nd2AXi_InR.gif)
+![Kadira Error Alerts](https://cldup.com/jNu35j7Dki.png)
 
 > I recommend you to create at least an alert for **"Server Crash Count"**. Then you'll get an email when your server got crashed due to an error.
 
