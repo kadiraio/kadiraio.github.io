@@ -4,7 +4,7 @@ title: Kadira Error Alerts and Filters
 permalink: /blog/kadira-error-alerts-and-filters
 ---
 
-We've launched a  [Error Tracking solution for Meteor](https://kadira.io/blog/awesome-error-tracking-solution-for-meteor-apps-with-kadira/) early September and now almost all Kadira apps are using it. With your help, we've fixed bunch of issues and now there is a huge list of features to build over coming months. **Thank You!**
+We've launched an [Error Tracking solution for Meteor](https://kadira.io/blog/awesome-error-tracking-solution-for-meteor-apps-with-kadira/) early September and now almost all Kadira apps are using it. With your help, we've fixed bunch of issues and now there is a huge list of features to build over coming months. **Thank You!**
 
 Today, I want to announce some of the essential features we've added recently to the Kadira Error Tracking. Let me show you them.
 
