@@ -37,4 +37,6 @@ Kadira.errors.addFilter(function(type, message, err) {
 Check our [documentation](http://support.kadira.io/knowledgebase/articles/431539-filtering-errors) to learn more about error filters.
 (We've also created few default rules for you. Check [the](http://support.kadira.io/knowledgebase/articles/431539-filtering-errors) also.)
 
+> In order to get these features, you need to update [kadira](https://github.com/meteorhacks/kadira) to the latest version.
+
 Although these are two small features, I hope they'll make your life easier on maintaining errors.
