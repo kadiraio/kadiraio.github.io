@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: New Pricing Model based on number of DDP connections
+title: New Pricing Model based on the number of DDP connections
 permalink: /blog/new-pricing-model
 ---
 
