@@ -628,140 +628,144 @@ footer.navbar {
 }
 
 /*
-  ---------------- BUTTONS -------------------------
+  ---------------- PRICING PAGE -------------------
 */
 
-#plan-list {
-  text-align: center;
+.table-plans {
+  margin: 30px 0 50px 0;
+  border: 0;
 }
 
-#plan-list .panel-heading {
-  font-size: 24px;
-  padding: 24px 0;
+.table-plans a{
+  color: white;
+  font-weight: bold;
 }
 
-#plan-list li {
-  font-size: 15px;
-  color: rgb(80, 80, 80);
-  border: none;
-}
-
-#plan-list li em {
-  font-style: normal;
-  font-weight: 600;
-  color: #FF685A;
-  border-bottom: 1px solid #FF685A;
-}
-
-#plan-list .clear {
-  color: #fff;
-}
-
-#plan-list .price-tag {
-  font-weight: 600;
-  font-size: 20px;
-  color: rgb(99, 99, 99);
-}
-
-.plan-heading {
-  font-size: 17px;
-  color: #4D4D4D;
-}
-
-.plan-heading p  {
-  padding-bottom: 15px;
-  border-bottom: 1px solid #E7E7E7;
-}
-
-.plan-info {
-  color: rgb(114, 114, 114);
-  font-size: 17px;
-  text-align: center;
-}
-
-.btn-plan {
-  font-size: 20px;
-}
-
-.btn-plan:hover {
+.table-plans a:hover {
+  color: white;
   opacity: 0.8;
 }
 
-/*
-  StartUp Plan
-*/
-
-#plan-startup .panel-heading {
-  color: white;
-  background: rgb(49, 112, 143);
+.table-plans tr.current{
+  background: #EEFFE8;
 }
 
-#plan-startup .btn-plan {
-  background: rgb(49, 112, 143);
-  border-color: rgb(49, 112, 143);
+.btn-plan {
+  text-transform: uppercase;
+  border: 1px solid #D0D0D0;
 }
 
-/*
-  Pro Plan
-*/
-
-#plan-pro .panel {
-  border: 1px solid rgb(255, 207, 243);
+.plan-free .btn {
+  border: 1px solid #aaa;
+  background-color: #aaa;
 }
 
-#plan-pro .panel-heading {
-  color: #fff;
-  background-color: rgb(124, 20, 99);
-  border: 1px solid rgb(124, 20, 99);
+.plan-solo .btn {
+  border: 1px solid #aaa;
+  background-color: #aaa;
 }
 
-#plan-pro .btn {
-  background-color: rgb(124, 20, 99);
-  color: #fff;
-}
-
-/*
-  Free Plan
-*/
-#plan-free .panel {
-  border: 1px solid #d6e9c6;
-}
-
-#plan-free .panel-heading {
-  color: #fff;
-  background-color: #7DAC69;
-  border: 1px solid #7DAC69;
-}
-
-#plan-free .btn {
+.plan-startup .btn {
   background-color: #7DAC69;
   color: #fff;
 }
 
-#common-questions-panel img {
-  max-width: 100%;
+.plan-pro .btn {
+  color: #fff;
+  background: rgb(49, 112, 143);
 }
 
-#common-questions-panel h1 {
-  border-bottom: 1px solid #DADADA;
-  padding-bottom: 10px;
+.plan-business .btn {
+  background-color: rgb(82, 29, 79);
+  color: #fff;
 }
 
-#common-questions-panel {
-  margin-top: 20px;
-  padding-left: 30px;
+.plan-enterprise .btn {
+  background-color: #434343;
+  color: #fff;
 }
 
-#common-questions-panel p,
-#common-questions-panel li{
-  font-size: 17px;
+.col-features {
+  padding-top: 15px;
+}
+
+.table-plans th {
+  font-size: 18px;
+  line-height: 32px;
+  color: #E13838;
+  text-align: center;
+  border: 0;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+}
+
+.table-plans td {
+  padding: 20px;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.list-features {
+  font-size: 18px;
+  color: #575656;
+  line-height: 32px;
+  list-style: none;
+}
+
+.col-question {
+  padding: 0 0 0 15px;
+}
+
+.row-questions p {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  max-width: 750px;
+}
+
+.row-questions h3 {
+  margin: 5px 0;
+}
+
+.row-questions {
+  margin-top: 10px;
+}
+
+.row-questions p,
+.row-questions li{
+  font-size: 18px;
   color: #575656;
   -webkit-font-smoothing: antialiased;
-  max-width: 700px;
 }
 
-#common-questions-panel ul{
+.row-questions ul{
   padding-left: 30px;
+}
+
+#common-questions {
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.free-plan-feature-summery .panel-default{
+  border-color: #6ECBE9;
+}
+
+.free-plan-feature-summery .panel-heading {
+  background-color: #6ECBE9;
+  border: 0;
+}
+
+.paid-plans-feature-summery .panel-default{
+  border-color: #E6C969;
+}
+
+.paid-plans-feature-summery .panel-heading {
+  background-color: #E6C969;
+  border: 0;
 }
 
 /*
