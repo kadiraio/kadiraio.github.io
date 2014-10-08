@@ -1,42 +1,41 @@
 ---
 layout: blog_post
-title: Kadira Error Alerts and Filters
-permalink: /blog/kadira-error-alerts-and-filters
+title: New Pricing Model based on number of DDP connections
+permalink: /blog/new-pricing-model
 ---
 
-We've launched an [Error Tracking solution for Meteor](https://kadira.io/blog/awesome-error-tracking-solution-for-meteor-apps-with-kadira/) early September and now almost all Kadira apps are using it. With your help, we've fixed bunch of issues and now there is a huge list of features to build over coming months. **Thank You!**
+Today I am very happy to announce our new pricing model. This is the third time we are changing our pricing model. The reason is simple, we want Kadira to be an affordable solution for everyone.
 
-Today, I want to announce some of the essential features we've added recently to the Kadira Error Tracking. Let me show you them.
+## Host based pricing model
 
-## Error Alerts
+Earlier, we had host based pricing model and you've paid for the number of hosts each of your apps are using. It has few major issues.
 
-Now you can create alerts targeting errors via our existing [alert system](https://kadira.io/blog/stay-alert-with-your-meteor-app/). Just click on the "Alerts" button on the main menu and create your first Error Alert.
+### Hosting Provider Dependant
 
-![Kadira Error Alerts](https://cldup.com/jNu35j7Dki.png)
+If you are using a deployment provider like "modulus.io", you need few hosts(servos) to run a decent production meteor app. If you are using a server from "AWS", you can run your Meteor app from a single host(server). 
 
-> I recommend you to create at least an alert for **"Server Crash Count"**. Then you'll get an email when your server got crashed due to an error.
+If you are using modulus.io you need to pay for 3 hosts, but only one if you are using AWS for an identical meteor app with similar usage. That's unfair.
 
-## Error Filtering
+### Per app based pricing
 
-Sometimes, you might won't need to track some errors in your app. Now you can easily filter them out by writing rules inside your app. For an examples, let's say "you need to filter all client errors which includes the word `heartbeat`". 
+Let's say, you want to share your staging app with your team. With our earlier pricing model, you need to pay for that app separately as well. That's an additional cost.
 
-This is how you can filter out those errors.
+Because of these issues, we were looking for an new pricing model. And some of you've suggested few models. Thank you for that. 
 
-~~~js
-// inside client/kadira.js
+## The New Pricing Model
+Today, we are releasing a new pricing model based on the number of DDP connections your app is using. 
 
-Kadira.errors.addFilter(function(type, message, err) {
-  if(type == 'client' && /heartbeat/.test(message)) {
-    return false; // filter out this error
-  }
+> a DDP connection is a realtime connection made to your Meteor server either from a browser or from a mobile app.
 
-  return true;
-});
-~~~
+So, now you don't need to pay more if you are using a hosting provider like modulus.io. Additionally, the new pricing model has following characteristics as well. 
 
-Check our [documentation](http://support.kadira.io/knowledgebase/articles/431539-filtering-errors) to learn more about error filters.
-(We've also created few default rules for you. Check [the](http://support.kadira.io/knowledgebase/articles/431539-filtering-errors) also.)
+* Pricing is based on per account basic
+* You can have any number of apps for an account
+* You can have any number of hosts for an app
+* Now we use Stripe 
 
-> In order to get these features, you need to update [kadira](https://github.com/meteorhacks/kadira) to the latest version.
+Our normal plans starting from _**100,000 DDP**_ connections for $50. We also have a small plan of $10. It is designed for a single developer who needs to use Kadira's paid features.
 
-Although these are two small features, I hope they'll make your life easier on maintaining errors.
+[**Click here to learn more about all Kadira plans**](https://kadira.io/pricing)
+
+Update your [**plan**](https://ui.kadira.io/account/plans/) and help us to help you.
