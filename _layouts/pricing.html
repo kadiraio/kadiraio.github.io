@@ -11,7 +11,7 @@
 
   <div class='post'>
     <div style="margin: 40px 0 20px 0">
-      <div class="col-sm-10 col-sm-offset-1">
+      <div class="col-sm-8 col-sm-offset-2">
         <table class="table table-plans">
           <thead>
             <tr>
@@ -25,43 +25,43 @@
           <tbody>
             <tr class="plan-free">
               <td>Free</td>
-              <td>5,000</td>
+              <td>10,000</td>
               <td>24 Hours</td>
               <td>Free</td>
-              <td><button class="btn btn-block btn-plan">Sign Up</button></td>
+              <td><a href="https://ui.kadira.io/sign-up" class="btn btn-block btn-plan">Sign Up</a></td>
             </tr>
-            <tr class="plan-solo current">
+            <tr class="plan-solo">
               <td>Solo</td>
-              <td>15,000</td>
+              <td>30,000</td>
               <td>24 Hours</td>
               <td>$10</td>
-              <td><button class="btn btn-block btn-plan">Sign Up</button></td>
+              <td><a href="https://ui.kadira.io/sign-up" class="btn btn-block btn-plan">Sign Up</a></td>
             </tr>
-            <tr class="plan-startup">
+            <tr class="plan-startup current">
               <td>Startup</td>
-              <td>50,000</td>
+              <td>100,000</td>
               <td>2 Weeks</td>
               <td>$50</td>
-              <td><button class="btn btn-block btn-plan">Sign Up</button></td>
+              <td><a href="https://ui.kadira.io/sign-up" class="btn btn-block btn-plan">Sign Up</a></td>
             </tr>
             <tr class="plan-pro">
               <td>Pro</td>
-              <td>200,000</td>
+              <td>400,000</td>
               <td>3 Months</td>
               <td>$150</td>
-              <td><button class="btn btn-block btn-plan">Sign Up</button></td>
+              <td><a href="https://ui.kadira.io/sign-up" class="btn btn-block btn-plan">Sign Up</a></td>
             </tr>
             <tr class="plan-business">
               <td>Business</td>
-              <td>600, 000</td>
+              <td>1,200,000</td>
               <td>3 Months</td>
               <td>$350</td>
-              <td><button class="btn btn-block btn-plan">Sign Up</button></td>
+              <td><a href="https://ui.kadira.io/sign-up" class="btn btn-block btn-plan">Sign Up</a></td>
             </tr>
             <tr class="plan-enterprise">
               <td>Enterprise</td>
-              <td>Custom</td>
-              <td>Unlimited</td>
+              <td>2,000,000 +</td>
+              <td>Forever</td>
               <td>Custom</td>
               <td><a class="btn btn-block" href="mailto:hello@meteorhacks.com">Contact</a></td>
             </tr>
@@ -75,7 +75,7 @@
 
   <!-- Plan Features -->
   <div class="row">
-    <div class="col-sm-5 col-sm-offset-1 free-plan-feature-summery">
+    <div class="col-sm-4 col-sm-offset-2 free-plan-feature-summery">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">All Kadira plans come with</h3>
@@ -84,24 +84,24 @@
           <ul class="list-features">
             <li>Access to Metrics and Traces</li>
             <li>Create any number of apps</li>
-            <li>Error tracking</li>
+            <li>Error Tracking</li>
             <li>Instant support via email </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="col-sm-5 paid-plans-feature-summery">
+    <div class="col-sm-4 paid-plans-feature-summery">
       <div class="panel panel-default">
         <div class="panel-heading">
           <h3 class="panel-title">All paid plans come with (except solo)</h3>
         </div>
         <div class="panel-body">
           <ul class="list-features">
-            <li>Unlimited Collaborators</li>
+            <li>Unlimited Collaborators (except solo)</li>
             <li>Unlimited Alerts</li>
             <li>CPU Profiling (yet to be released)</li>
-            <li>Monitoring Mongo Observers (yet to be released)</li>
+            <li>Monitoring Observers (yet to be released)</li>
           </ul>
         </div>
       </div>
@@ -110,77 +110,91 @@
 
   <div class="clearfix"></div>
 
-  <!-- Frequently Asked Questions -->
   <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
-      <h1 id="common-questions">Common Questions</h1>
+      <div class="col-sm-8 col-sm-offset-2">
+        <h1 id='common-questions'>Common Questions</h1>
+      </div>
     </div>
+
+    <div class="row row-questions">
+      <div class="col-sm-8 col-sm-offset-2 col-question">
+        <h3 id='solo-plan'>What is the Solo Plan?</h3>
+        <p>Solo plan is a special plan targetted toward indi-developers with a limited budget.</p>
+        <p>It has most of our paid features. But, it can't have collobarators and have a limit of 5 alerts per an app.</p>
+      </div>
+    </div>
+
+    <div class="row row-questions">
+      <div class="col-sm-8 col-sm-offset-2 col-question">
+        <h3>What is a DDP Session?</h3>
+        <p>A DDP Session is realtime connection made to your Meteor server. It can be made either from a browser or from a mobile app. </p>
+        <p>We don't count it as a new connection, when a connection just got reconnected within 30 minutes after it gets disconnected from the server.</p>
+        <p>A connection will be marked as IDLE if it didn't send any method call or subscription request for 30 minutes. When an IDLE connection comes active again, we count it as a new connection.</p>
+      </div>
+    </div>
+
+    <div class="row row-questions">
+      <div class="col-sm-8 col-sm-offset-2 col-question">
+        <h3>What is Data Retention?</h3>
+        <p>Data Retention indicates the period of time we keep your application data with us.</p>
+      </div>
+    </div>
+
+    <div class="row row-questions">
+      <div class="col-sm-8 col-sm-offset-2 col-question">
+        <h3>Can I change plans?</h3>
+        <p>Of course you can change plans anytime.</p>
+      </div>
+    </div>
+
+    <div class="row row-questions">
+      <div class="col-sm-8 col-sm-offset-2 col-question">
+        <h3>What happens when I increase DDP Sessions limit</h3>
+        <p>We don't automatically block your app. We'll inform you before you reach limits or after you've exceeded. Then if you don't need to upgrade, you will be transferred to a forever free with a limited set of features.</p>
+      </div>
+    </div>
+
+    <div class="row row-questions">
+      <div class="col-sm-8 col-sm-offset-2 col-question">
+        <h3>How many hosts/servers/vms an app can have?</h3>
+        <p>There are no hard limitations. But we are monitoring the usage to prevent abuse.</p>
+      </div>
+    </div>  
+
+    <div class="row row-questions">
+      <div class="col-sm-8 col-sm-offset-2 col-question">
+        <h3>Tell me more about Collaborators?</h3>
+        <p>You can simply allow other members in your team to use Kadira UI to monitor and optimize your app. You can change the ownership to another user as well.</p>
+        <p>
+        Collaborators can be added to any app, but there is no way to add account-level collaborators.
+        </p>
+      </div>
+    </div> 
+
+    <div class="row row-questions">
+      <div class="col-sm-8 col-sm-offset-2 col-question">
+        <h3>What are Alerts?</h3>
+        <p><a href='https://kadira.io/blog/stay-alert-with-your-meteor-app/'>Kadira Alerts</a> sends you a notification when something strange happens with your app. You can set alerts for almost every metric available in Kadira.</p>
+      </div>
+    </div> 
+
+    <div class="row row-questions">
+      <div class="col-sm-8 col-sm-offset-2 col-question">
+        <h3>What is Error Tracking?</h3>
+        <p>Kadira <a href='https://kadira.io/blog/awesome-error-tracking-solution-for-meteor-apps-with-kadira/'>tracks</a> both server and client errors for you automatically. You can use Kadira UI to analyze error traces and understand them.</p>
+      </div>
+    </div>    
   </div>
+
+  <hr/>
 
   <div class="row row-questions">
-    <div class="col-sm-10 col-sm-offset-1 col-question">
-      <h3 id="solo-plan">What is the Solo Plan?</h3>
-      <p>Solo plan is a special plan targetted toward indi-developers with a limited budget.</p>
-      <p>It has most of our paid features. But, it can't have collobarators and have a limit of 5 alerts per an app.</p>
+    <div class="col-sm-8 col-sm-offset-2 col-question">
+      <p>Do you have any other questions? <a href='http://support.kadira.io'>Please ask!</a></p>
+      <p>We are happy to help you out.</p>
     </div>
   </div>
-
-  <div class="row row-questions">
-    <div class="col-sm-10 col-sm-offset-1 col-question">
-      <h3>What is a DDP Session?</h3>
-      <p>A DDP Session is realtime connection made to your Meteor server. It can be made either from a browser or from a mobile app. </p>
-    </div>
-  </div>
-
-  <div class="row row-questions">
-    <div class="col-sm-10 col-sm-offset-1 col-question">
-      <h3>What is Data Retention?</h3>
-      <p>Data Retention indicates the period of time we keep your application data with us.</p>
-    </div>
-  </div>
-
-  <div class="row row-questions">
-    <div class="col-sm-10 col-sm-offset-1 col-question">
-      <h3>Can I change plans?</h3>
-      <p>Of course you can change plans anytime.</p>
-    </div>
-  </div>
-
-  <div class="row row-questions">
-    <div class="col-sm-10 col-sm-offset-1 col-question">
-      <h3>What happens when I increase DDP Sessions limit</h3>
-      <p>We don't automatically block your app. We'll inform you before you reach limits or after you've exceeded. Then if you don't need to upgrade, you will be transferred to a forever free with a limited set of features.</p>
-    </div>
-  </div>
-
-  <div class="row row-questions">
-    <div class="col-sm-10 col-sm-offset-1 col-question">
-      <h3>How many hosts/servers/vms an app can have?</h3>
-      <p>There are no hard limitations. But we'll monitor for abuse.</p>
-    </div>
-  </div>
-
-  <div class="row row-questions">
-    <div class="col-sm-10 col-sm-offset-1 col-question">
-      <h3>Tell me more about Collaborators?</h3>
-      <p>You can simply allow other members in your team to use Kadira UI to monitor and optimize your app. You can change the ownership to another user as well.</p>
-    </div>
-  </div>
-
-  <div class="row row-questions">
-    <div class="col-sm-10 col-sm-offset-1 col-question">
-      <h3>What are Alerts?</h3>
-      <p>Kadira Alerts sends you a notification when something strange happens with your app. You can set alerts for almost every metric available in Kadira.</p>
-    </div>
-  </div>
-
-  <div class="row row-questions">
-    <div class="col-sm-10 col-sm-offset-1 col-question">
-      <h3>What is Error Tracking?</h3>
-      <p>Kadira tracks both server and client errors for you automatically. You can use Kadira UI to analyze error traces and understand them.</p>
-    </div>
-  </div>
-
+  
   <div class="clearfix"></div>
 
   {% include footer.html %}
