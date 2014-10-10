@@ -4,7 +4,7 @@ title: Analyzing a Meteor CPU Profile
 permalink: /academy/analyze-meteor-cpu-profile
 ---
 
-Once you've taken a CPU profile simply click the "Analyze" button and you'll see this
+Once you've [taken a CPU profile](/academy/meteor-cpu-profiling) simply click the "Analyze" button and you'll see this
 
 ![MeteorJS CPU Profiling with Kadira](https://cldup.com/JZjBguQOrW.png)
 
