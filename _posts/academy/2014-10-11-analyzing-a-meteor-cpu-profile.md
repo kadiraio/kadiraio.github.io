@@ -10,7 +10,7 @@ Once you've taken a CPU profile simply click the "Analyze" button and you'll see
 
 I'll explain each of the items in a moment. Before that, we need to learn some basics.
 
-> if you need to play around with a sample CPU profile, [click here](). CPU profiles taken with Kadira can be shared very easily.
+> if you need to play around with a sample CPU profile, [click here](https://ui.kadira.io/cpf/zwRXNccosHYbo8x4j?metric=costlyFunction&id=zwRXNccosHYbo8x4j&method=3906587821). CPU profiles taken with Kadira can be shared very easily.
 
 ## Basics
 
