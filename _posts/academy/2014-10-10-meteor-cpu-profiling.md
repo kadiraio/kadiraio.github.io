@@ -18,7 +18,7 @@ The v8-profiler uses some internal APIs of v8 (the engine that NodeJS runs on) t
 
 This is a sampling profiler: it samples functions and stacks that are on the CPU and provides a report that we can analyze. We'll talk about this more in a separate article.
 
-## Taking a CPU profile
+## Taking a CPU profile - for a production app (remotely)
 
 Taking a CPU profile is easy: 
 
@@ -30,6 +30,24 @@ Taking a CPU profile is easy:
 ![Taking a CPU Profile](https://cldup.com/nnGuMDeNVr.png)
 
 * after 10 seconds you'll be able to analyze the profile.
+
+**Watch this demo**
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/IqNiVEbA5CI" frameborder="0" allowfullscreen="1">
+</iframe>
+
+## Taking a CPU profile - for a dev app (locally)
+
+* run your Meteor app with `KADIRA_PROFILE_LOCALLY` environemental variable
+* open your app's browser console and paste following code (to profile for 10 secs)
+* `Kadira.profileCpu(10)`
+* Check server logs to get the location of saved CPU profile
+* Visit Kadira UI and analyze the taken CPU profile
+
+**Watch this demo**
+
+<iframe width="853" height="480" src="//www.youtube.com/embed/NpsVcGFeUNc" frameborder="0" allowfullscreen="1">
+</iframe>
 
 ## Preparation 
 
