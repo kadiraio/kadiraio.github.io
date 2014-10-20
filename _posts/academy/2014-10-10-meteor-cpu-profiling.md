@@ -6,7 +6,7 @@ permalink: /academy/meteor-cpu-profiling
 
 If you need to see what exactly is happening inside your app, the best option is to take a CPU profile. It is not easy to take and analyze a CPU profile with NodeJS; we need the right set of tools and guides, which is what we are doing with Kadira's CPU profiler.
 
-![MeteorJS CPU Profiling with Kadira](https://cldup.com/JZjBguQOrW.png)
+![MeteorJS CPU Profiling with Kadira](https://cldup.com/9e2Zti7psL.png)
 
 ## v8-profiler
 

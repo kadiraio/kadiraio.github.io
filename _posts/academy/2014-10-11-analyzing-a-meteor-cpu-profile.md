@@ -6,7 +6,7 @@ permalink: /academy/analyze-meteor-cpu-profile
 
 Once you've [taken a CPU profile](/academy/meteor-cpu-profiling) simply click the "Analyze" button and you'll see this
 
-![MeteorJS CPU Profiling with Kadira](https://cldup.com/JZjBguQOrW.png)
+![MeteorJS CPU Profiling with Kadira](https://cldup.com/9e2Zti7psL.png)
 
 I'll explain each of the items in a moment. Before that, we need to learn some basics.
 
