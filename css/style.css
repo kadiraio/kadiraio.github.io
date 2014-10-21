@@ -680,9 +680,13 @@ footer.navbar {
   color: #fff;
 }
 
-.plan-enterprise .btn {
-  background-color: #434343;
-  color: #fff;
+.plan-custom a {
+  color: #428bca;
+}
+
+.plan-custom a:hover {
+  color: #428bca;
+  text-decoration: underline;
 }
 
 .col-features {
