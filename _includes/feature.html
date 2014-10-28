@@ -3,7 +3,11 @@
     <div class="content-wrap">
       <div class="description">
         <h2>{{feature.title}}</h2>
-        <p>{{feature.description}}</p>
+        <p>{{feature.description}} 
+          {%if feature.more %}
+            <a href="{{feature.more}}"  class="">Read more</a> 
+          {% endif %}
+        </p>
       </div>
       <div class="screenshots">
         {{feature.content}}
