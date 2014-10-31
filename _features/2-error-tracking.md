@@ -5,4 +5,4 @@ description: Kadira tracks all your client and server errors automatically. <br>
 more: /error-tracking.html
 ---
 
-<img src="images/screenshots/error-tracking.png" alt="Kadira tracks all your client and server errors automatically" class="single">
+<img src="/images/screenshots/error-tracking.png" alt="Kadira tracks all your client and server errors automatically" class="single">

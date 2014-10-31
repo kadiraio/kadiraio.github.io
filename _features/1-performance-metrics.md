@@ -5,4 +5,4 @@ description: See what’s going on with your app with different performance metr
 more: /performance-metrics.html
 ---
 
-<img src="images/screenshots/make-your-app-faster-1.png" alt="Response time breakdown graph" class="single">
+<img src="/images/screenshots/make-your-app-faster-1.png" alt="Response time breakdown graph" class="single">

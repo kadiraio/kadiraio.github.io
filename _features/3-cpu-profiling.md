@@ -5,4 +5,4 @@ description: You can profile your app in production or locally with Kadira and a
 more: /cpu-profiling.html
 ---
 
-<img src="images/screenshots/cpu-profiling.png" alt="kadira cpu profiler" class="single">
+<img src="/images/screenshots/cpu-profiling.png" alt="kadira cpu profiler" class="single">
