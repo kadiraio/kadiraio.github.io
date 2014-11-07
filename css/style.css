@@ -942,3 +942,67 @@ footer.navbar {
     margin-bottom: 50px;
   }
 }
+
+/*
+  ------------- PROMO --------------
+*/
+
+#promo-bulletproof-meteor {
+  background: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.bulletproof-meteor-intro {
+  margin: 60px 0 40px 0;
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.25;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bulletproof-meteor-intro span.bold {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.bulletproof-meteor-apps {
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bulletproof-meteor-apps {
+  padding: 10px;
+}
+
+.bulletproof-meteor-apps strong {
+  text-decoration: underline;
+}
+
+.bulletproof-meteor-app-logos img {
+  display: inline-block;
+  height: 40px;
+  margin: 15px 5px 20px;
+  padding: 3px 7px 2px;
+}
+
+.bulletproof-meteor-start {
+  margin: 20px 0 60px 0;
+  text-align: center;
+}
+
+.bulletproof-meteor-start .btn-start {
+  font-size: 30px;
+  padding: 15px 60px;
+  line-height: 1;
+  color: white;
+  background: #699141;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.bulletproof-meteor-start .btn-start:hover {
+  opacity: 0.8;
+}

@@ -98,6 +98,6 @@ In your app, you might be using many Meteor Methods. You may need to improve all
 
 > You can follow the [same process](https://www.youtube.com/watch?v=CTk0Qvj0n6Y&feature=youtu.be) for PubSub, but you will need to sort the Pub/Sub Breakdown by [SubRate](http://support.kadira.io/knowledgebase/articles/347439-subrate) instead of Throughput.
 
-There are many more ways to improve your app with Kadira. Explore and [share](http://support.kadira.io/forums/224274-general) your discoveries with us. You can also refer the tutorials on the [Kadira Academy](https://kadira.io/academy/) to find more ways to improve your app.
+There are many more ways to improve your app with Kadira. Explore and [share](http://support.kadira.io/forums/224274-general) your discoveries with us. You can also refer the tutorials on the [Kadira Academy](https://kadira.io/academy/) or follow [BulletProof Meteor](https://bulletproofmeteor.com/basics/introduction/?utm_source=kadira&utm_medium=link&utm_term=kadira&utm_content=getting-started&utm_campaign=kadira") to find more ways to improve your app.
 
 If you need help or more information, contact arunoda at `arunoda [at] meteorhacks.com`. Good luck and don't forget to share your [experience](http://support.kadira.io/forums/224274-general) with us.
