@@ -49,3 +49,8 @@
     date: "10, October 2014"
     link: /academy/analyze-meteor-cpu-profile
     summery: "Let's learn how to analyze a CPU profile"
+  -
+    title: "Know Your Observers"
+    date: "13, November 2014"
+    link: /academy/know-your-observers
+    summery: "Observers are among the key components of Meteor. They take care of observing documents on MongoDB and they notify changes. Let's see how you can monitor them with Kadira."
