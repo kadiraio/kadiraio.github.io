@@ -2,7 +2,7 @@
   -
     caption: "Tour"
     type: "tour"
-    link: "#features"
+    link: "/#features"
   -
     caption: "Pricing"
     type: "pricing"
