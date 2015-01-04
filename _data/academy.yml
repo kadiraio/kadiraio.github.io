@@ -54,3 +54,8 @@
     date: "13, November 2014"
     link: /academy/know-your-observers
     summery: "Observers are among the key components of Meteor. They take care of observing documents on MongoDB and they notify changes. Let's see how you can monitor them with Kadira."
+  -
+    title: "Kadira Insights - Finding Hidden Secrets in Your Meteor App"
+    date: "5, January 2015"
+    link: /academy/kadira-insights
+    summery: "With Kadira Insights, you can find relationships in your app. Then you can try to predict and plan your app accordingly."
