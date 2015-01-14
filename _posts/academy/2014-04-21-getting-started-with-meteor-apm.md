@@ -9,7 +9,7 @@ This guide will help you get started with Kadira to identify how your app behave
 ##Install and Configure Kadira
 
 Adding Kadira support for your app is pretty simple. Simply add the kadira smart-package as follows:
-  
+
     meteor add meteorhacks:kadira
     # if you've not yet migrated to Meteor 0.9 run following
     # mrt add kadira
@@ -32,7 +32,10 @@ use followng `settings.json` file with your app.
   ...
   "kadira": {
     "appId": "<appId>",
-    "appSecret": "<appSecret>"
+    "appSecret": "<appSecret>",
+    "options": {
+
+    }
   }
   ...
 }
@@ -46,11 +49,18 @@ export KADIRA_APP_ID=<appId>
 export KADIRA_APP_SECRET=<appSecret>
 ~~~
 
+> You can also specify options with environment variables too. For that, look at the [options definition](https://github.com/meteorhacks/kadira/blob/master/lib/environment_variables.js#L40). <br><br>
+> For an example: if you need to send kadira traffic via a http proxy. This is how it can be done with environment variables.
+>
+> `export KADIRA_OPTIONS_PROXY=http://proxyhost.com:port`
+
 After you've successfully connected with Kadira, you'll be able to see messages like the ones below, which indicate you've successfully authenticated with Kadira.
 
 ![Successfully Connected to the Kadira](https://i.cloudup.com/cBzynAatoq.png)
 
 _**After about one minute, your data will be processed and will be available on the UI.**_
+
+> If you are connecting to kadira behind a enterprise firewall or using a HTTP/HTTPS proxy. Then you need to configure kadira for that. For that look at this [article](http://support.kadira.io/knowledgebase/articles/376248-using-kadira-with-enterprise-firewall-proxy).
 
 ## Kadira Dashboard
 
