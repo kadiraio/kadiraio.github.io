@@ -10,9 +10,13 @@ If you need to see what exactly is happening inside your app, the best option is
 
 ## v8-profiler
 
-We are actually using the [v8-profiler](https://github.com/node-inspector/v8-profiler) from the [node-inspector](https://github.com/node-inspector/node-inspector) to take a CPU profile of your app. It comes with Kadira by default and you don't need to install any additional tools. 
+We are actually using the [v8-profiler](https://github.com/node-inspector/v8-profiler) from the [node-inspector](https://github.com/node-inspector/node-inspector) to take a CPU profile of your app. To install that, simply add this meteor package into your app.
 
-> make sure your app is using the latest version of Kadira.
+~~~shell
+meteor add meteorhacks:kadira-profiler
+~~~
+
+> If you are using a older Meteor version, add this package with: `mrt add kadira-profiler`.
 
 The v8-profiler uses some internal APIs of v8 (the engine that NodeJS runs on) to profile what's happening in your app. Consequently, this solution works everywhere, whether your app is hosted on AWS, modulus.io or even at meteor.com.
 
