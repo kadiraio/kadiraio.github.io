@@ -24,7 +24,7 @@ Now we are using some alternative methods to track CPU usage without using binar
 
 **Then, what about CPU profiling?**
 
-Unfortunately for [CPU profiling](https://kadira.io/academy/meteor-cpu-profiling/), there is no workaround. So, we split the CPU profiling functionality into an [another package](https://github.com/meteorhacks/kadira-profiler). With that, Windows user can use all the features of Kadira except CPU profiling.
+Unfortunately for [CPU profiling](https://kadira.io/academy/meteor-cpu-profiling/), there is no workaround. So, we split the CPU profiling functionality into an [another package](https://github.com/meteorhacks/kadira-profiler). With that, Windows users can use all the features of Kadira except CPU profiling.
 
 After Meteor for Windows comes with the binary module building support, Windows users can get the CPU profiling support as well. I'll keep you posted.
 
