@@ -20,6 +20,10 @@
     type: "docs"
     link: "http://support.kadira.io"
   -
+    caption: "Status"
+    type: "status"
+    link: "https://status.kadira.io"
+  -
     caption: "Login"
     type: "login"
     link: "https://ui.kadira.io/sign-in"
