@@ -74,7 +74,7 @@ Sometimes you'll receive a lot of data for the method and do some calculations i
 Install the following package.
 
 ~~~shell
-mrt add mongodb-server-aggregation
+meteor add meteorhacks:aggregate
 ~~~
 
 Use this code.
