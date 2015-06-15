@@ -1,5 +1,10 @@
 ---
   -
+    title: "Introducing Kadira Debug"
+    date: "15, June 2015"
+    link: /blog/introducing-kadira-debug
+    summery: "Kadira Debug is our latest tool helps you to debug your Meteor app. Today, we are releasing it."
+  -
     title: "Kadira's 1st Anniversary and Beyond"
     date: "02, June 2015"
     link: /academy/kadira-1st-anniversary-and-beyond

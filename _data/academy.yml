@@ -59,3 +59,8 @@
     date: "5, January 2015"
     link: /academy/kadira-insights
     summery: "With Kadira Insights, you can find relationships in your app. Then you can try to predict and plan your app accordingly."
+  -
+    title: "Understanding Your Meteor App with Kadira Debug"
+    date: "15, June 2015"
+    link: /academy/understandin-your-meteor-app
+    summery: "With Kadira Debug, you can understand what's really going on your app in the perspective of a single client."
