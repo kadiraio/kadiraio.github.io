@@ -1,7 +1,7 @@
 ---
 layout: academy_post
 title: Understanding Your Meteor App with Kadira Debug
-permalink: /academy/understandin-your-meteor-app
+permalink: /academy/understanding-your-meteor-app
 ---
 
 Writing a Meteor app is fun and saves a lot of your development time compared with developing in a traditional way. Although it’s easy to write Meteor apps, there are many things happening behind the scenes. To write better apps, you need to understand what they do behind the scenes. Then you can easily optimize your app and create a nice experience for the end user.
@@ -31,7 +31,7 @@ Let’s look at some of these views.
 
 Event Stream is the main part of Kadira Debug. It shows what really happened in your app as a timeline. It includes all route changes, DDP activities, events and a few other things
 
-![Kadira Debug Event Stream](https://cldup.com/qmlzwESGpO.png)
+<img src="https://cldup.com/B0cHgsa2x7.png" style="max-width: 500px" alt="Kadira Debug Event Stream" />
 
 At a glance, you should be able to understand some of these events, like `Route` and `Subscribe`. But there are some events you need to look at more closely. Let’s discuss.
 
@@ -59,7 +59,7 @@ Kadira Debug tracks a lot of Blaze related activities. Those activities show the
 
 Now that we know what are tracking in terms of Client Activities, let’s try to interpret several UI elements in the Client Activites view.
 
-![Kadira Debug Client Activities](https://cldup.com/RZbUR8WFA5.png)
+<img src="https://cldup.com/RZbUR8WFA5.png" style="max-width: 700px" alt="Kadira Debug Client Activities" />
 
 > The bullet numbers are the numbers in the above screenshot.
 
