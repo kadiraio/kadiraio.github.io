@@ -75,3 +75,6 @@ Now that we know what are tracking in terms of Client Activities, let’s try to
 ## Demo: Using Kadira Debug
 
 In the following demo, we are going to see how to use Kadira Debug in the Discover Meteor's [Microscope](https://github.com/DiscoverMeteor/Microscope) app and what we can improve.
+
+<iframe width="640" height="480" src="https://www.youtube.com/embed/y6u5nJE-NPE?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen="1">
+</iframe>
