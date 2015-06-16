@@ -21,6 +21,6 @@ Using Kadira Debug is simple:
 
 > It even supports Cordova apps without any additional configuration.  
 
-We have also created a guide on [how to understand your Meteor app](/academy/understandin-your-meteor-app) using Kadira Debug. We'll add more resources in coming weeks.
+We have also created a guide on [how to understand your Meteor app](/academy/understanding-your-meteor-app) using Kadira Debug. We'll add more resources in coming weeks.
 
 If you find a issue with [Kadira Debug](https://github.com/meteorhacks/kadira-debug) or you are looking for a feature, submit it to our [GitHub repo](https://github.com/meteorhacks/kadira-debug). 
