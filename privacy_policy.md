@@ -4,9 +4,9 @@ title: Privacy Policy of Kadira
 permalink: /privacy_policy.html
 ---
 
-This Privacy Policy was last modified on May 16, 2014.
+This Privacy Policy was last modified on June 29, 2015.
 
-MeteorHacks Private Limited ("us", "we", or "our") operates <https://kadira.io> (the "Kadira"). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Kadira.
+Kadira Inc. ("us", "we", or "our") operates <https://kadira.io> (the "Kadira"). This page informs you of our policies regarding the collection, use and disclosure of Personal Information we receive from users of the Kadira.
 
 We will not use or share your information with anyone except as described in this Privacy Policy. This Privacy Policy does not apply to information we collect by other means (including offline) or from other sources. By using the Kadira or using the ["kadira" Smart Package](https://github.com/meteorhacks/kadira), you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible at https://kadira.io.
 
@@ -36,13 +36,13 @@ The security of your data is important to us, but remember that no method of tra
 ## Links To Other Sites
 Kadira may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy of every site you visit.
 
-MeteorHacks Private Limited has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party sites or services.
+Kadira Inc. has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party sites or services.
 
 ## Changes To This Privacy Policy
-MeteorHacks Private Limited may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on the Kadira. You are advised to review this Privacy Policy periodically for any changes.
+Kadira Inc. may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on the Kadira. You are advised to review this Privacy Policy periodically for any changes.
 
 ## Contact Us
 If you have any questions about this Privacy Policy, please contact us.
 
-Email: <hello@meteorhacks.com><br>
-Address: MeteorHacks Pvt Ltd, Orion City, Colombo 9, Sri Lanka.
+Email: <support@kadira.io><br>
+Address: Kadira Inc, 2028 E Ben White Blvd #240-6100, Austin, TX 78741.
