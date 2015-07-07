@@ -1,16 +1,19 @@
 <div class="post">
   <h1>{{page.title}}</h1>
   <div>
-    {% if only_title == "true" %}
-      <span class="who">by
-        <a href="https://twitter.com/arunoda">arunoda</a>
-        <a href="https://plus.google.com/u/0/+ArunodaSusiripala?rel=author" style='color:#fff'>.</a>
+    {% if page.author %}
+      <span class="who">by 
+        <a href="{{page.author.profile}}">{{page.author.name}}</a>
       </span>
     {% else %}
-      <span class="who">By
+      <span class="who">by 
         <a href="https://twitter.com/arunoda">arunoda</a>
-        <a href="https://plus.google.com/u/0/+ArunodaSusiripala?rel=author" style='color:#fff'>.</a>
-      </span> -
+      </span>
+    {% endif %}
+
+    {% if only_title == "true" %}
+      
+    {% else %}
       <span class="date">{{page.date | date: "%B %d, %Y"}}</span>
     {% endif %}
   </div>

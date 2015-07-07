@@ -6,9 +6,16 @@
         {% if only_title == "true" %}
           
         {% else %}
-          <span class="who">by 
-            <a href="https://twitter.com/arunoda">arunoda</a>
-          </span> - 
+          {% if post.author %}
+            <span class="who">by 
+              <a href="{{post.author.profile}}">{{post.author.name}}</a>
+            </span>
+          {% else %}
+            <span class="who">by 
+              <a href="https://twitter.com/arunoda">arunoda</a>
+            </span>
+          {% endif %}
+           - 
           <span class="date">{{ post.date }}</span>
         {% endif %}
       </div>

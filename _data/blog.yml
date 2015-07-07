@@ -1,5 +1,13 @@
 ---
   -
+    title: "Sharing the Meteor Login State Between Subdomains"
+    date: "07, July 2015"
+    link: /blog/sharing-meteor-login-state-between-sub-domains
+    summery: "In this blog we'll show you how we shared login state between our static web app and our Meteor app Kadira UI."
+    author:
+      name: Kasun Indi
+      profile: https://twitter.com/_thinkholic
+  -
     title: "Meteor Server Side Rendering Support with FlowRouter and React"
     date: "01, July 2015"
     link: /blog/meteor-ssr-support-using-flow-router-and-react
